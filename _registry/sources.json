@@ -1,0 +1,119 @@
+{
+  "registry": "ZP-VAULT-000",
+  "schema": 1,
+  "note": "Founding artifacts are registered in place. They are never moved, renamed, or edited. A sha256 change means the source moved under us and every claim citing it must be re-verified.",
+  "sources": [
+    {
+      "id": "ZP-SRC-01",
+      "path": "Identity _ Typological Vault.pdf",
+      "kind": "pdf",
+      "title": "Identity / Typological Vault",
+      "extent_pages": 6,
+      "measures": "Self as type. 40+ classification systems applied to one person.",
+      "tier": "T2",
+      "as_of": "unknown (pre-2026-08)",
+      "limit": "Self-selected typology. Highest comfort, lowest predictive value. Nothing here is measured by anyone but the subject.",
+      "bytes": 80363,
+      "sha256": "f1f3eb9ebb191abe59ae7fb64cca8ecae6a00636d8755766cd901edfc2d88f13"
+    },
+    {
+      "id": "ZP-SRC-02",
+      "path": "JSON file re-export ChatGPT Memory .md",
+      "kind": "md",
+      "title": "Memory re-export (JSON)",
+      "extent_lines": 604,
+      "sections": 18,
+      "tiers": [
+        "direct_evidence",
+        "strong_inference",
+        "speculative"
+      ],
+      "measures": "Self as observed by an instrument, longitudinally.",
+      "tier": "mixed",
+      "as_of": "2026 (re-export)",
+      "limit": "Already tiered by its author. The tiering is the useful part; the model's inferences are T1 at best and must be re-evidenced before use.",
+      "bytes": 67159,
+      "sha256": "f79935cbeebf9a473e78519ba9bdf0cc1ea09bcef97c4eb0ece4eb2d0fb403c1",
+      "line_count_method": "splitlines(); the file has no trailing newline, so `wc -l` reports 603"
+    },
+    {
+      "id": "ZP-SRC-03",
+      "path": "Zazie_Media_Master (1).pdf",
+      "kind": "pdf",
+      "title": "Zazie Exact-Name Media Master",
+      "extent_pages": 14,
+      "records": 133,
+      "breakdown": {
+        "press_editorial": 25,
+        "film_exhibitions": 11,
+        "publications": 6,
+        "profiles": 31,
+        "compilations": 60
+      },
+      "priorities": {
+        "A": 23,
+        "B": 26,
+        "C": 84
+      },
+      "unverified_leads": 15,
+      "measures": "Self as cited by the world.",
+      "tier": "T0",
+      "as_of": "2026-08-09",
+      "limit": "Proves an exact-name public record exists. Does NOT validate any biographical, award, or review claim made by the source.",
+      "bytes": 127885,
+      "sha256": "321aba47d7118df4ecb3be7bb88f2260240fc4a31c1e427c35ae2c39b7e2f085"
+    },
+    {
+      "id": "ZP-SRC-04",
+      "path": "Zazie_Productions_Instagram_Forensic_Audit.pdf",
+      "kind": "pdf",
+      "title": "Forensic Public-Image Audit \u2014 Instagram",
+      "extent_pages": 21,
+      "report_id": "ZP-IG-2026-0819",
+      "findings": 11,
+      "evidence_base": "14 of 29 grid posts, 8 tagged-tab items, 8 public comments, bio & stats, 2 highlight titles",
+      "measures": "Self as perceived by a stranger in thirty seconds.",
+      "tier": "T0",
+      "as_of": "2026-08-19",
+      "limit": "Logged-out view only, 14 of 29 posts. Point-in-time. Perception, not conduct. Makes no diagnosis and infers no motive.",
+      "bytes": 133942,
+      "sha256": "20dd760a0f611e291f23f4248e948668a7753462cd15e9e9e4a49c61d031be22"
+    },
+    {
+      "id": "ZP-SRC-05",
+      "path": "Zazie_Productions_Shadow_Signal_Stewardship_Mega_Compendium.pdf",
+      "kind": "pdf",
+      "title": "Shadow / Signal / Stewardship \u2014 Mega Compendium",
+      "extent_pages": 222,
+      "named_figures": 271,
+      "light_counterparts": 17,
+      "protocols": 10,
+      "measures": "Self as possible. The adversarial atlas.",
+      "tier": "T2",
+      "as_of": "2026-07",
+      "limit": "Most seductive document in the repo. Thought experiments, not predictions. Persona names are fictional composites. Every archetype requires a behavioral falsifier before it may enter the case file.",
+      "bytes": 907955,
+      "sha256": "8e7ed27e4aa83952342a99e1d1ae95ee054614a3ab2faba14e2c6a333caaed49"
+    },
+    {
+      "id": "ZP-SRC-06",
+      "path": "Zazie_Productions_Complete_Discography.xlsx",
+      "kind": "xlsx",
+      "title": "Complete Discography",
+      "sheets": 6,
+      "tracks": 200,
+      "isrc_verified": 165,
+      "years": [
+        2019,
+        2026
+      ],
+      "discogs_artist": "11354435",
+      "measures": "Self as output. The only record in the vault that cannot be argued with.",
+      "tier": "T0",
+      "as_of": "2026-08-09",
+      "limit": "ISRCs validated via Deezer API at compile time. '\u2014' means no ISRC found, not a missing value. Never fabricate ISRCs.",
+      "bytes": 53290,
+      "sha256": "a7c78ccbabc439435cb0b811667ab2193e8c3b06be87d37b25d7f16aba56896d"
+    }
+  ]
+}
