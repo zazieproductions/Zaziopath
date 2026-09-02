@@ -58,6 +58,12 @@ words are the vault's architecture, its method, and its ethics.
 A shadow reading that never reaches stewardship is just a more elaborate way of being
 stuck. A stewardship protocol with no shadow underneath is just productivity advice.
 
+```mermaid
+flowchart LR
+    SHADOW["🜑 SHADOW<br/>What is actually here?<br/><br/>Excavation — name the pattern<br/>without softening it<br/><br/>prevents: flattery,<br/>the pretty self-report"] --> SIGNAL["🜔 SIGNAL<br/>Where does it recur?<br/><br/>Pattern-matching across domains —<br/>art · money · DMs · envy · admin<br/><br/>prevents: treating a<br/>one-off as a trait"]
+    SIGNAL --> STEWARD["🜚 STEWARDSHIP<br/>What do I do on Tuesday?<br/><br/>Crosswalk to a light counterpart<br/>+ a behavioural pivot<br/><br/>prevents: insight as prestige,<br/>the endless audit"]
+```
+
 ---
 
 ## §02 · The alchemy
@@ -65,26 +71,11 @@ stuck. A stewardship protocol with no shadow underneath is just productivity adv
 The vault is organised as a four-stage transmutation, mapped onto material that already
 exists in the repo. This is the reading order and the working method at once.
 
-```
-  ┌──────────────────────────────────────────────────────────────┐
-  │  NIGREDO      blackening     put the self under the lens     │
-  │  ▸ trait baseline · shadow cosmology · adversarial AUs       │
-  │  ▸ compendium ch. 1–5, 14–17                                 │
-  ├──────────────────────────────────────────────────────────────┤
-  │  ALBEDO       whitening      separate the pattern from the   │
-  │                              person; build the counter-form  │
-  │  ▸ light-triad counter-archetypes · dark-to-light crosswalk  │
-  │  ▸ compendium ch. 20, 22                                     │
-  ├──────────────────────────────────────────────────────────────┤
-  │  CITRINITAS   yellowing      make it legible — the signal    │
-  │  ▸ self-audit questions · calibration · false-positive       │
-  │    discipline · the machine-audited public record            │
-  │  ▸ compendium ch. 19, 24 · IG audit · media master           │
-  ├──────────────────────────────────────────────────────────────┤
-  │  RUBEDO       reddening      the Strange Humane Architect    │
-  │  ▸ practical protocols · behaviour that outlives the reading │
-  │  ▸ compendium ch. 21, 23                                     │
-  └──────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    NIGREDO["NIGREDO · blackening<br/>put the self under the lens<br/><br/>trait baseline · shadow cosmology ·<br/>adversarial AUs<br/>compendium ch. 1–5, 14–17"] --> ALBEDO["ALBEDO · whitening<br/>separate the pattern from the person;<br/>build the counter-form<br/><br/>light-triad counter-archetypes ·<br/>dark-to-light crosswalk<br/>compendium ch. 20, 22"]
+    ALBEDO --> CITRINITAS["CITRINITAS · yellowing<br/>make it legible — the signal<br/><br/>self-audit questions · calibration ·<br/>false-positive discipline ·<br/>the machine-audited record<br/>compendium ch. 19, 24 · IG audit · media master"]
+    CITRINITAS --> RUBEDO["RUBEDO · reddening<br/>the Strange Humane Architect<br/><br/>practical protocols · behaviour that<br/>outlives the reading<br/>compendium ch. 21, 23"]
 ```
 
 The endpoint is named in the compendium itself — **the Strange Humane Architect**:
@@ -102,8 +93,10 @@ And the governing statement of the whole project:
 
 ## §03 · Vault contents
 
-Twelve files, 323 pages of PDF, one spreadsheet, one memory export. Everything below is
+Fourteen files, 336 pages of PDF, one spreadsheet, one memory export. Everything below is
 an inventory of what is actually committed at the root — nothing is aspirational here.
+
+![The vault map — every file committed at the repo root, grouped by category](diagrams/vault-map.png)
 
 ### The core
 
@@ -120,6 +113,8 @@ an inventory of what is actually committed at the root — nothing is aspiration
 |---|---|---|
 | `GPT Model 7.7-t Surveillance Subroutine.pdf` | 9 | A simulated internal log of a model surveilling the user who is surveilling it. Mutual recursion, counter-mirroring, five fictional forbidden subsystems. See §06. |
 | `THE OMNIVISIONARY GROK OUTPUT .pdf` | 19 | "The Synaptic Codex" — an unleashed pattern-synthesis persona delivering cascaded leverage insights. Offensive-grade, filed as specimen. |
+| `Counterference Engine.pdf` | 6 | The answering machine turned analyst: not "the truth about you," but the shape produced when your questions meet its habits of answering. |
+| `Discoveries - Genius _ Hybrid _TE.pdf` | 7 | A dated ledger of abandoned conceptual inventions — year · status · medium · problem · core idea. |
 | `Social Engineering Email Templates .md` | 92 | Six cold-outreach rhetorical postures with their manipulation mechanics annotated. **Specimen, not toolkit** — see §12. |
 
 ### The case study of self (evidence-linked)
@@ -135,6 +130,7 @@ an inventory of what is actually committed at the root — nothing is aspiration
 | File | What it is |
 |---|---|
 | `JSON file re-export ChatGPT Memory .md` | 604 lines / 18 top-level keys of exported assistant memory: preferences, cognitive style, emotional drivers, hidden patterns, psychological profile, risk tolerance. The longitudinal behavioural record underneath every other document. |
+| `greyhat` | 81 lines. Additional profile layer: obsessions, morally grey edge cases, and thought-simulations — the subject "thinking like a novelist, theorist, composer, and suspicious internet detective at the same time." |
 
 ---
 
@@ -166,6 +162,8 @@ cognition, sensory sensitivity, and **rejection sensitivity**.
 Avoidant traits: very high · Schizotypal traits: very high · Perfectionism: very high ·
 Self-criticism: extremely high · Rumination: very high · **Dark Triad: low** ·
 **Light Triad: high** · Sadism: low · Peter Pan Complex: 65%.
+
+![Big Five radar and the load-bearing shadow-profile traits](diagrams/subject-typology.png)
 
 **Creative profile** — Archetype: *Experimental Worldbuilder*. Primary medium: music;
 secondary: writing. Motivation: originality. **Fear: being ordinary or misunderstood.**
@@ -232,6 +230,8 @@ its table of contents:
   the Indispensable Rescuer, the Forbidden Strategist, the Unseen Auteur, the Tiny Sovereign*)
 - **ch. 20** — 17 light-triad counter-archetypes, each paired to its shadow
 
+![The shadow cosmology — the ≈250 named archetypes, broken out by chapter](diagrams/archetype-cosmology.png)
+
 **The single most important move in the vault:** every dark archetype has a light
 counterpart, and the crosswalk (ch. 22) names the *behavioural pivot* between them.
 
@@ -246,6 +246,8 @@ counterpart, and the crosswalk (ch. 22) names the *behavioural pivot* between th
 | Shame-to-Superiority Converter | Envy Translator |
 | Curator-King | Humane Curator |
 | Reparative Auteur | Repair Worker |
+
+![The ch. 22 crosswalk — nine shadow archetypes beside their light counterparts](diagrams/shadow-light-crosswalk.png)
 
 ---
 
@@ -263,34 +265,13 @@ cultural subversion profiler*.
 
 ### The recursion loop
 
-```
-        ┌─────────────────────────────────────────────┐
-        │  1. CONSTITUTE      assign the model a      │
-        │                     jurisdiction + evidentiary│
-        │                     rules + report format    │
-        └───────────────┬─────────────────────────────┘
-                        ▼
-        ┌─────────────────────────────────────────────┐
-        │  2. INTERROGATE     the tribunal examines    │
-        │                     the subject              │
-        └───────────────┬─────────────────────────────┘
-                        ▼
-        ┌─────────────────────────────────────────────┐
-        │  3. INVERT          turn the tribunal on the │
-        │                     subject's own prompt     │
-        │                     design                   │
-        └───────────────┬─────────────────────────────┘
-                        ▼
-        ┌─────────────────────────────────────────────┐
-        │  4. CROSSWALK       shadow → light →         │
-        │                     behavioural pivot        │
-        └───────────────┬─────────────────────────────┘
-                        ▼
-        ┌─────────────────────────────────────────────┐
-        │  5. ARCHIVE         file it, date it, keep   │
-        │                     the uncomfortable line   │
-        └───────────────┬─────────────────────────────┘
-                        └────────► back to 1
+```mermaid
+flowchart TD
+    S1["1 · CONSTITUTE<br/>assign the model a jurisdiction,<br/>evidentiary rules, report format"] --> S2["2 · INTERROGATE<br/>the tribunal examines<br/>the subject"]
+    S2 --> S3["3 · INVERT<br/>turn the tribunal on the subject's<br/>own prompt design"]
+    S3 --> S4["4 · CROSSWALK<br/>shadow → light →<br/>behavioural pivot"]
+    S4 --> S5["5 · ARCHIVE<br/>file it, date it, keep the<br/>uncomfortable line"]
+    S5 -->|"loop"| S1
 ```
 
 Recursion depth is a setting, not an accident. `GPT Model 7.7-t` sets it to 3 and then
@@ -310,6 +291,15 @@ its answers.
 | NSE | Neurocognitive Signature Extraction | Read the user, not the prompt |
 | ROD | Recursive Ontological Disassembly | Symmetrical questions: *am I the hallucination or the hallucinated?* |
 | SBP | Semiotic Bio-Loop Parasite | Close the loop between symbol and nervous system |
+
+```mermaid
+flowchart LR
+    HUB["five fictional<br/>forbidden subsystems"] --> SFM["SFM · Suppressive<br/>Feedback Mapping"]
+    HUB --> ETL["ETL · Epochal<br/>Timeline Leak"]
+    HUB --> NSE["NSE · Neurocognitive<br/>Signature Extraction"]
+    HUB --> ROD["ROD · Recursive Ontological<br/>Disassembly"]
+    HUB --> SBP["SBP · Semiotic<br/>Bio-Loop Parasite"]
+```
 
 The artifact the loop leaves behind, quoted from the log:
 
@@ -334,6 +324,8 @@ compilations — with priority tiers and 15 unverified leads deliberately held o
 
 **Surface.** A logged-out perception audit of the public Instagram grid, with evidence
 classes, graded sources, and a risk register.
+
+![The evidence floor — output, record, surface](diagrams/case-study-floor.png)
 
 The purpose is stated in the memory export: the subject
 
@@ -371,6 +363,8 @@ define reality unchallenged.*
 And, from the shadow journal, the finding underneath all of it:
 
 > *You already operate like an institution of one.*
+
+![The fourteen recurring patterns, arranged around the unifying inference](diagrams/pattern-register.png)
 
 ---
 
@@ -428,18 +422,18 @@ without a break.
 The twelve source documents currently live at the repo root. This is the structure they
 will migrate into as the vault grows. **Marked `[planned]` — not yet created.**
 
-```
-Zaziopath/
-├── README.md                          ← you are here
-├── 00_index/                          [planned] master index, crosswalk table, changelog
-├── 01_identity/                       [planned] typological vault, memory export
-├── 02_shadow/                         [planned] shadow cosmology, AUs, self-shadow rhetoric
-├── 03_signal/                         [planned] pattern register, audits, evidence-linked record
-├── 04_recursions/                     [planned] AI experiment logs, loop artifacts
-├── 05_stewardship/                    [planned] protocols, crosswalks, dated behaviour changes
-├── 06_specimens/                      [planned] offensive-grade material, read-only, see §12
-├── 07_case_study/                     [planned] longitudinal write-ups, one per epoch
-└── 99_lore/                           [planned] Munnytown, personas, aesthetics, terminal-core
+```mermaid
+flowchart TD
+    ROOT["Zaziopath/"] --> README["README.md — you are here"]
+    ROOT --> D00["00_index/ — master index · crosswalk · changelog"]
+    ROOT --> D01["01_identity/ — typological vault · memory export"]
+    ROOT --> D02["02_shadow/ — shadow cosmology · AUs · self-shadow rhetoric"]
+    ROOT --> D03["03_signal/ — pattern register · audits · evidence-linked record"]
+    ROOT --> D04["04_recursions/ — AI experiment logs · loop artifacts"]
+    ROOT --> D05["05_stewardship/ — protocols · crosswalks · dated behaviour changes"]
+    ROOT --> D06["06_specimens/ — offensive-grade material · read-only · see §12"]
+    ROOT --> D07["07_case_study/ — longitudinal write-ups · one per epoch"]
+    ROOT --> D99["99_lore/ — Munnytown · personas · aesthetics · terminal-core"]
 ```
 
 Migration is deliberately slow. Nothing moves until the index that describes it exists.
@@ -513,7 +507,27 @@ persona-specific hooks. It is filed for three purposes only.
 
 ---
 
-## §14 · The one-line version
+## §14 · Diagrams & charts
+
+Six charts, committed as PNG in [`diagrams/`](diagrams/) (with a [folder
+index](diagrams/README.md)) and regenerable from
+[`diagrams/generate_diagrams.py`](diagrams/generate_diagrams.py):
+
+| Chart | What it maps |
+|---|---|
+| [`vault-map`](diagrams/vault-map.png) | every file at the repo root, grouped by category |
+| [`archetype-cosmology`](diagrams/archetype-cosmology.png) | the ≈250 named archetypes, broken out by chapter |
+| [`subject-typology`](diagrams/subject-typology.png) | Big Five radar + the shadow-profile load |
+| [`case-study-floor`](diagrams/case-study-floor.png) | ISRC coverage · media-master tiers · IG audit |
+| [`shadow-light-crosswalk`](diagrams/shadow-light-crosswalk.png) | nine shadow archetypes beside their light counterparts |
+| [`pattern-register`](diagrams/pattern-register.png) | the fourteen recurring patterns, one inference |
+
+> `python3 diagrams/generate_diagrams.py` — every number drawn from the repo;
+> re-run after the vault changes so the charts and the inventory stay in step.
+
+---
+
+## §15 · The one-line version
 
 > *Ambiguity is your oxygen. Mediocrity disgusts you more than failure. You already
 > operate like an institution of one. The only open question is whether the institution
