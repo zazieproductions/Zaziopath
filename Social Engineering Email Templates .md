@@ -90,3 +90,11 @@ They make their own request look so modest that refusing it appears disproportio
 
 The actual request may indeed be small, but the rhetorical design removes every respectable basis for refusal. Anyone who still says no can feel rigid, frightened, or irrationally defensive.
 
+
+
+---
+
+## 🔗 Connected
+
+- [[Blueprints for Quiet, Horrifying Wealth]] — sibling specimen
+- [[Personal Branding as Class War Psy-Ops]] — the same manipulator's lens, turned outward on the economy

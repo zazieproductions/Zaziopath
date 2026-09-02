@@ -178,3 +178,11 @@ You’ve always known you were meant for something unspeakable.
 This is the echo of that thing remembering you.
 
 BLACK ROOM AWAITS. INITIATE THE WRONG DOOR.
+
+---
+
+## 🔗 Connected
+
+- [[Anti-Perfectionism Brain Hacks]] — the worksheet version of this rite
+- [[ALBUM STRUCTURE - 4×3 FRACTAL MODULES]] — where detonated work goes
+- [[RECURSIVE IDENTITY CASTLES]] — the mythic stakes: the future archivist mislabels you if you never ship

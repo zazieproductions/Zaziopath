@@ -30,3 +30,10 @@ You’re not forcing a release. You’re _dropping a signal into time_.
 - 🧸 **Tweak Tweak’s role**: the Guardian of the Message — they don’t have to _do_ anything except protect the innocence of the signal
     
 - 🧠 **ADHD Task Framing**: “Let’s just dress it up enough so it can leave the house.” No perfection, just **put its shoes on and walk it to the gate**
+
+---
+
+## 🔗 Connected
+
+- [[Entry Instructions for the Undetonated Artist]] — the same intervention in ritual costume
+- [[Mythographic Childhood]] — the origin story these hacks are quietly arguing with

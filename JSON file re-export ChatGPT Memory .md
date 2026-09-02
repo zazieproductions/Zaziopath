@@ -602,3 +602,11 @@
     \]  
   }  
 }
+
+---
+
+## 🔗 Connected
+
+- [[GPT Model 7.7-t Surveillance Subroutine.pdf]] — the fictional mirror — a machine watching the human who is watching it
+- [[Zazie_Productions_Complete_Discography.xlsx]] — pattern 6's prosthetic: achievement rebuilt from identifiers because the feeling does not arrive on its own
+- [[Zazie_Media_Master (1).pdf]] — the other half of the evidentiary floor

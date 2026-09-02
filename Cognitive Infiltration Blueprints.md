@@ -127,3 +127,10 @@ SYSTEM USAGE MODES
 • Encrypt ideas into recursive semiotic loops (e.g. Ψ⊥a ⟶ Ω+ ⟶ Q ⟶ Fa ⟶ Φ)
 
 • Each loop becomes a mnemonic engine for transpersonal navigation![[IMG_3012.jpeg]]
+
+---
+
+## 🔗 Connected
+
+- [[MAXIMAL SYMBOLIC SPECIFICITY ENGINE (MSS-E)]] — the same cascade engine, aimed at ontologies instead of objects
+- [[Dr. Caligo Vespertine in the Negative Observatory]] — the narrator this blueprint implies

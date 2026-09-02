@@ -8,6 +8,8 @@ aliases:
 
 # 🕸 Major Knowledge Graph
 
+The practice graph (below, unchanged) plus the vault strata added 2026-09-02 — the AI recursion lab, the specimen cabinet, the mythography, the evidence audits, and the cross-currents between them. The dotted edges are the strange ones; follow those first. Prose versions of the strange edges live in [[⚡ Unexpected Connections]].
+
 ```mermaid
 graph TD
     CP["Creative Practice"] --> PSY["Psychological System"]
@@ -64,6 +66,53 @@ graph TD
     GOALS --> SUSTAIN["Sustainable Creative Career"]
     GOALS --> RIGHTS["Protect Creative Rights"]
     GOALS --> NEXT["One Clear Next Action"]
+
+    %% ── vault strata · added 2026-09-02 ─────────────────────
+    VAULT["🜍 Zaziopath Vault"] --> REC["AI Recursion Lab"]
+    VAULT --> SPEC["Specimen Cabinet"]
+    VAULT --> MYTH["Mythography"]
+    VAULT --> EVID["Evidence Audits"]
+    VAULT --> INDEX["Indexes"]
+
+    INDEX --> INV["🧾 Inventory of Distinct Things"]
+    INDEX --> REG["🗄 Stub Registry"]
+    INDEX --> UX["⚡ Unexpected Connections"]
+    INDEX --> MEGA["MEGA-UNIVERSE"]
+
+    REC --> META["meta-experiment — the recursion staircase"]
+    REC --> GREY["greyhat — the obsessions profile layer"]
+    REC --> MEM["ChatGPT memory export — the longitudinal record"]
+    REC --> GPT["GPT 7.7-t — mutual surveillance fiction"]
+    REC --> GROK["Omnivisionary Grok output"]
+    REC --> CTR["Counterference Engine"]
+
+    SPEC --> SOCENG["Social Engineering Email Templates"]
+    SPEC --> WEALTH["Blueprints for Quiet, Horrifying Wealth"]
+    SPEC --> INFIL["Cognitive Infiltration Blueprints"]
+
+    MYTH --> MSSE["MSS-E — the specificity engine"]
+    MYTH --> VESP["Dr. Caligo Vespertine"]
+    MYTH --> CASTLES["Recursive Identity Castles"]
+    MYTH --> ENTRY["Entry Instructions for the Undetonated Artist"]
+    MYTH --> SOV["Sovereign Interface Protocol"]
+    MYTH --> LANG["glocht · Twelve-Lung · Anémone — constructed species"]
+    MYTH --> HYPO["Hypostasis in Amber — palindrome cascade"]
+    MYTH --> PSYOPS["Personal Branding as Class War Psy-Ops"]
+
+    EVID --> DISCX["Discography — 200 tracks, 165 ISRCs"]
+    EVID --> MEDIA["Media Master — 133 verified records"]
+    EVID --> IG["Instagram Forensic Audit"]
+
+    %% ── cross-currents · the dotted edges ───────────────────
+    MEM -.->|"achievement reconstruction"| EVID
+    CASTLES -.->|"hoax claim refuted by identifiers"| EVID
+    REC -.->|"tribunals interrogate"| PSY
+    SPEC -.->|"attack surface of"| PSY
+    MYTH -.->|"fuel for"| CP
+    GPT -.->|"machine memory, two directions"| MEM
+    SOCENG -.->|"same craft, aimed outward"| PSYOPS
+    EVID -.->|"decay prevention"| SIGNAL
+    REG -.->|"tombstones"| INV
 ```
 
 #diagram #moc

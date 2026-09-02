@@ -115,3 +115,11 @@ Bone-grown, alone. Lichen grins in grayscale.
 Scale fails. Scale tells. Nothing swells.
 
   
+
+
+---
+
+## 🔗 Connected
+
+- [[ALBUM STRUCTURE - 4×3 FRACTAL MODULES]] — self-mirroring as release architecture
+- [[RECURSIVE IDENTITY CASTLES]] — the self treated as a palindromic cascade

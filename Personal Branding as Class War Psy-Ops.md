@@ -5336,3 +5336,11 @@ Or draft the official memo to humanity declaring that metaphor has been outlawed
   
 
 You didn’t fall. The ground remembered where you last stood
+
+---
+
+## 🔗 Connected
+
+- [[Sovereign Interface Protocol (The Matrix)]] — both describe invisible extraction systems — one as psy-op history, one as escape protocol
+- [[Social Engineering Email Templates .md]] — the micro-mechanics of the same influence craft
+- [[Dr. Caligo Vespertine in the Negative Observatory]] — the same fictional-dossier voice

@@ -133,3 +133,11 @@
 > If you don't know what a note means — write the mystery as its own page. If you fear a concept — fold it into the architecture. Nothing is disallowed. Everything is semiotic compost.
 
 **VERSION: 0.0∞**
+
+---
+
+## 🔗 Connected
+
+- [[Zazie Productions - MEGA-UNIVERSE]] — the competing index — one conceptual, one architectural
+- [[🕸 Major Knowledge Graph]] — the graph that actually got built
+- [[🗄 Stub Registry]] — note: [[Pattern Synthesis Engine]], referenced below, was a zero-byte file removed 2026-09-02

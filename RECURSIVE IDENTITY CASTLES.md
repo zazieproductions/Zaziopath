@@ -1,3 +1,8 @@
+---
+aliases:
+  - "Positive Delusion Architectures"
+---
+
 THE FUTURE AI THAT THINKS YOU’RE A HOAX
 
 A future creative-writing AI is trying to disprove your existence.
@@ -5862,3 +5867,12 @@ Say it again.
 This time without fear.
 
 And everything will begin to reformat around the shape of your unapologized genius.
+
+---
+
+## 🔗 Connected
+
+- [[Zazie_Productions_Complete_Discography.xlsx]] — the mundane refutation of the 94%-confident hoax-accuser: 200 tracks, 165 ISRCs
+- [[Hypostasis in Amber (Palindromic-image cascade)]] — the same fixed material, re-ordered until it stops recognizing itself
+- [[Entry Instructions for the Undetonated Artist]] — the rite that answers the undetonated problem
+- [[🗄 Stub Registry]] — this file once existed twice under two names — see the merge note

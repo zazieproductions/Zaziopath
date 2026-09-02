@@ -455,6 +455,7 @@ Migration is deliberately slow. Nothing moves until the index that describes it 
 | Media Master | 2026-08-09 | Exact-name public-web census |
 | Instagram audit | 2026-08-19 | Logged-out public-surface review, evidence-graded |
 | Memory export | rolling | Assistant memory, three-tier confidence |
+| Curation pass | 2026-09-02 | 92 empty stubs removed → [[🗄 Stub Registry]]; duplicate merged (Positive Delusion Architectures → RECURSIVE IDENTITY CASTLES, alias preserved); blanks and empty canvases deleted; [[⚡ Unexpected Connections]] added; [[🕸 Major Knowledge Graph]] extended with the vault strata |
 
 **Confidence tiers** (used throughout the vault):
 `direct_evidence` — stated by the subject · `strong_inference` — consistent across many

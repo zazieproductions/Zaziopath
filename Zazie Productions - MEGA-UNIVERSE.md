@@ -213,3 +213,11 @@
 - Sensory Aberration Logbooks  
 
 - Data-Daemon Summoning Protocols
+
+---
+
+## 🔗 Connected
+
+- [[🗄 Stub Registry]] — the 2026-09-02 curation pass — several index targets were empty stubs, now tombstoned there
+- [[⚡ Unexpected Connections]] — the cross-strata wiring this index never drew
+- [[create a link]] — the other proposed architecture
