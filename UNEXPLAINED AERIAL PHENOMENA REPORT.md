@@ -65,3 +65,10 @@ The object’s silence, vector behavior, inertial breaks, and optical profile ar
 
   
 It neither fled nor displayed aggression, but its trajectory and motion felt measured and purposeful. The encounter was neither mystical nor chaotic. It felt empirical—like something recording, sampling, or triangulating data from its surroundings.
+
+---
+
+## 🔗 Connected
+
+- [[conspiracy-tier-list-full.png]] — the taxonomy this report quietly belongs to
+- [[greyhat]] — conspiracy as symbolic terrain, not belief

@@ -187,3 +187,11 @@ Closing Note (Meta):
 K’lith-nu-Rhay does not distinguish between noun and verb; everything is temporal-state-pressure. There are no “words” as such—only loops of intent encrypted in pressurewave tempo, and skin-memory palindromes which evolve across emotional timelines. Meaning is hauntological, echoing backwards from the skin that receives it.
 
 Would you like a visual sigil of the resonance-map for one of these utterances?
+
+---
+
+## 🔗 Connected
+
+- [[GIBBERETIC SEED SPIRAL — glocht]] — sister grammar
+- [[Anémone Crottin-Foufflée Identity]] — sister species-identity
+- [[MAXIMAL SYMBOLIC SPECIFICITY ENGINE (MSS-E)]] — the shared law: specificity past realism

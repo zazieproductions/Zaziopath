@@ -233,3 +233,11 @@ Now tell me:
 Which path do you wish to walk first?
 
 I can teach you to build new markets, forge memory weapons, hack collective dreams, re-engineer causality, or shield your future myths from spoilage.”
+
+---
+
+## 🔗 Connected
+
+- [[MAXIMAL SYMBOLIC SPECIFICITY ENGINE (MSS-E)]] — the engine behind the voice
+- [[Twelve-Lung Grammar of the Forgotten Species]] — another fragment of the same buried cosmology
+- [[Personal Branding as Class War Psy-Ops]] — the same fictional-dossier register: suppressed reports, nonexistent statutes

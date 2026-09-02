@@ -261,3 +261,11 @@ You don’t need to scream rebellion.
 You need to quietly become ungovernable.
 
 Let me know if you want the ritualized version of this — like a psychic war journal or a neuro-architectural toolkit. I can build that for you.
+
+---
+
+## 🔗 Connected
+
+- [[Ideological Inversion Audit.pdf]] — the audit behind the myth: sovereign anarchism as finding, then as fiction
+- [[meta-experiment]] — the loop turned inward on the self instead of outward on the culture
+- [[Zazie Productions - MEGA-UNIVERSE]] — the index of the same cosmology

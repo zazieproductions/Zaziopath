@@ -479,3 +479,11 @@ This liturgy will self-destruct only when mispronounced.
   
   
 **
+
+---
+
+## 🔗 Connected
+
+- [[Twelve-Lung Grammar of the Forgotten Species]] — sister grammar
+- [[Anémone Crottin-Foufflée Identity]] — the species it could belong to
+- [[MAXIMAL SYMBOLIC SPECIFICITY ENGINE (MSS-E)]] — the shared law: specificity past realism

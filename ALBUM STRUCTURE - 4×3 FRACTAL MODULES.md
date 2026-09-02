@@ -103,3 +103,10 @@ Each day is broken into 7 Core Sectors:
     
 
 Nighttime Ritual (Daily, 23:11): Render one bounce at 3% slower tempo, reversed, low-passed, played into the corner of the room as an offering to unrealized selves.
+
+---
+
+## 🔗 Connected
+
+- [[Hypostasis in Amber (Palindromic-image cascade)]] — the mirror logic, in words
+- [[Zazie_Productions_Discography.csv]] — the 200-track substrate this structure would organize

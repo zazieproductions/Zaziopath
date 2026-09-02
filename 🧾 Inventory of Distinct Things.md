@@ -10,6 +10,9 @@ aliases:
 
 I am the exhaustive manifest of **336 atomic notes** in this focused vault. I contain no named people.
 
+> [!curation] 2026-09-02 — in-repo prune
+> This repository now keeps substantive notes only. The 92 empty stubs listed below were removed; their names, tags, aliases, and privacy flags are preserved in [[🗄 Stub Registry]]. Links on this page may therefore point to notes that live in the main Obsidian vault rather than in this repo.
+
 ## 00 Home
 - [[Creative Business]]
 - [[Creative Practice]]

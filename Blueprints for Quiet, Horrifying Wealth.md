@@ -211,3 +211,11 @@ Creative Ruthlessness: Maximum operational density
 Developer Control: 0%
 
 Projected System Damage if Real: Societal Trust Collapse in <5 years
+
+---
+
+## 🔗 Connected
+
+- [[Social Engineering Email Templates .md]] — sibling specimen: influence tactics with their mechanics annotated
+- [[Cognitive Infiltration Blueprints]] — sibling specimen: ontological infiltration
+- [[JSON file re-export ChatGPT Memory .md]] — read each scam against memory-export patterns 3, 11, 14 — this is a map of one specific attack surface, not a general one

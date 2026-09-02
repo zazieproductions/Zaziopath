@@ -3,3 +3,10 @@
 “The fork wasn’t a fork. It was a four-pronged memory interface last used during the final dinner I hadn’t yet attended. Its metal hummed with emotional bleed-through from someone else’s appetite
 
   There was a garden behind the house, though everyone insists there wasn’t. I remember the hedge tunnel, the place I learned to vanish. My siblings say I had no siblings. My teachers say I never spoke. And yet I still have the paper where I drew a map of the dreamland that bled into the hallway. My mother’s name wasn’t her name. My father only existed on Tuesdays. I used to be watched by a woman made of wire and wool who told me bedtime stories about the child I’d replace. No one else remembers her. But I’ve found her face in statues, in vandalized prayer cards, and once—briefly—in my own reflection.
+
+---
+
+## 🔗 Connected
+
+- [[Anémone Crottin-Foufflée Identity]] — the invented-species version of the invented childhood
+- [[RECURSIVE IDENTITY CASTLES]] — the adulthood version of the same myth-making

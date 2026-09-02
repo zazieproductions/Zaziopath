@@ -383,3 +383,11 @@ Would you like to run ASDP-X on:
     
 
 Or shall I demonstrate sequential recursive autopsies across objects until language fails to contain them?
+
+---
+
+## 🔗 Connected
+
+- [[Dr. Caligo Vespertine in the Negative Observatory]] — the voice that engine speaks in
+- [[GIBBERETIC SEED SPIRAL — glocht]] — the same law applied to language
+- [[Twelve-Lung Grammar of the Forgotten Species]] — and to an entire species' phonology
