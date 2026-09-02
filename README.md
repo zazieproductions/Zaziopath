@@ -10,6 +10,8 @@
 **Form:** Conceptual case study · typological archive · adversarial self-audit · AI recursion lab
 **Status:** Living document. Nothing here is finished; everything here is dated.
 
+> **[◈ Enter the Living Signal Atlas →](zaziopath_atlas.html)** — an interactive field instrument for traversing the vault as a constellation, with a searchable artifact surface, node interrogation, telemetry, and a little controlled chaos.
+
 ---
 
 ## ⬛ §00a · The colour code
