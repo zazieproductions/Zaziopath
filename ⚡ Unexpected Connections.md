@@ -102,4 +102,4 @@ One question at three altitudes: when does arranging other people's material bec
 
 ---
 
-<sub>⚡ **Unexpected Connections** · drawn 2026-09-02 · a Zazie Productions working document · see also [[🗄 Stub Registry]] for what was removed to make room.</sub>
+<sub>⚡ **Unexpected Connections** · drawn 2026-09-02 · a Zazie Productions working document · see also [[🗄 Stub Registry]] for what was removed to make room, and [[🔍 CASE FILE — Pattern Forensics]] (`ZP-PF-2026-0902`), where ten of these wires are tested against the catalog's own metadata and either hold or snap.</sub>
