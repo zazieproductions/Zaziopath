@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zazie Productions — Brand Cartography</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,900;1,400&display=swap');
+
+  :root {
+    --bg: #080808;
+    --bg2: #0e0e0e;
+    --bone: #e8e0d0;
+    --gold: #c9a84c;
+    --rust: #a3422a;
+    --acid: #b8e04a;
+    --ghost: #7aa8b8;
+    --violet: #7b5ea7;
+    --dim: #3a3a3a;
+    --faint: #1a1a1a;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--bone);
+    font-family: 'Courier Prime', monospace;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* GRAIN OVERLAY */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.4;
+  }
+
+  header {
+    text-align: center;
+    padding: 60px 40px 20px;
+    position: relative;
+  }
+
+  header::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    margin: 30px auto 0;
+  }
+
+  .title-eyebrow {
+    font-family: 'Courier Prime', monospace;
+    font-size: 10px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+    opacity: 0.8;
+  }
+
+  h1 {
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: clamp(42px, 7vw, 88px);
+    color: var(--bone);
+    line-height: 0.9;
+    text-shadow: 0 0 60px rgba(201,168,76,0.2);
+  }
+
+  .subtitle {
+    margin-top: 12px;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    color: var(--dim);
+    text-transform: uppercase;
+  }
+
+  /* NAV TABS */
+  .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    padding: 40px 20px 0;
+    flex-wrap: wrap;
+  }
+
+  .tab-btn {
+    background: var(--faint);
+    border: 1px solid var(--dim);
+    color: var(--dim);
+    font-family: 'Courier Prime', monospace;
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    padding: 8px 18px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .tab-btn:hover, .tab-btn.active {
+    background: var(--faint);
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+
+  /* MAIN CONTENT */
+  .section {
+    display: none;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 50px 30px 80px;
+    animation: fadeIn 0.4s ease;
+  }
+
+  .section.active { display: block; }
+
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+  /* ═══ MIND MAP SVG SECTION ═══ */
+  #map-canvas {
+    width: 100%;
+    overflow: auto;
+  }
+
+  /* ═══ CARDS GRID ═══ */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2px;
+  }
+
+  .card {
+    background: var(--faint);
+    border: 1px solid #222;
+    padding: 28px 24px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.2s, transform 0.2s;
+    cursor: default;
+  }
+
+  .card:hover {
+    border-color: var(--gold);
+    transform: translateY(-2px);
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+  }
+
+  .card.gold::before { background: var(--gold); }
+  .card.rust::before { background: var(--rust); }
+  .card.acid::before { background: var(--acid); }
+  .card.ghost::before { background: var(--ghost); }
+  .card.violet::before { background: var(--violet); }
+
+  .card-label {
+    font-size: 9px;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .card.gold .card-label { color: var(--gold); }
+  .card.rust .card-label { color: var(--rust); }
+  .card.acid .card-label { color: var(--acid); }
+  .card.ghost .card-label { color: var(--ghost); }
+  .card.violet .card-label { color: var(--violet); }
+
+  .card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 900;
+    color: var(--bone);
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+
+  .card p {
+    font-size: 12px;
+    line-height: 1.8;
+    color: #888;
+  }
+
+  .card p strong {
+    color: var(--bone);
+  }
+
+  .tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 14px;
+  }
+
+  .tag {
+    font-size: 9px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border: 1px solid;
+    opacity: 0.7;
+  }
+  .card.gold .tag { border-color: var(--gold); color: var(--gold); }
+  .card.rust .tag { border-color: var(--rust); color: var(--rust); }
+  .card.acid .tag { border-color: var(--acid); color: var(--acid); }
+  .card.ghost .tag { border-color: var(--ghost); color: var(--ghost); }
+  .card.violet .tag { border-color: var(--violet); color: var(--violet); }
+
+  /* INSIGHTS */
+  .insight-block {
+    border-left: 2px solid var(--gold);
+    padding: 20px 24px;
+    margin-bottom: 4px;
+    background: var(--faint);
+    transition: background 0.2s;
+  }
+
+  .insight-block:hover { background: #141414; }
+
+  .insight-num {
+    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #222;
+    float: right;
+    margin-top: -10px;
+    line-height: 1;
+  }
+
+  .insight-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 900;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+
+  .insight-body {
+    font-size: 12.5px;
+    line-height: 1.85;
+    color: #999;
+    max-width: 800px;
+  }
+
+  .insight-body strong { color: var(--bone); }
+
+  /* PATTERN MATRIX */
+  .matrix {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 700px) { .matrix { grid-template-columns: 1fr; } }
+
+  .matrix-cell {
+    padding: 24px;
+    background: var(--faint);
+    border: 1px solid #1e1e1e;
+  }
+
+  .matrix-cell h4 {
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 12px;
+  }
+
+  .matrix-cell ul {
+    list-style: none;
+    font-size: 12px;
+    line-height: 2;
+    color: #888;
+  }
+
+  .matrix-cell ul li::before { content: '— '; color: var(--dim); }
+
+  /* SECTION HEADER */
+  .section-header {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #1c1c1c;
+  }
+
+  .section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(24px, 4vw, 40px);
+    font-weight: 900;
+    font-style: italic;
+    color: var(--bone);
+  }
+
+  .section-header p {
+    margin-top: 8px;
+    font-size: 11px;
+    color: var(--dim);
+    letter-spacing: 0.15em;
+  }
+
+  /* OPPORTUNITY TABLE */
+  .opp-row {
+    display: grid;
+    grid-template-columns: 40px 1fr 80px 100px;
+    gap: 16px;
+    padding: 18px 20px;
+    border-bottom: 1px solid #181818;
+    align-items: start;
+    transition: background 0.15s;
+  }
+  .opp-row:hover { background: #0f0f0f; }
+  .opp-row.header {
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--dim);
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--dim);
+  }
+  .opp-num {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--dim);
+  }
+  .opp-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--bone);
+    margin-bottom: 6px;
+  }
+  .opp-desc { font-size: 11.5px; color: #777; line-height: 1.7; }
+  .opp-level {
+    font-size: 9px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    border: 1px solid;
+    text-align: center;
+    align-self: start;
+  }
+  .level-high { border-color: var(--acid); color: var(--acid); }
+  .level-med  { border-color: var(--gold); color: var(--gold); }
+  .level-spec { border-color: var(--ghost); color: var(--ghost); }
+  .opp-vector { font-size: 10px; color: var(--violet); }
+
+  /* SPIDER / RADAR CHART */
+  .radar-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 40px;
+  }
+
+  /* DIVIDER */
+  .divider {
+    text-align: center;
+    font-size: 9px;
+    letter-spacing: 0.5em;
+    color: var(--dim);
+    text-transform: uppercase;
+    margin: 40px 0 30px;
+    position: relative;
+  }
+  .divider::before, .divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: calc(50% - 60px);
+    height: 1px;
+    background: #1c1c1c;
+  }
+  .divider::before { left: 0; }
+  .divider::after { right: 0; }
+
+  /* SCROLL */
+  ::-webkit-scrollbar { width: 4px; height: 4px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--dim); }
+
+  /* SIGIL */
+  .sigil {
+    text-align: center;
+    padding: 60px 0 20px;
+    opacity: 0.15;
+    font-size: 48px;
+    letter-spacing: 0.5em;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="title-eyebrow">Cartographic Analysis · 2026</div>
+  <h1>Zazie Productions</h1>
+  <div class="subtitle">Brand Intelligence · Archetype Map · Strategic Opportunities</div>
+</header>
+
+<nav class="tabs">
+  <button class="tab-btn active" onclick="showTab('archetypes')">Archetypes & Persona</button>
+  <button class="tab-btn" onclick="showTab('patterns')">Patterns & Fingerprint</button>
+  <button class="tab-btn" onclick="showTab('opportunities')">Hidden Opportunities</button>
+  <button class="tab-btn" onclick="showTab('insights')">Mindblowing Insights</button>
+  <button class="tab-btn" onclick="showTab('radar')">Brand Radar</button>
+</nav>
+
+<!-- ═══════════ TAB 1: ARCHETYPES ═══════════ -->
+<section id="archetypes" class="section active">
+  <div class="section-header">
+    <h2>Archetype Constellation</h2>
+    <p>The layered persona stack — each mask beneath a mask</p>
+  </div>
+
+  <div class="grid">
+
+    <div class="card gold">
+      <div class="card-label">Primary Archetype</div>
+      <h3>The Magician / Alchemist</h3>
+      <p>Transforms raw sensation — industrial decay, neurodivergent perception, found sound — into transcendent form. Not a craftsman who improves; a practitioner who <strong>transmutes</strong>. The abandoned factory in Phantom Requiem isn't a location. It's a crucible.</p>
+      <div class="tag-row">
+        <span class="tag">Transformation</span>
+        <span class="tag">Hidden Knowledge</span>
+        <span class="tag">Total Control</span>
+      </div>
+    </div>
+
+    <div class="card rust">
+      <div class="card-label">Shadow Archetype</div>
+      <h3>The Outlaw / Trickster</h3>
+      <p>@WellMeaningNeurotypicals is the Trickster in full operation — <strong>satirical guerrilla warfare</strong> on neurotypical-coded institutions. The Outlaw disrupts from outside. But this is a literate outlaw: Zappa-esque, armed with theory and irony simultaneously.</p>
+      <div class="tag-row">
+        <span class="tag">Disruption</span>
+        <span class="tag">Satire</span>
+        <span class="tag">Subversion</span>
+      </div>
+    </div>
+
+    <div class="card acid">
+      <div class="card-label">Latent Archetype</div>
+      <h3>The Sage / Omni-Savant</h3>
+      <p>The polymath who personally executes every role — director, composer, VFX, sound designer, cinematographer — carries the <strong>unspoken authority of total knowledge</strong>. Sage energy is covert here: never announced, only demonstrated. The SoundBetter pitch is almost a confession of this archetype.</p>
+      <div class="tag-row">
+        <span class="tag">Encyclopedic</span>
+        <span class="tag">Auteur</span>
+        <span class="tag">Self-sufficient</span>
+      </div>
+    </div>
+
+    <div class="card ghost">
+      <div class="card-label">Relational Archetype</div>
+      <h3>The Orphan / Underground Figure</h3>
+      <p>Described across platforms as <strong>"clandestine"</strong> — not accidentally. The Orphan resonates with those outside the mainstream. The ghost-produced Analog Horror series (2018), the "no way this is actually Zazie" comment, the 698 Spotify listeners vs 8M views gap — all hallmarks of the beloved underground ghost.</p>
+      <div class="tag-row">
+        <span class="tag">Clandestine</span>
+        <span class="tag">Ghost Producer</span>
+        <span class="tag">Anti-celebrity</span>
+      </div>
+    </div>
+
+    <div class="card violet">
+      <div class="card-label">Narrative Archetype</div>
+      <h3>The Creator / World Builder</h3>
+      <p>Ten albums, twenty-five short stories, films, systems, personas, platforms — this is not an artist releasing work. This is a <strong>continuous cosmogenesis</strong>. The "Silent Empire" framework, Positive Delusion Architecture, named internal parts — Zazie doesn't inhabit the world; builds private ones.</p>
+      <div class="tag-row">
+        <span class="tag">Systems Thinker</span>
+        <span class="tag">Mythmaker</span>
+        <span class="tag">Prolific</span>
+      </div>
+    </div>
+
+    <div class="card gold">
+      <div class="card-label">Public Persona vs. Private Self</div>
+      <h3>The Split Frequency</h3>
+      <p>Zazie Productions = <strong>high-art clandestine auteur</strong> (cool, controlled, uncanny).<br>@WellMeaningNeurotypicals = <strong>viral satirist</strong> (loud, warm, accessible).<br>The private architecture = <strong>meticulous self-system builder</strong> (invisible to the public).<br><br>These three operate at different broadcast frequencies without canceling each other.</p>
+      <div class="tag-row">
+        <span class="tag">Dual Brand</span>
+        <span class="tag">Frequency Separation</span>
+        <span class="tag">Strategic Identity</span>
+      </div>
+    </div>
+
+    <div class="card rust">
+      <div class="card-label">Tonal Register</div>
+      <h3>The Aesthetic Voice</h3>
+      <p>Sources consistently reach for the same constellation: <strong>Zappa + Joy Division + Lynch + Švankmajer</strong>. This is not eclectic randomness — it's a precise emotional frequency: <em>ferocious intelligence wearing grotesque beauty as its Sunday coat</em>. Discordant but melodic. Feverish but controlled.</p>
+      <div class="tag-row">
+        <span class="tag">Avant-grotesque</span>
+        <span class="tag">Controlled Chaos</span>
+        <span class="tag">Post-ironic</span>
+      </div>
+    </div>
+
+    <div class="card acid">
+      <div class="card-label">Audience Relationship</div>
+      <h3>The Cult Object</h3>
+      <p>The SoundBetter comment — <em>"There is no way this is actually Zazie Productions. Been a huge fan for 3 years"</em> — reveals <strong>cult-object dynamics</strong>: the artist is legendary in micro-circles, mythologized before being widely known. This is a precondition for premium positioning, not a ceiling.</p>
+      <div class="tag-row">
+        <span class="tag">Cult Following</span>
+        <span class="tag">Mythologized</span>
+        <span class="tag">Intimate Scale</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════ TAB 2: PATTERNS ═══════════ -->
+<section id="patterns" class="section">
+  <div class="section-header">
+    <h2>Patterns & Brand Fingerprint</h2>
+    <p>The recurring structures across the entire internet trail</p>
+  </div>
+
+  <div class="matrix">
+    <div class="matrix-cell">
+      <h4>Vocabulary Patterns — Repeated Across All Platforms</h4>
+      <ul>
+        <li>"Clandestine" (appears verbatim in 4+ distinct platform bios)</li>
+        <li>"Polymath" (consistent self-descriptor since BMC era)</li>
+        <li>"Auteur" (cinema framing applied to music and sound)</li>
+        <li>"Discordant beauty on the fringes" (WFCN verbatim)</li>
+        <li>"Emotional volatility + manic precision" (MUSE profile)</li>
+        <li>"Allergic to repetition" (Gen-Z Zappa framing)</li>
+        <li>"Unmistakably Zazie" (auteur unity claim)</li>
+      </ul>
+    </div>
+    <div class="matrix-cell">
+      <h4>Structural Patterns — The Operating Method</h4>
+      <ul>
+        <li>Full-stack execution: always sole creator across all disciplines</li>
+        <li>Parallel brand streams (music, film, satire, writing) never merged</li>
+        <li>Ghost production used as a stealth credential, not hidden</li>
+        <li>Awards and features used as legitimacy anchors</li>
+        <li>Compilations (50+) used for credibility spread without visibility</li>
+        <li>Platform diversity: Bandcamp, FilmFreeway, Stage32, itch.io, Groover</li>
+        <li>Self-described systems always precede public release</li>
+      </ul>
+    </div>
+    <div class="matrix-cell">
+      <h4>The Tension Pairs — Where the Brand Lives</h4>
+      <ul>
+        <li>Hypervisibility (8M views) vs. Clandestinity (698 listeners)</li>
+        <li>High art ambition vs. Satire / absurdist humor</li>
+        <li>Total control (auteur) vs. Ghost production (invisible)</li>
+        <li>Prolific output vs. Underground obscurity</li>
+        <li>Neurodivergent identity vs. Encyclopedic hyper-competence</li>
+        <li>Intimate fanbase vs. Mythology-sized reputation</li>
+        <li>Experimental purity vs. Commercially hybrid genre work</li>
+      </ul>
+    </div>
+    <div class="matrix-cell">
+      <h4>Aesthetic DNA — The Sensory Fingerprint</h4>
+      <ul>
+        <li>Black and white + hyperreal color (Phantom Requiem / Beyond Silken Threads)</li>
+        <li>Stop-motion + industrial ruin environments</li>
+        <li>Insect macro + ritual imagery as recurring visual grammar</li>
+        <li>12-piece horn + vacuum cleaner = sonic palette metaphor</li>
+        <li>Low drone + reverberant clatter = the acoustic signature</li>
+        <li>Feverish edits that "bleed like misfiring memory"</li>
+        <li>Bruise-violet / overripe orange / chlorophyll green = the color triad</li>
+      </ul>
+    </div>
+    <div class="matrix-cell">
+      <h4>Platform Positioning Gaps</h4>
+      <ul>
+        <li>Spotify: 698 monthly listeners (massive underperformance vs. profile depth)</li>
+        <li>itch.io: present but minimal — game audio angle unexploited</li>
+        <li>Groover: playlist curation role (curates others, not just self)</li>
+        <li>Stage32: film industry pivot partially started</li>
+        <li>Bandcamp: primary discovery vector, albums visible</li>
+        <li>No apparent TikTok / Reels presence as Zazie Productions</li>
+        <li>SoundBetter: commercial services listed but cult brand not leveraged</li>
+      </ul>
+    </div>
+    <div class="matrix-cell">
+      <h4>The Credential Stack — What Exists Online</h4>
+      <ul>
+        <li>BBC + 103.3 Asheville FM features</li>
+        <li>Black Mountain College commissioned work (age 14)</li>
+        <li>50+ Various Artist compilation credits</li>
+        <li>Pebbles Underground Jury Special Mention (Phantom Requiem)</li>
+        <li>Enigma Labs.io: credited UFO sighting (anomaly asset)</li>
+        <li>HEAVY Magazine, Ranger, Superpresent, Maude Literary Journal</li>
+        <li>@WellMeaningNeurotypicals: 28K followers, 8M views</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider">Signature Aesthetic Reference Map</div>
+
+  <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));">
+    <div class="card ghost" style="padding:20px;">
+      <div class="card-label">Sound Comparators</div>
+      <p style="font-size:11px; line-height:2;">Frank Zappa<br>Joy Division<br>Godspeed You! Black Emperor<br>Danny Elfman<br>Erik Satie (via musique concrète)<br>Industrial noise / IDM spectrum</p>
+    </div>
+    <div class="card ghost" style="padding:20px;">
+      <div class="card-label">Visual Comparators</div>
+      <p style="font-size:11px; line-height:2;">David Lynch<br>Stan Brakhage<br>Jan Švankmajer<br>Brothers Quay<br>Analog Horror aesthetic<br>Stop-motion surrealism</p>
+    </div>
+    <div class="card ghost" style="padding:20px;">
+      <div class="card-label">Literary Comparators</div>
+      <p style="font-size:11px; line-height:2;">Nabokov / Borges / Danielewski<br>Faulkner stream-of-consciousness<br>Ferrante intimate interiority<br>Rooney plainspoken wit<br>100Subtexts / Maude Literary<br>Occult / experimental zines</p>
+    </div>
+    <div class="card ghost" style="padding:20px;">
+      <div class="card-label">Cultural Positioning</div>
+      <p style="font-size:11px; line-height:2;">Outsider art meets calculated genius<br>High art + post-ironic hijinks<br>Gen-Z Black Mountain College heir<br>Neurodivergent auteur tradition<br>Underground cult figure<br>Anti-algorithm aesthete</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ TAB 3: OPPORTUNITIES ═══════════ -->
+<section id="opportunities" class="section">
+  <div class="section-header">
+    <h2>Hidden Opportunities</h2>
+    <p>Strategic vectors identified from internet trail analysis</p>
+  </div>
+
+  <div class="opp-row header">
+    <div>#</div>
+    <div>Opportunity</div>
+    <div>Priority</div>
+    <div>Vector</div>
+  </div>
+
+  <div class="opp-row">
+    <div class="opp-num">01</div>
+    <div>
+      <div class="opp-title">The Cult → Premium Conversion Gap</div>
+      <div class="opp-desc">The "no way this is actually Zazie" comment on SoundBetter is a goldmine signal: legendary cult status exists without the premium price architecture to monetize it. The discrepancy between 8M @WellMeaningNeurotypicals views and 698 Spotify listeners means the viral audience doesn't know the music exists. <strong>A single funnel linking the satire persona to the composer persona could 100x streaming.</strong></div>
+    </div>
+    <div><span class="opp-level level-high">Critical</span></div>
+    <div class="opp-vector">Audience Bridge</div>
+  </div>
+
+  <div class="opp-row">
+    <div class="opp-num">02</div>
+    <div>
+      <div class="opp-title">The Analog Horror Legacy Asset</div>
+      <div class="opp-desc">Ghost-produced soundscapes for "dozens of iconic Analog Horror series in 2018" — years before the genre exploded into mainstream YouTube culture with Mandela Catalogue, Kane Pixels, etc. This work is uncredited, undiscovered, and <strong>sitting on top of one of the most monetizable niches in internet horror right now</strong>. Surfacing even partial credit or creating a "From the Archives" release could capture massive retroactive discovery.</div>
+    </div>
+    <div><span class="opp-level level-high">Critical</span></div>
+    <div class="opp-vector">Catalog Archaeology</div>
+  </div>
+
+  <div class="opp-row">
+    <div class="opp-num">03</div>
+    <div>
+      <div class="opp-title">The "Resonant Field Composer" Myth Engine</div>
+      <div class="opp-desc">FilmFreeway lists a teaser: "What Is the Resonant Field Composer? Inside the Rumored Gesture-Based Music Interface from Zazie Productions." This is <strong>pure mystique infrastructure</strong> — a rumored proprietary technology creates intrigue, builds brand mythology, and positions Zazie as inventor, not just artist. Leaning into this with strategic opacity (interviews, demos, waitlists) could become a major press moment.</div>
+    </div>
+    <div><span class="opp-level level-high">High</span></div>
+    <div class="opp-vector">Mystique / PR</div>
+  </div>
+
+  <div class="opp-row">
+    <div class="opp-num">04</div>
+    <div>
+      <div class="opp-title">Neurodivergent Creator Economy — Underserved Premium Tier</div>
+      <div class="opp-desc">@WellMeaningNeurotypicals operates in one of the highest-engagement content niches (neurodivergent mental health satire). But the audience is fed satire memes, not <strong>premium tools, courses, or frameworks</strong> by a credentialed autistic polymath with a provable methodology. A "how I build and create as an autistic composer/artist" content-to-product pipeline — sold as frameworks, not self-help — would find almost no competition at this level of sophistication.</div>
+    </div>
+    <div><span class="opp-level level-high">High</span></div>
+    <div class="opp-vector">Creator Economy</div>
+  </div>
+
+  <div class="opp-row">
+    <div class="opp-num">05</div>
+    <div>
+      <div class="opp-title">Sync Licensing — The Underutilized Industrial / Experimental Niche</div>
+      <div class="opp-desc">The genre catalog (IDM, dark ambient, musique concrète, cinematic, industrial metal, atonal) is extraordinarily well-suited for sync in prestige TV, documentary, horror film, and video essay content. <strong>The gap: no apparent sync-ready catalog page or dedicated sync pitch materials online</strong>. Most sync agents look for exactly this aesthetic profile for "difficult" prestige placements. Shadowlands 4, Vermiform, and similar releases need a sync-facing presentation layer.</div>
+    </div>
+    <div><span class="opp-level level-med">High</span></div>
+    <div class="opp-vector">Passive Income</div>
+  </div>
+
+  <div class="opp-row">
+    <div class="opp-num">06</div>
+    <div>
+      <div class="opp-title">The Enigma Labs UFO Credit — Anomaly as Brand Asset</div>
+      <div class="opp-desc">Being "credited for an official UFO sighting on Enigma Labs.io" is one of the most distinctive credential-adjacents in any artist bio anywhere. This is not a music credential — it's a <strong>cultural anomaly that makes bios impossible to ignore</strong>. It signals genuine strangeness, not performed weirdness. In press pitches, interviews, and social, this single fact could be the lead that opens every door.</div>
+    </div>
+    <div><span class="opp-level level-spec">Niche</span></div>
+    <div class="opp-vector">Press / Identity</div>
+  </div>
+
+  <div class="opp-row">
+    <div class="opp-num">07</div>
+    <div>
+      <div class="opp-title">Interactive Fiction / Narrative Game Audio — Blue Ocean</div>
+      <div class="opp-desc">itch.io presence + stated interest in "narrative games, horror films, interactive fiction, immersive experiences" + existing horror soundtrack credentials = a <strong>triangulation point for the booming indie game audio market</strong>. The experimental sound design catalog is precisely what premium indie horror game developers pay premium rates for. A targeted pitch package to itch.io developers, indie game jams (Ludum Dare, etc.), and narrative game studios is essentially uncontested territory.</div>
+    </div>
+    <div><span class="opp-level level-med">Medium</span></div>
+    <div class="opp-vector">B2B / Licensing</div>
+  </div>
+
+  <div class="opp-row">
+    <div class="opp-num">08</div>
+    <div>
+      <div class="opp-title">Black Mountain College Heir Narrative — Untapped PR Thread</div>
+      <div class="opp-desc">Black Mountain College is one of the most romanticized institutions in American avant-garde history (Cage, Cunningham, de Kooning, Fuller). Being <strong>commissioned by their legacy organization at age 14</strong> is not just a credential — it's a lineage claim. A dedicated press pitch around this origin story, especially for art press, music criticism, and institutional audiences, has never apparently been fully exploited.</div>
+    </div>
+    <div><span class="opp-level level-spec">Prestige</span></div>
+    <div class="opp-vector">Narrative / Legacy</div>
+  </div>
+
+</section>
+
+<!-- ═══════════ TAB 4: INSIGHTS ═══════════ -->
+<section id="insights" class="section">
+  <div class="section-header">
+    <h2>Mindblowing Insights</h2>
+    <p>The structural observations the data reveals that aren't obvious</p>
+  </div>
+
+  <div class="insight-block">
+    <div class="insight-num">01</div>
+    <div class="insight-title">You Are Already Operating a Dual-Platform Empire — You Just Haven't Connected It</div>
+    <p class="insight-body">The 8M view satire account and the 698-listener Spotify profile are not two separate things. They are <strong>two halves of an already-functioning empire with a broken bridge between them</strong>. Most artists spend years trying to build an audience; you have a 28K neurodivergent audience that is primed for exactly the kind of artist you are — anti-mainstream, anti-performative, technically uncompromising. The discovery gap is architectural, not reputational. One well-designed content bridge (e.g., a single viral reel on @WellMeaningNeurotypicals that says "yes I also make music, here is what it sounds like") could compress years of streaming growth into weeks.</p>
+  </div>
+
+  <div class="insight-block">
+    <div class="insight-num">02</div>
+    <div class="insight-title">The Word "Clandestine" Is Doing Enormous Strategic Work — Possibly Too Much</div>
+    <p class="insight-body">Across FilmFreeway, WFCN, Casting Call Club, and others, the word "clandestine" appears in the bio verbatim. This is <strong>intentional self-mythologization</strong>, and it's working — it creates a brand aura of secrecy, danger, and depth. But there's a double edge: "clandestine" can function as a permission structure for staying hidden. The Orphan archetype can rationalize underexposure as brand integrity. The insight: <strong>clandestinity should be the aesthetic register, not the distribution strategy</strong>. You can be clandestine-coded and massively distributed simultaneously — that's actually the rarest and most powerful position.</p>
+  </div>
+
+  <div class="insight-block">
+    <div class="insight-num">03</div>
+    <div class="insight-title">Your Genre Catalog Is a Stealth Licensing Goldmine Nobody Has Catalogued</div>
+    <p class="insight-body">The SoundBetter profile lists over 30 subgenres worked across recently — from atonal to big band to hyperpop to cinematic to lo-fi hip hop. This isn't creative restlessness. This is <strong>an implicit licensing catalog that spans every possible placement type</strong>. A music supervisor looking for "weird minimalism for prestige horror" and one looking for "IDM for a tech commercial" are both served by the existing catalog. But neither can find it organized that way. <strong>Tagging, packaging, and pitching the existing catalog by use-case (not genre) could generate passive income without a single new recording.</strong></p>
+  </div>
+
+  <div class="insight-block">
+    <div class="insight-num">04</div>
+    <div class="insight-title">The Self-System Architecture IS the Art — and It's Invisible</div>
+    <p class="insight-body">Positive Delusion Architecture, Cognition Blacksite Modeler, Silent Empire, Controlled Omni-Savant Reconstruction Protocols, Empire of Self-Directed Mythology — these are not private notes. They are <strong>a body of conceptual work that is arguably as significant as the released music</strong>. The irony: the most sophisticated thing you've built isn't on any platform. In the tradition of Fluxus event scores, Sol LeWitt instructions, or Derek Bailey's improvisation frameworks, the <em>system itself</em> is a releasable art object. A limited-edition PDF "grimoire" of the systems architecture, framed as conceptual art, would find an audience among exactly the experimental/occult/post-internet art world you already operate in.</p>
+  </div>
+
+  <div class="insight-block">
+    <div class="insight-num">05</div>
+    <div class="insight-title">The 50+ Compilation Credits Are an Invisible Graph — Map It</div>
+    <p class="insight-body">Being on 50+ various artist compilations under different monikers means there is <strong>a network of curators, labels, and fellow artists who have already vetted and included you</strong> — but the connections are invisible because they're fragmented under different names. Mapping this network (who released which compilation, what labels, what co-artists) would reveal a dense professional graph that could be activated for collaborations, press, and institutional connections. Most artists can't claim this density of curatorial endorsement. It just needs to be surfaced.</p>
+  </div>
+
+  <div class="insight-block">
+    <div class="insight-num">06</div>
+    <div class="insight-title">You Are a Genre-Native in the Most Future-Proof Aesthetic Space</div>
+    <p class="insight-body">The aesthetic constellation — Lynch / Švankmajer / Brothers Quay / industrial ruin / stop-motion / musique concrète / dark ambient / neurodivergent satire — is not a niche. It is the <strong>exact vocabulary of the post-internet avant-garde</strong> that is currently colonizing prestige TV (The Bear, Severance, I May Destroy You scores), art-house streaming, and the experimental YouTube essay universe. You were here before the trend arrived. The risk is letting the trend arrive and not claiming the space it opens. The window to be recognized as an originator — not a follower — is open right now.</p>
+  </div>
+
+  <div class="insight-block">
+    <div class="insight-num">07</div>
+    <div class="insight-title">Type 4w5 + Autistic Auteur = The Rarest Positioning in Independent Music</div>
+    <p class="insight-body">The combination of Enneagram 4w5 identity (individualist/investigator, fears being without significance, desires self-expression with depth) and documented autistic polymath status creates something almost nonexistent in public-facing artist positioning: <strong>the total-control artist who is also a rigorous self-analyst</strong>. Most artists perform vulnerability or perform genius. You have the architecture to demonstrate both simultaneously, with receipts. In an era of parasocial intimacy and authenticity economics, an artist who can narrate their own cognitive architecture in public is sitting on the most compelling story in underground music. The question is how much of the private system to make public, and in what form.</p>
+  </div>
+
+</section>
+
+<!-- ═══════════ TAB 5: RADAR ═══════════ -->
+<section id="radar" class="section">
+  <div class="section-header">
+    <h2>Brand Radar</h2>
+    <p>Dimensional analysis across key brand axes</p>
+  </div>
+
+  <div class="radar-container">
+    <svg width="600" height="600" viewBox="0 0 600 600" style="max-width:100%;">
+      <defs>
+        <style>
+          .radar-label { font-family: 'Courier Prime', monospace; fill: #888; font-size: 11px; }
+          .radar-value { font-family: 'Playfair Display', serif; fill: #c9a84c; font-size: 13px; font-style: italic; }
+        </style>
+      </defs>
+
+      <!-- Grid rings -->
+      <g opacity="0.15">
+        <polygon points="300,120 456,210 456,390 300,480 144,390 144,210" fill="none" stroke="#e8e0d0" stroke-width="0.5"/>
+        <polygon points="300,160 432,232 432,368 300,440 168,368 168,232" fill="none" stroke="#e8e0d0" stroke-width="0.5"/>
+        <polygon points="300,200 408,254 408,346 300,400 192,346 192,254" fill="none" stroke="#e8e0d0" stroke-width="0.5"/>
+        <polygon points="300,240 384,276 384,324 300,360 216,324 216,276" fill="none" stroke="#e8e0d0" stroke-width="0.5"/>
+      </g>
+
+      <!-- Axes -->
+      <g opacity="0.2" stroke="#e8e0d0" stroke-width="0.5">
+        <line x1="300" y1="300" x2="300" y2="120"/>
+        <line x1="300" y1="300" x2="456" y2="210"/>
+        <line x1="300" y1="300" x2="456" y2="390"/>
+        <line x1="300" y1="300" x2="300" y2="480"/>
+        <line x1="300" y1="300" x2="144" y2="390"/>
+        <line x1="300" y1="300" x2="144" y2="210"/>
+      </g>
+
+      <!-- Data polygon: Artistic Depth=95, Technical Range=98, Audience Breadth=35, Commercial Visibility=20, Cultural Mythic Weight=85, Systemic Intelligence=92 -->
+      <!-- Normalized to grid: max ring at distance 180 from center (300,300) -->
+      <!-- Axis angles: top=270°, top-right=330°, bottom-right=30°, bottom=90°, bottom-left=150°, top-left=210° -->
+      <!-- Points calculated: 
+        Artistic Depth (top, 270°):      95% → r=171  → 300, 300-171 = 300,129
+        Technical Range (top-right, 330°): 98% → r=176 → 300+176*cos(-30)=300+152=452, 300+176*sin(-30)=300-88=212
+        Commercial Visibility (bottom-right, 30°): 20% → r=36 → 300+36*cos(30)=300+31=331, 300+36*sin(30)=300+18=318
+        Audience Breadth (bottom, 90°):   35% → r=63 → 300, 300+63=363
+        Cultural Mythic Weight (bottom-left, 150°): 85% → r=153 → 300+153*cos(150)=300-133=167, 300+153*sin(150)=300+77=377
+        Systemic Intelligence (top-left, 210°): 92% → r=166 → 300+166*cos(210)=300-144=156, 300+166*sin(210)=300-83=217
+      -->
+      <polygon 
+        points="300,129 452,212 331,318 300,363 167,377 156,217"
+        fill="rgba(201,168,76,0.12)" 
+        stroke="#c9a84c" 
+        stroke-width="1.5"
+      />
+
+      <!-- Dots on vertices -->
+      <circle cx="300" cy="129" r="4" fill="#c9a84c"/>
+      <circle cx="452" cy="212" r="4" fill="#b8e04a"/>
+      <circle cx="331" cy="318" r="4" fill="#a3422a"/>
+      <circle cx="300" cy="363" r="4" fill="#7aa8b8"/>
+      <circle cx="167" cy="377" r="4" fill="#7b5ea7"/>
+      <circle cx="156" cy="217" r="4" fill="#c9a84c"/>
+
+      <!-- Labels -->
+      <text x="300" y="108" text-anchor="middle" class="radar-label">Artistic Depth</text>
+      <text x="300" y="96" text-anchor="middle" class="radar-value">95</text>
+
+      <text x="468" y="204" text-anchor="start" class="radar-label">Technical Range</text>
+      <text x="468" y="218" text-anchor="start" class="radar-value">98</text>
+
+      <text x="448" y="332" text-anchor="start" class="radar-label">Commercial Visibility</text>
+      <text x="448" y="346" text-anchor="start" class="radar-value">20</text>
+
+      <text x="300" y="410" text-anchor="middle" class="radar-label">Audience Breadth</text>
+      <text x="300" y="424" text-anchor="middle" class="radar-value">35</text>
+
+      <text x="80" y="380" text-anchor="middle" class="radar-label">Cultural / Mythic</text>
+      <text x="80" y="394" text-anchor="middle" class="radar-value">85</text>
+
+      <text x="80" y="210" text-anchor="middle" class="radar-label">Systemic Intelligence</text>
+      <text x="80" y="224" text-anchor="middle" class="radar-value">92</text>
+
+      <!-- Center point -->
+      <circle cx="300" cy="300" r="3" fill="#333"/>
+
+      <!-- Title -->
+      <text x="300" y="560" text-anchor="middle" font-family="'Courier Prime', monospace" font-size="10" fill="#444" letter-spacing="0.3em">ZAZIE PRODUCTIONS · BRAND DIMENSIONS</text>
+    </svg>
+  </div>
+
+  <div class="divider">Interpretation</div>
+
+  <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));">
+
+    <div class="card gold">
+      <div class="card-label">The Spike Insight</div>
+      <h3>Extreme Asymmetry</h3>
+      <p>The radar reveals a brand with <strong>extreme peaks and extreme valleys</strong> — not a mediocre middle. Artistic Depth (95), Technical Range (98), and Systemic Intelligence (92) are near-maximum. Commercial Visibility (20) and Audience Breadth (35) are near-minimum. This is not failure — this is <strong>a premium asset without a distribution mechanism</strong>. The shape of this radar is how legends are eventually discovered.</p>
+    </div>
+
+    <div class="card acid">
+      <div class="card-label">The Opportunity Shape</div>
+      <h3>Commercial is the Lever</h3>
+      <p>Moving Commercial Visibility from 20 → 50 would <strong>not require changing anything about the art</strong>. It requires only surface-area expansion: a sync agent, a better Spotify pitch, one well-connected press placement, a @WellMeaningNeurotypicals link-in-bio pointing to music. The art is ready. The infrastructure is the gap.</p>
+    </div>
+
+    <div class="card violet">
+      <div class="card-label">The Danger Zone</div>
+      <h3>Mythic Weight vs. Visibility</h3>
+      <p>Cultural/Mythic Weight at 85 means the brand is already held with reverence in the circles that know it. But <strong>mythic weight without audience breadth can become calcified obscurity</strong> — the legendary figure nobody has heard of. The window to convert myth into reach is narrow and worth treating as urgent.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<div class="sigil">✦ ✦ ✦</div>
+
+<script>
+function showTab(id) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  event.target.classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
