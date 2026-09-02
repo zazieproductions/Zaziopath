@@ -74,6 +74,271 @@ graph TD
 
 ---
 
+<sub>This is the map of the vault's **architecture**. The map of its **content** — every
+node and every strange wire between them — is §00c, directly below.</sub>
+
+---
+
+## ⬛ §00c · The complex — every wire, one map
+
+> Drawn 2026-09-02. §00b is the floor plan — *where each stratum lives*. This is the
+> content map — *what everything does to everything else*: the interests, the systems,
+> the subgenres, the schemes, the dark traits, and the recursion that reads them all.
+> One diagram, whole territory — the same promise as §00b, kept for the content instead
+> of the architecture.
+>
+> **How to read it.** Chips and colours are still §00a. The ◉ blue strata are the
+> psychology — the systems of the mind, the dark traits as filed in §04, the parts cast —
+> and they all feed the ◐ pink shadow engine, where insight itself becomes control of
+> meaning (compendium ch. 14–17). White nodes are the interest tree — practice,
+> subgenres, and systems, following the 🕸 Major Knowledge Graph convention. From the
+> engine, the map splits outward: ⚠ schemes filed under glass, ☾ the mythography, ∞ the
+> recursion lab, ▤ the evidence bench. Solid edges are containment or kinship. **Dotted
+> edges are the strange wires — follow those first.** Every wire terminates in the ◈
+> convergence at the bottom: the stewardship loop, one person, one open question.
+
+```mermaid
+flowchart TD
+
+    %% ═════════════════ ROOT ═════════════════
+    R["◈ ZAZIOPATH<br/>one person · one instrument<br/>Shadow → Signal → Stewardship"]:::idx
+
+    R --> SE
+    R --> SH
+    R --> IN
+    R --> SP
+    R --> MY
+    R --> RC
+    R --> EV
+    R --> ST
+
+    %% ═════════════════ ◉ SELF · DARK TRAITS ═════════════════
+    subgraph SE["◉ SELF — the systems of the mind · the dark traits · the parts"]
+        S1["◉ the person under the lens<br/>subject · analyst · prosecutor · archivist · architect"]:::identity
+        S2["◉ the inner cast<br/>IFS parts language"]:::identity
+        S3["◉ value & aesthetic strata"]:::identity
+
+        S1 --> S_T1["typology battery<br/>INFP-T · Enneagram 4w5 · tritype 458 · sp/sx<br/>EII · ELVF · CS founder-mode · melancholic"]:::identity
+        S1 --> S_T2["Big Five<br/>openness ↑↑ · neuroticism ↑↑<br/>conscientiousness ≈ · agreeableness ≈ · extraversion ↓"]:::identity
+        S1 --> S_T3["cognitive engine<br/>pattern recognition ↑↑ · systems & symbolic thinking<br/>fantasy proneness · need for cognition · ambiguity tolerance"]:::identity
+        S1 --> S_T4["dark-triadic baseline<br/>dark triad low · light triad high · sadism low<br/>the shadow lives elsewhere — in meaning"]:::identity
+        S1 --> S_T5["shadow profile<br/>vulnerable narcissism ↑↑ · avoidant ↑↑ · schizotypal ↑↑<br/>perfectionism ↑↑ · self-criticism ↑↑ · rumination ↑↑"]:::identity
+        S1 --> S_T6["registers of pain<br/>rejection sensitivity · envy · shame spirals<br/>freeze · avoidance · reassurance loops · Peter Pan 65%"]:::identity
+        S1 --> S_T7["OCD territory<br/>intrusive harm thoughts<br/>the thought ≠ the intent"]:::identity
+        S1 --> S_T8["armoured performance<br/>grandiosity as armour · self-idealization as armour<br/>the Strategist Performer · paradox as fuel"]:::identity
+        S1 --> S_T9["meta-level addiction<br/>allergy to the neutral middle<br/>insight about insight about insight"]:::identity
+
+        S2 --> P1["Hubris — the Grandiose Protector<br/>status-sensitive · attachment alarm underneath"]:::identity
+        S2 --> P2["Rumination Child Part · Vulnerable Child Part<br/>Tweak Tweak · Babyheart"]:::identity
+        S2 --> P3["Tuffy Bunnytown — the sacred fool<br/>anti-inner-child · Ma$imillion Munnytown<br/>HMP-777 · Bunny Supremacy"]:::identity
+
+        S3 --> V1["aesthetic strata<br/>Information Gothic · Haunted Archivecore<br/>Occult Modernism · terminal-core"]:::identity
+        S3 --> V2["genre weather<br/>liminal psychological horror · industrial ambient<br/>dark psychedelia · musique concrète · analog decay"]:::identity
+        S3 --> V3["politics — sovereign anarchism<br/>anti-hierarchy over the self, absolute authorship within<br/>porous cultural borders · hard operational boundaries"]:::identity
+        S3 --> V4["ethics & alignment<br/>creative / chaotic neutral · envy the deadly sin<br/>prudence the virtue · fallibilist · anti-domination"]:::identity
+    end
+
+    %% ═════════════════ ◐ SHADOW · THE COSMOLOGY ═════════════════
+    subgraph SH["◐ SHADOW — the 222-page compendium · ≈250 archetypes"]
+        EN["◐ THE SHADOW ENGINE<br/>ch. 14–17 · 17 quiet rhetorics + 26 deeper distortions<br/>the moment insight itself becomes control of meaning"]:::shadow
+        CO1["ch. 2 · 30 shadow-Zazie forms → composites<br/>Velvet Caligula · Forensic Saint · Autobiographical Totalitarian"]:::shadow
+        CO2["ch. 3–5 · 35 dark alternate-universe selves<br/>perception intact, sensitivity removed<br/>hotter · messier · vindictive · online"]:::shadow
+        CO3["ch. 6–10 · 88 incoming operators + alluring figures<br/>the Milo Grey family of co-conspirators"]:::shadow
+        CO4["ch. 12 · ten money scams<br/>calibrated to this exact psychology"]:::shadow
+        CO5["ch. 17–18 · 18 unmeasurable archetypes<br/>six parts beneath the rhetoric"]:::shadow
+        CW["△ THE CROSSWALK — ch. 20 + 22<br/>every shadow beside its light counterpart<br/>the pivot is a behaviour, never an insight"]:::steward
+
+        CO1 --> EN
+        CO2 --> EN
+        CO3 --> EN
+        CO4 --> EN
+        CO5 --> EN
+        EN --> CW
+    end
+
+    %% ═════════════════ ◇ INTEREST TREE · SUBGENRES · SYSTEMS ═════════════════
+    subgraph IN["◇ INTEREST TREE — practice · subgenres · systems · collaborations<br/>(white = the content map, as in 🕸 Major Knowledge Graph)"]
+        IN1["◇ the interest tree<br/>what the engine runs on"]:::practice
+        M1["music"]:::practice
+        F1["film & audiovisual"]:::practice
+        T1["technology & creative systems"]:::practice
+        C1["curation & business"]:::practice
+        D1["deep thinking & thought experiments"]:::practice
+        G1["goals & workflows"]:::practice
+
+        IN1 --> M1
+        IN1 --> F1
+        IN1 --> T1
+        IN1 --> C1
+        IN1 --> D1
+        IN1 --> G1
+
+        M1 --> M2["methods<br/>granular · spectral · found sound · acousmatic<br/>musique concrète · sonic maximalism"]:::practice
+        M1 --> M3["principles<br/>atmosphere before melody · silence as threat<br/>hybrid acoustic–electronic · immersive audio"]:::practice
+        M1 --> M4["composition theory<br/>set theory · Z-related aggregates · combinatoriality<br/>Fourier & sieve methods · tritone adjudication"]:::practice
+        M1 --> M5["fractal album architecture<br/>4×3 modules — Primary Mix · Negative Mirror<br/>Dissolution Edit · Ritual Stem Suite"]:::practice
+        M1 --> M6["the catalog<br/>200 tracks · 165 ISRCs · 2019–2026<br/>compilations · netlabel releases"]:::practice
+
+        F1 --> F2["horror & liminal scoring<br/>STATIC · The Haunted · Aquaphobia · Sepsis<br/>custom horror scoring service"]:::practice
+        F1 --> F3["the professional layer<br/>cue sheets & spotting · stem strategy<br/>-6 dBFS · clean stems plus reference"]:::practice
+
+        T1 --> T2["local AI & the second brain<br/>llama.cpp · LM Studio · local models<br/>the Creative Command Center"]:::practice
+        T1 --> T3["creative coding<br/>Vortex AV Engine · graphic-art-to-soundscapes<br/>WebGL · Web Audio · ESP32 art display"]:::practice
+        T1 --> T4["archive glue<br/>ffmpeg · ImageMagick · yt-dlp<br/>PyMuPDF · Tesseract"]:::practice
+
+        C1 --> C2["curation as labour<br/>netlabel · compilations · Goa psytrance<br/>shoegaze · earworm · off-kilter oddities"]:::practice
+        C1 --> C3["services · rates · exposure<br/>sync research · rate floor · pricing anxiety<br/>custom horror scoring · SoundBetter"]:::practice
+        C1 --> C4["collaboration systems<br/>director–composer · client briefs · boundaries<br/>follow-up after silence · trust through specificity"]:::practice
+
+        D1 --> D2["decay studies<br/>signal decay & media rot · memory degradation<br/>dread as texture · haunted interface"]:::practice
+        D1 --> D3["borderline questions<br/>curation vs authorship · haunted artifacts<br/>anti-conservatory gesture · accessible avant-garde"]:::practice
+        D1 --> D4["AI ethics<br/>opposition to non-consensual training<br/>authorship through transformation"]:::practice
+
+        G1 --> G2["finish ambitious work · sustainable career<br/>protect creative rights<br/>one clear next action"]:::practice
+    end
+
+    %% ═════════════════ ⚠ SPECIMENS · THE SCHEMES ═════════════════
+    subgraph SP["⚠ SPECIMENS — the schemes under glass<br/>(§12 · read for recognition & defence, never use)"]
+        X0["⚠ the specimen cabinet"]:::spec
+        X1["Cognitive Infiltration Blueprints<br/>neuroviral engines · infoparasite lifecycles<br/>IFS shadow-actor simulations"]:::spec
+        X2["Social Engineering Email Templates<br/>six outreach postures<br/>mechanics annotated — not a send-this file"]:::spec
+        X3["Blueprints for Quiet, Horrifying Wealth<br/>scarcity-alchemist economics"]:::spec
+        X4["The Omnivisionary Grok Output<br/>the Synaptic Codex · cascaded leverage<br/>filed read-only"]:::spec
+
+        X0 --> X1
+        X0 --> X2
+        X0 --> X3
+        X0 --> X4
+    end
+
+    %% ═════════════════ ☾ MYTHOGRAPHY ═════════════════
+    subgraph MY["☾ MYTHOGRAPHY — the worldbuilding arm · lore · personas"]
+        MH["☾ the myth workshop"]:::myth
+        Y1["MSS-E — the specificity engine<br/>the glyph is the message<br/>a non-systemic system"]:::myth
+        Y2["Dr. Caligo Vespertine<br/>Negative Observatory · cult of 7<br/>semantic instability generator"]:::myth
+        Y3["constructed species & tongues<br/>glocht · Twelve-Lung Grammar<br/>Anémone Crottin-Foufflée"]:::myth
+        Y4["Recursive Identity Castles<br/>the 94% collective-fiction claim<br/>alternate-universe selves"]:::myth
+        Y5["Hypostasis in Amber<br/>palindromic-image cascade<br/>Operation Z · Great Dissonant Cartel"]:::myth
+        Y6["Entry Instructions for the<br/>Undetonated Artist · the chartreuse room"]:::myth
+        Y7["Sovereign Interface Protocol (The Matrix)<br/>xenoschematic rituals<br/>no external OS · one absolute interior"]:::myth
+        Y8["Personal Branding as Class War Psy-Ops"]:::myth
+        Y9["mythographic childhood · Munnytown<br/>the wire-and-wool woman · plush pantheon<br/>ArtZoyd Signal Rot Atlas residency"]:::myth
+
+        MH --> Y1
+        MH --> Y2
+        MH --> Y3
+        MH --> Y4
+        MH --> Y5
+        MH --> Y6
+        MH --> Y7
+        MH --> Y8
+        MH --> Y9
+    end
+
+    %% ═════════════════ ∞ RECURSION LAB ═════════════════
+    subgraph RC["∞ RECURSION LAB — machines turned on the self"]
+        RH["∞ constitutional authorship<br/>constitute a tribunal: jurisdiction<br/>evidentiary rules · report format"]:::rec
+        R1["GPT 7.7-t Surveillance Subroutine<br/>mutual surveillance · the five forbidden<br/>subsystems: SFM · ETL · NSE · ROD · SBP"]:::rec
+        R2["the memory export<br/>604 lines · 18 keys<br/>three-tier confidence · longitudinal"]:::rec
+        R3["Counterference Engine<br/>the interrogation that answers<br/>before the question is asked"]:::rec
+        R4["meta-experiment — the staircase<br/>depth 3 maximum<br/>then surface, mandatory break"]:::rec
+        R5["greyhat profile layer<br/>strange systems · hidden incentives<br/>moral-grey edge cases"]:::rec
+
+        RH --> R1
+        RH --> R2
+        RH --> R3
+        RH --> R4
+        RH --> R5
+    end
+
+    %% ═════════════════ ▤ EVIDENCE ═════════════════
+    subgraph EV["▤ EVIDENCE — the record that outlives mood"]
+        EH["▤ the audit bench"]:::ev
+        E1["the discography<br/>200 tracks · 165 verified ISRCs · 82.5%<br/>Deezer-validated · 2019–2026"]:::ev
+        E2["the media master<br/>133 URL-level records<br/>press · film · profiles · compilations"]:::ev
+        E3["the Instagram forensic audit<br/>ZP-IG-2026-0819<br/>public-surface perception-risk grading"]:::ev
+        E4["the case file + pattern atlas<br/>ZP-PF-2026-0902 · ten findings · FIG 0–7<br/>one script · one palette"]:::ev
+
+        EH --> E1
+        EH --> E2
+        EH --> E3
+        EH --> E4
+    end
+
+    %% ═════════════════ △ STEWARDSHIP ═════════════════
+    subgraph ST["△ STEWARDSHIP — the Tuesday self"]
+        H1["△ stewardship<br/>behaviour that outlives the reading"]:::steward
+        H2["the twelve questions — ch. 19<br/>the executable code run before<br/>sending · signing · apologizing · posting"]:::steward
+        H3["anti-perfectionism brain hacks<br/>the Archive Shift · soft deadlines<br/>ADHD bait · Tweak Tweak soothing"]:::steward
+        H4["calibration — ch. 24<br/>false-positive discipline<br/>the failure mode is paranoia"]:::steward
+        H5["the Strange Humane Architect<br/>sees systems, not components<br/>strategy without counterfeited consent"]:::steward
+
+        H1 --> H2
+        H1 --> H3
+        H1 --> H4
+        H1 --> H5
+    end
+
+    %% ═════════════════ THE CONVERGENCE ═════════════════
+    CN["◈ THE CONVERGENCE — the something every wire lands on<br/>Shadow → Signal → Stewardship, one loop<br/>dark traits crosswalked · schemes filed as specimens<br/>worlds built that people can enter and leave freely<br/>open question — which part runs the institution?"]:::idx
+
+    H1 -->|"the method terminates in behaviour, dated and filed"| CN
+
+    %% ── the strange wires · follow these first ──
+    S_T5 -.->|"attack surface — the scams are calibrated<br/>to this exact profile"| CO4
+    S_T8 -.->|"armour recruits the engine<br/>when insight becomes rank"| EN
+    S_T9 -.->|"the meta-spiral the lab caps at depth 3"| R4
+    P3 -.->|"parts made holdable —<br/>plush theology in felt"| Y9
+    V3 -.->|"the Matrix protocol dramatizes<br/>the inversion finding"| Y7
+    CW -.->|"the 4×3 module set is the crosswalk<br/>in production terms"| M5
+    CW -.->|"the twelve questions turn<br/>the pivots into executable code"| H2
+    EN -.->|"the rhetorics turned outward,<br/>in tool form"| X1
+    CO4 -.->|"the same ten scams,<br/>annotated as specimens"| X2
+    M4 -.->|"dark AUs are Z-related selves —<br/>identical material, permuted"| Y4
+    D2 -.->|"signal rot aestheticized —<br/>the residency makes decay the medium"| Y9
+    D2 -.->|"decay fought with admin — an ISRC is<br/>embalming fluid for a track"| E1
+    X2 -.->|"same craft, aimed outward —<br/>branding as class-war psy-ops"| Y8
+    Y4 -.->|"the demand: one act that statistically<br/>refutes the fiction"| E1
+    MH -.->|"the cosmology is fuel for the tribunal<br/>— and the tribunal reads it back"| RH
+    R1 -.->|"machine memory,<br/>two directions"| R2
+    EH -.->|"counts replace claims —<br/>ground truth for the Tuesday self"| H1
+    S1 -.->|"the specimen, examined<br/>under every lens"| CN
+    EN -.->|"the governing question<br/>of the whole vault"| CN
+    IN1 -.->|"strange worlds, entered<br/>and left freely"| CN
+    X0 -.->|"filed, never used —<br/>self-recognition & defence"| CN
+    MH -.->|"raw material, kept honest<br/>by the evidence"| CN
+    RH -.->|"every loop ends in a dated,<br/>filed loop artifact"| CN
+    EH -.->|"the record that outlives mood"| CN
+    CN -.->|"the next pattern surfaces —<br/>the loop restarts"| EN
+
+    %% ── the colour code · README §00a · Okabe–Ito ──────────
+    classDef idx fill:#231F20,stroke:#231F20,color:#FFFFFF
+    classDef identity fill:#0072B2,stroke:#231F20,color:#FFFFFF
+    classDef shadow fill:#CC79A7,stroke:#231F20,color:#231F20
+    classDef practice fill:#FFFFFF,stroke:#231F20,color:#231F20
+    classDef spec fill:#D55E00,stroke:#231F20,color:#FFFFFF
+    classDef myth fill:#F0E442,stroke:#231F20,color:#231F20
+    classDef rec fill:#009E73,stroke:#231F20,color:#FFFFFF
+    classDef ev fill:#E69F00,stroke:#231F20,color:#231F20
+    classDef steward fill:#56B4E9,stroke:#231F20,color:#231F20
+
+    style SE fill:#FFFFFF,stroke:#0072B2,stroke-width:2px
+    style SH fill:#FFFFFF,stroke:#CC79A7,stroke-width:2px
+    style IN fill:#FFFFFF,stroke:#231F20,stroke-width:2px
+    style SP fill:#FFFFFF,stroke:#D55E00,stroke-width:2px
+    style MY fill:#FFFFFF,stroke:#F0E442,stroke-width:2px
+    style RC fill:#FFFFFF,stroke:#009E73,stroke-width:2px
+    style EV fill:#FFFFFF,stroke:#E69F00,stroke-width:2px
+    style ST fill:#FFFFFF,stroke:#56B4E9,stroke-width:2px
+```
+
+<sub>Reading order is a descent: self → engine → worlds → evidence → Tuesday. The dotted
+wires are the map's real content; their prose versions live in [[⚡ Unexpected
+Connections]], and a subset are tested against the catalog's metadata in [[🔍 CASE FILE
+— Pattern Forensics]]. Where the map and the record disagree, the record wins — an
+undated insight is a mood.</sub>
+
+---
 ## ⬛ §00 · What this repository is
 
 `Zaziopath` is not a portfolio, a memoir, or a personality-test scrapbook.
@@ -640,6 +905,7 @@ Migration is deliberately slow. Nothing moves until the index that describes it 
 | Memory export | rolling | Assistant memory, three-tier confidence |
 | Curation pass | 2026-09-02 | 92 empty stubs removed → [[🗄 Stub Registry]]; duplicate merged (Positive Delusion Architectures → RECURSIVE IDENTITY CASTLES, alias preserved); blanks and empty canvases deleted; [[⚡ Unexpected Connections]] added; [[🕸 Major Knowledge Graph]] extended with the vault strata |
 | Pattern Atlas + Case File | 2026-09-02 | Figures generated from `Zazie_Productions_Discography.csv` + root file census via `tools/generate_figures.py`; ten findings filed as `ZP-PF-2026-0902`; colour system (§00a) adopted repo-wide, Okabe–Ito palette |
+| Complex mindmap | 2026-09-02 | README §00c — the whole wiring in one diagram: interests · systems · subgenres · schemes · dark traits · mythography · recursion · evidence, converging on the stewardship endpoint; 91 nodes, 8 strata clusters, colours per §00a, syntax-validated with mermaid 11.17.2 |
 
 **Confidence tiers** (used throughout the vault):
 `direct_evidence` — stated by the subject · `strong_inference` — consistent across many
