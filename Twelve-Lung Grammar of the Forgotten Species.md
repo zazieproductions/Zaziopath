@@ -1,4 +1,5 @@
   
+
 Prompt:
 
 Invent a living language spoken by a once-extinct species with twelve lungs and no vocal cords. Their speech was not voiced through breath, but sonic blood pressure modulations transmitted through their skin and ambient vibrations. You are the last living neuro-linguist trying to reconstruct their lost tongue using:
@@ -22,10 +23,16 @@ Each sentence must:
 3. Mutate slightly in syntax depending on the emotional state of the listener—simulate how.
 
   
-  
+
   
 
----
+  
+
+  
+
+  
+
+  
 
 Context Simulation:
 
@@ -33,9 +40,13 @@ You are the last neuro-temporal semiolinguist of the extinct Aerithytes, a senti
 
 The language, K’lith-nu-Rhay, was not spoken but sensed, not read but reverberated. Meaning was contingent on proximity, emotion, and skin-contact rhythmics. Linguistic memory was partially encoded in bioluminescent pressure residues left on sacred surfaces, decipherable only through grave-induced trance states and resonance-matched fossil drumming.
 
----
+  
 
-### Core Linguistic Constraints:
+  
+
+  
+
+Core Linguistic Constraints:
 
 Each utterance must:
 
@@ -49,11 +60,15 @@ Each utterance must:
       
     
 
----
+  
 
-### 1. 
+  
 
-### PRAYER
+  
+
+1. 
+
+PRAYER
 
 Surface Form (Pressure-text):
 
@@ -84,11 +99,15 @@ Emotion-State Syntax Mutation:
 
 “Pressure flees. Stillness drowns. Hollow is unheld.”
 
----
+  
 
-### 2. 
+  
 
-### WARNING
+  
+
+2. 
+
+WARNING
 
 Surface Form (Pressure-text):
 
@@ -117,11 +136,15 @@ Emotion-State Syntax Mutation:
 
 “Flee the unsealing. Coil collapse is near.”
 
----
+  
 
-### 3. 
+  
 
-### LOVE CONFESSION
+  
+
+3. 
+
+LOVE CONFESSION
 
 Surface Form (Pressure-text):
 
@@ -153,9 +176,13 @@ Emotion-State Syntax Mutation:
 
 “My extinction began where you pressed.”
 
----
+  
 
-### Closing Note (Meta):
+  
+
+  
+
+Closing Note (Meta):
 
 K’lith-nu-Rhay does not distinguish between noun and verb; everything is temporal-state-pressure. There are no “words” as such—only loops of intent encrypted in pressurewave tempo, and skin-memory palindromes which evolve across emotional timelines. Meaning is hauntological, echoing backwards from the skin that receives it.
 
