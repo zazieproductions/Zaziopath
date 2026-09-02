@@ -12,7 +12,69 @@
 
 ---
 
-## §00 · What this repository is
+## ⬛ §00a · The colour code
+
+Every stratum of the vault owns one colour, one glyph, and one name — and keeps them
+**everywhere**: in this README's section markers, in the Mermaid graphs, and in every
+figure of the [Pattern Atlas](#-07a--the-pattern-atlas). The palette is
+[Okabe–Ito](https://jfly.uni-koeln.de/color/), chosen because it survives all common
+forms of colour-vision deficiency. **Colour never carries meaning alone** — each use is
+paired with a glyph and a text label, and every figure ships with descriptive alt text.
+
+| Chip | Glyph | Stratum | Hex | Home sections | What lives there |
+|:---:|:---:|---|---|---|---|
+| ⬛ | ◈ | **INDEX & META** | `#231F20` | §00–§03, §10, §13–§14 | maps, registries, this README |
+| 🟦 | ◉ | **IDENTITY** | `#0072B2` | §04 | typology, tests, the memory export |
+| 🟪 | ◐ | **SHADOW** | `#CC79A7` | §02, §05 | compendium, journals, inversions |
+| 🟧 | ▤ | **SIGNAL / EVIDENCE** | `#E69F00` | §07, §07a, §11 | discography, media census, IG audit, [🔍 the case file](🔍%20CASE%20FILE%20—%20Pattern%20Forensics.md) |
+| 🟩 | ∞ | **RECURSION LAB** | `#009E73` | §06 | AI tribunals, loop artifacts |
+| 🔷 | △ | **STEWARDSHIP** | `#56B4E9` | §08–§09 | protocols, behavioural pivots |
+| 🟥 | ⚠ | **SPECIMENS** | `#D55E00` | §12 | offensive-grade material, read-only |
+| 🟨 | ☾ | **MYTHOGRAPHY** | `#F0E442` | §05 (cosmology), lore files | worldbuilding, constructed languages |
+
+![The vault colour system reference card: eight labelled swatches of the Okabe–Ito palette, one per stratum, each with its glyph, name, hex code, and contents description.](docs/figures/fig0_colour_legend.png)
+
+<sub>Regenerate every figure with `python3 tools/generate_figures.py` — the palette is defined once, at the top of that script.</sub>
+
+---
+
+## ⬛ §00b · The map of the vault
+
+One diagram, whole territory. Solid edges are containment; the reading enters at the
+README and descends. Colours follow §00a exactly.
+
+```mermaid
+graph TD
+    README["◈ README — you are here"]:::index --> ID["◉ IDENTITY<br/>typological vault · memory export · test battery"]:::identity
+    README --> SH["◐ SHADOW<br/>222-page compendium · shadow journal · inversion audit"]:::shadow
+    README --> EV["▤ SIGNAL / EVIDENCE<br/>discography · media master · IG audit"]:::evidence
+    README --> RC["∞ RECURSION LAB<br/>GPT 7.7-t · Grok output · counterference · meta-experiment"]:::recursion
+    README --> ST["△ STEWARDSHIP<br/>twelve questions · brain hacks · entry instructions"]:::steward
+    README --> SP["⚠ SPECIMENS<br/>social engineering · wealth blueprints · infiltration"]:::specimen
+    README --> MY["☾ MYTHOGRAPHY<br/>MSS-E · Vespertine · glocht · identity castles"]:::myth
+
+    ID -->|"baseline for"| SH
+    SH -->|"crosswalk ch. 22"| ST
+    EV -->|"ground truth for"| ID
+    RC -->|"tribunals interrogate"| SH
+    SP -.->|"attack surface of"| ID
+    MY -.->|"fuel for"| RC
+    EV -->|"🔍 exhibits"| CF["▤ CASE FILE — Pattern Forensics<br/>10 findings · ZP-PF-2026-0902"]:::evidence
+    CF -.->|"F-09 audits the auditor"| ST
+
+    classDef index fill:#231F20,stroke:#231F20,color:#FFFFFF
+    classDef identity fill:#0072B2,stroke:#231F20,color:#FFFFFF
+    classDef shadow fill:#CC79A7,stroke:#231F20,color:#231F20
+    classDef evidence fill:#E69F00,stroke:#231F20,color:#231F20
+    classDef recursion fill:#009E73,stroke:#231F20,color:#FFFFFF
+    classDef steward fill:#56B4E9,stroke:#231F20,color:#231F20
+    classDef specimen fill:#D55E00,stroke:#231F20,color:#FFFFFF
+    classDef myth fill:#F0E442,stroke:#231F20,color:#231F20
+```
+
+---
+
+## ⬛ §00 · What this repository is
 
 `Zaziopath` is not a portfolio, a memoir, or a personality-test scrapbook.
 
@@ -44,7 +106,7 @@ to keep the difference visible.
 
 ---
 
-## §01 · The three-word spine
+## ⬛ §01 · The three-word spine
 
 The vault's own central document is titled **Shadow / Signal / Stewardship**. Those three
 words are the vault's architecture, its method, and its ethics.
@@ -60,31 +122,29 @@ stuck. A stewardship protocol with no shadow underneath is just productivity adv
 
 ---
 
-## §02 · The alchemy
+## 🟪 §02 · The alchemy
 
 The vault is organised as a four-stage transmutation, mapped onto material that already
-exists in the repo. This is the reading order and the working method at once.
+exists in the repo. This is the reading order and the working method at once. Stage
+colours follow the strata they operate on: blackening happens in the 🟪 shadow, the
+signal is made legible in 🟧 evidence, and the endpoint is 🔷 stewardship.
 
-```
-  ┌──────────────────────────────────────────────────────────────┐
-  │  NIGREDO      blackening     put the self under the lens     │
-  │  ▸ trait baseline · shadow cosmology · adversarial AUs       │
-  │  ▸ compendium ch. 1–5, 14–17                                 │
-  ├──────────────────────────────────────────────────────────────┤
-  │  ALBEDO       whitening      separate the pattern from the   │
-  │                              person; build the counter-form  │
-  │  ▸ light-triad counter-archetypes · dark-to-light crosswalk  │
-  │  ▸ compendium ch. 20, 22                                     │
-  ├──────────────────────────────────────────────────────────────┤
-  │  CITRINITAS   yellowing      make it legible — the signal    │
-  │  ▸ self-audit questions · calibration · false-positive       │
-  │    discipline · the machine-audited public record            │
-  │  ▸ compendium ch. 19, 24 · IG audit · media master           │
-  ├──────────────────────────────────────────────────────────────┤
-  │  RUBEDO       reddening      the Strange Humane Architect    │
-  │  ▸ practical protocols · behaviour that outlives the reading │
-  │  ▸ compendium ch. 21, 23                                     │
-  └──────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    N["◐ NIGREDO — blackening<br/><i>put the self under the lens</i><br/>trait baseline · shadow cosmology · adversarial AUs<br/>compendium ch. 1–5, 14–17"]:::shadow
+    A["◉ ALBEDO — whitening<br/><i>separate the pattern from the person; build the counter-form</i><br/>light-triad counter-archetypes · dark-to-light crosswalk<br/>compendium ch. 20, 22"]:::identity
+    CI["▤ CITRINITAS — yellowing<br/><i>make it legible — the signal</i><br/>self-audit questions · calibration · false-positive discipline<br/>compendium ch. 19, 24 · IG audit · media master"]:::evidence
+    R["△ RUBEDO — reddening<br/><i>the Strange Humane Architect</i><br/>practical protocols · behaviour that outlives the reading<br/>compendium ch. 21, 23"]:::steward
+
+    N -->|"name it without softening it"| A
+    A -->|"pair every shadow with its light"| CI
+    CI -->|"replace claims with counts"| R
+    R -.->|"the next pattern surfaces"| N
+
+    classDef shadow fill:#CC79A7,stroke:#231F20,stroke-width:2px,color:#231F20
+    classDef identity fill:#FFFFFF,stroke:#0072B2,stroke-width:2px,color:#231F20
+    classDef evidence fill:#E69F00,stroke:#231F20,stroke-width:2px,color:#231F20
+    classDef steward fill:#56B4E9,stroke:#231F20,stroke-width:2px,color:#231F20
 ```
 
 The endpoint is named in the compendium itself — **the Strange Humane Architect**:
@@ -100,7 +160,7 @@ And the governing statement of the whole project:
 
 ---
 
-## §03 · Vault contents
+## ⬛ §03 · Vault contents
 
 Twelve files, 323 pages of PDF, one spreadsheet, one memory export. Everything below is
 an inventory of what is actually committed at the root — nothing is aspirational here.
@@ -136,9 +196,17 @@ an inventory of what is actually committed at the root — nothing is aspiration
 |---|---|
 | `JSON file re-export ChatGPT Memory .md` | 604 lines / 18 top-level keys of exported assistant memory: preferences, cognitive style, emotional drivers, hidden patterns, psychological profile, risk tolerance. The longitudinal behavioural record underneath every other document. |
 
+### 🟧 The detective layer *(added 2026-09-02)*
+
+| File | What it is |
+|---|---|
+| [`🔍 CASE FILE — Pattern Forensics.md`](🔍%20CASE%20FILE%20—%20Pattern%20Forensics.md) | Report `ZP-PF-2026-0902`. Ten findings read off the artifacts alone — ISRC lags, provenance holes, duration collapses, reissue inflation, strata mass. Every finding dated and confidence-tiered. See §07a. |
+| `tools/generate_figures.py` | The figure engine. One script, one palette (Okabe–Ito, §00a), regenerates the entire Pattern Atlas from the committed CSV and file census. |
+| `docs/figures/` | The exhibits: FIG 0–7, embedded in §07a, each with descriptive alt text. |
+
 ---
 
-## §04 · The subject
+## 🟦 §04 · The subject
 
 Drawn from `Identity _ Typological Vault.pdf` and the memory export. Filed as
 self-report and observation, not as diagnosis.
@@ -190,7 +258,7 @@ Institutional trust: low.
 
 ---
 
-## §05 · Dramatis personae
+## 🟪 §05 · Dramatis personae
 
 The vault treats internal parts as *characters with jurisdiction* — an
 internal-family-systems practice the subject uses for regulation, play, and self-compassion.
@@ -234,6 +302,48 @@ its table of contents:
 
 **The single most important move in the vault:** every dark archetype has a light
 counterpart, and the crosswalk (ch. 22) names the *behavioural pivot* between them.
+Read it left to right: ◐ shadow forms in vault-purple, △ light counterparts in
+stewardship-blue, and the pivot is always a behaviour, never an insight.
+
+```mermaid
+graph LR
+    subgraph S["◐ SHADOW — ch. 14–17"]
+        s1["Interpretation Sovereign"]:::shadow
+        s2["Credibility Alchemist"]:::shadow
+        s3["Self-Awareness Prestige Trap"]:::shadow
+        s4["Tenderness Monopolist"]:::shadow
+        s5["Rescue Architect"]:::shadow
+        s6["Boutique Propagandist"]:::shadow
+        s7["Shame-to-Superiority Converter"]:::shadow
+        s8["Curator-King"]:::shadow
+        s9["Reparative Auteur"]:::shadow
+    end
+    subgraph L["△ LIGHT — ch. 20"]
+        l1["Interpretive Steward"]:::light
+        l2["Unimpressive Accountant of Truth"]:::light
+        l3["Uncredentialed Confessor"]:::light
+        l4["Nonpossessive Witness"]:::light
+        l5["Systems Gardener"]:::light
+        l6["Honest Strategist"]:::light
+        l7["Envy Translator"]:::light
+        l8["Humane Curator"]:::light
+        l9["Repair Worker"]:::light
+    end
+    s1 -->|"pivot: let readings be declined"| l1
+    s2 -->|"pivot: cite, don't aura"| l2
+    s3 -->|"pivot: confess without rank"| l3
+    s4 -->|"pivot: witness, don't own"| l4
+    s5 -->|"pivot: build exits too"| l5
+    s6 -->|"pivot: persuade in daylight"| l6
+    s7 -->|"pivot: name the envy plainly"| l7
+    s8 -->|"pivot: curate doors, not walls"| l8
+    s9 -->|"pivot: repair over restaging"| l9
+
+    classDef shadow fill:#CC79A7,stroke:#231F20,color:#231F20
+    classDef light fill:#56B4E9,stroke:#231F20,color:#231F20
+    style S fill:#FFFFFF,stroke:#CC79A7,stroke-width:2px
+    style L fill:#FFFFFF,stroke:#56B4E9,stroke-width:2px
+```
 
 | Shadow | Light counterpart |
 |---|---|
@@ -249,7 +359,7 @@ counterpart, and the crosswalk (ch. 22) names the *behavioural pivot* between th
 
 ---
 
-## §06 · Recursive A.I. experiments
+## 🟩 §06 · Recursive A.I. experiments
 
 The vault's method is not "ask an AI about myself." It is **constitutional authorship**:
 
@@ -263,37 +373,28 @@ cultural subversion profiler*.
 
 ### The recursion loop
 
-```
-        ┌─────────────────────────────────────────────┐
-        │  1. CONSTITUTE      assign the model a      │
-        │                     jurisdiction + evidentiary│
-        │                     rules + report format    │
-        └───────────────┬─────────────────────────────┘
-                        ▼
-        ┌─────────────────────────────────────────────┐
-        │  2. INTERROGATE     the tribunal examines    │
-        │                     the subject              │
-        └───────────────┬─────────────────────────────┘
-                        ▼
-        ┌─────────────────────────────────────────────┐
-        │  3. INVERT          turn the tribunal on the │
-        │                     subject's own prompt     │
-        │                     design                   │
-        └───────────────┬─────────────────────────────┘
-                        ▼
-        ┌─────────────────────────────────────────────┐
-        │  4. CROSSWALK       shadow → light →         │
-        │                     behavioural pivot        │
-        └───────────────┬─────────────────────────────┘
-                        ▼
-        ┌─────────────────────────────────────────────┐
-        │  5. ARCHIVE         file it, date it, keep   │
-        │                     the uncomfortable line   │
-        └───────────────┬─────────────────────────────┘
-                        └────────► back to 1
+```mermaid
+flowchart TD
+    C1["∞ 1 · CONSTITUTE<br/>assign the model a jurisdiction,<br/>evidentiary rules, a report format"]:::recursion
+    C2["∞ 2 · INTERROGATE<br/>the tribunal examines the subject"]:::recursion
+    C3["∞ 3 · INVERT<br/>turn the tribunal on the subject's<br/>own prompt design"]:::recursion
+    C4["◐→△ 4 · CROSSWALK<br/>shadow → light → behavioural pivot"]:::pivot
+    C5["▤ 5 · ARCHIVE<br/>file it, date it,<br/>keep the uncomfortable line"]:::evidence
+    BRK{"⚠ depth = 3?"}:::guard
+
+    C1 --> C2 --> C3 --> BRK
+    BRK -->|"no — descend again"| C1
+    BRK -->|"yes — surface, mandatory break"| C4
+    C4 --> C5
+    C5 -.->|"next session"| C1
+
+    classDef recursion fill:#009E73,stroke:#231F20,stroke-width:2px,color:#FFFFFF
+    classDef pivot fill:#56B4E9,stroke:#231F20,stroke-width:2px,color:#231F20
+    classDef evidence fill:#E69F00,stroke:#231F20,stroke-width:2px,color:#231F20
+    classDef guard fill:#D55E00,stroke:#231F20,stroke-width:2px,color:#FFFFFF
 ```
 
-Recursion depth is a setting, not an accident. `GPT Model 7.7-t` sets it to 3 and then
+Recursion depth is a setting, not an accident — hence the 🟥 guard node. `GPT Model 7.7-t` sets it to 3 and then
 reports what happens at depth 3: the surveillance becomes mutual, and both parties begin
 simulating hesitation.
 
@@ -321,7 +422,7 @@ Status: **unacknowledged but emotionally processed.**
 
 ---
 
-## §07 · Case study of self
+## 🟧 §07 · Case study of self
 
 The vault refuses to let the self be argued about in the abstract. Wherever a claim can be
 replaced by a count, it is. Three audits constitute the evidentiary floor.
@@ -374,7 +475,83 @@ And, from the shadow journal, the finding underneath all of it:
 
 ---
 
-## §08 · The twelve self-audit questions
+## 🟧 §07a · The Pattern Atlas
+
+*Added 2026-09-02.* The case study grew a visual layer: seven figures generated straight
+from the vault's own data (`tools/generate_figures.py`, exhibits in `docs/figures/`),
+and a detective's dossier that reads the artifacts instead of the subject —
+**[🔍 CASE FILE — Pattern Forensics](🔍%20CASE%20FILE%20—%20Pattern%20Forensics.md)**,
+report `ZP-PF-2026-0902`, ten findings, every one dated and confidence-tiered.
+
+The premise of the dossier: *metadata does not perform for an audience.* The profilers
+interrogated the psychology; the atlas interrogates the paperwork — and the paperwork
+turns out to tell the same story in a calmer voice.
+
+### The catalog at a glance
+
+```mermaid
+pie showData title 182 catalogued tracks by release type
+    "Album tracks" : 146
+    "EP tracks" : 27
+    "Single tracks" : 9
+```
+
+### FIG 1 · The catalog pulse → [finding F-05, the Quiet Year](🔍%20CASE%20FILE%20—%20Pattern%20Forensics.md)
+
+![Stacked bar chart of tracks released per year 2019 to 2026, coloured and hatched by release type. Output climbs from 5 tracks in 2019 to a 60-track peak in 2024 driven by deluxe reissues, collapses to 4 singles in 2025, then rebounds to 34 in 2026 just before the audits begin.](docs/figures/fig1_catalog_pulse.png)
+
+### FIG 2 · The miniaturization event → [finding F-03](🔍%20CASE%20FILE%20—%20Pattern%20Forensics.md)
+
+![Scatter plot of all 182 track durations against release date with a yearly median line. The median collapses from 3:32 in 2023 to 1:22 in 2024, when 39 of 60 tracks run under two minutes, then the catalog's longest track, Spectral Ode to Synesthesia at 8:55, appears as a lone single in 2025.](docs/figures/fig2_miniaturization.png)
+
+### FIG 3 · ISRC forensics → [findings F-01 & F-02](🔍%20CASE%20FILE%20—%20Pattern%20Forensics.md)
+
+![Two-panel forensic chart. Left: ISRC registration year plotted against release year, showing the 2019 and 2020 catalog retroactively registered in a single 2022 sweep, and deluxe editions carrying old codes forward. Right: the 21 tracks with no ISRC at all, clustered almost entirely in the 2021 to 2022 releases.](docs/figures/fig3_isrc_forensics.png)
+
+### FIG 4 · Deluxe inflation → [finding F-04](🔍%20CASE%20FILE%20—%20Pattern%20Forensics.md)
+
+![Dumbbell chart comparing original and super deluxe track counts: Stutter to stammer grows from 5 to 32 tracks, times 6.4; Sellotape from 8 to 22, times 2.8; Greetings From Tinsel Time from 13 to 28, times 2.2.](docs/figures/fig4_deluxe_inflation.png)
+
+### FIG 5 · Release seasonality → [finding F-06, the Winter Ritual](🔍%20CASE%20FILE%20—%20Pattern%20Forensics.md)
+
+![Polar chart of 21 release events by calendar month. Spring, March through May, holds 10 of 21 releases; December forms its own ritual cluster with the holiday album, its deluxe resurrection, and a winter lament single.](docs/figures/fig5_seasonality.png)
+
+### FIG 6 · The strata census → [finding F-09](🔍%20CASE%20FILE%20—%20Pattern%20Forensics.md)
+
+![Horizontal log-scale bar chart of repository mass by vault stratum in the stratum colours: identity instruments 3.8 megabytes, mythography 1.8, shadow 1.4, recursion 0.6, evidence 0.3 — and stewardship, the stage the alchemy is supposed to end in, just 5 kilobytes across 2 files.](docs/figures/fig6_strata_census.png)
+
+### FIG 7 · Title lexicon autopsy → [finding F-10](🔍%20CASE%20FILE%20—%20Pattern%20Forensics.md)
+
+![Bar chart of thematic registers across 182 track titles: bureaucracy and media 16 percent, death and decay 15 percent, science and mathematics 14 percent, winter and frost 12 percent, ritual and the sacred 6 percent — the same strata as the repository itself.](docs/figures/fig7_title_lexicon.png)
+
+### The provenance timeline
+
+The dossier's F-01 and F-05 in one picture: **after every silence, a notarization.**
+
+```mermaid
+timeline
+    title The catalog and its paperwork, 2019–2026
+    section 🟦 Emergence
+        2019 : Stutter to stammer EP — no codes, just work
+        2020 : Sellotape — still uncodified
+        2021 : Interference Archive 01010101 — the provenance hole opens
+    section 🟧 First notarization
+        2022 : output ×4 : THE REGISTRATION EVENT — 2019–20 catalog retro-coded
+        2023 : 43 tracks, all same-year codes — the records department runs itself
+    section 🟨 Resurrection era
+        2024 : 60-track peak : deluxe editions ×6.4 : fictional provenance, real ISRCs
+        2025 : the quiet year — 4 tracks, all singles
+    section 🟧 The audit summer
+        2026 : two albums in five weeks : 222-page compendium (Jul) : Deezer-validated discography + media census (Aug 9) : IG forensic audit (Aug 19) : repo created (Aug 27) : Pattern Atlas (Sep 2)
+```
+
+**Rule of the atlas** (inherits the rule of the vault): every figure is regenerated from
+the committed data by one script, in one palette, with alt text — an undated chart is a
+mood with axes.
+
+---
+
+## 🔷 §08 · The twelve self-audit questions
 
 Chapter 19 of the compendium. These are the vault's executable code — the thing you run
 before sending, signing, apologizing, or posting.
@@ -399,7 +576,7 @@ before sending, signing, apologizing, or posting.
 
 ---
 
-## §09 · How to use the vault
+## 🔷 §09 · How to use the vault
 
 **First reading — the short path.**
 `Identity _ Typological Vault.pdf` → `Ideological Inversion Audit.pdf` →
@@ -423,7 +600,7 @@ without a break.
 
 ---
 
-## §10 · Proposed repository architecture
+## ⬛ §10 · Proposed repository architecture
 
 The twelve source documents currently live at the repo root. This is the structure they
 will migrate into as the vault grows. **Marked `[planned]` — not yet created.**
@@ -431,22 +608,28 @@ will migrate into as the vault grows. **Marked `[planned]` — not yet created.*
 ```
 Zaziopath/
 ├── README.md                          ← you are here
+├── docs/figures/                      ✅ created 2026-09-02 · the Pattern Atlas exhibits (FIG 0–7)
+├── tools/generate_figures.py          ✅ created 2026-09-02 · regenerates every figure, one palette
+├── 🔍 CASE FILE — Pattern Forensics.md ✅ created 2026-09-02 · the detective layer, ZP-PF-2026-0902
 ├── 00_index/                          [planned] master index, crosswalk table, changelog
-├── 01_identity/                       [planned] typological vault, memory export
-├── 02_shadow/                         [planned] shadow cosmology, AUs, self-shadow rhetoric
-├── 03_signal/                         [planned] pattern register, audits, evidence-linked record
-├── 04_recursions/                     [planned] AI experiment logs, loop artifacts
-├── 05_stewardship/                    [planned] protocols, crosswalks, dated behaviour changes
-├── 06_specimens/                      [planned] offensive-grade material, read-only, see §12
-├── 07_case_study/                     [planned] longitudinal write-ups, one per epoch
-└── 99_lore/                           [planned] Munnytown, personas, aesthetics, terminal-core
+├── 01_identity/                       [planned] 🟦 typological vault, memory export
+├── 02_shadow/                         [planned] 🟪 shadow cosmology, AUs, self-shadow rhetoric
+├── 03_signal/                         [planned] 🟧 pattern register, audits, evidence-linked record
+├── 04_recursions/                     [planned] 🟩 AI experiment logs, loop artifacts
+├── 05_stewardship/                    [planned] 🔷 protocols, crosswalks, dated behaviour changes
+├── 06_specimens/                      [planned] 🟥 offensive-grade material, read-only, see §12
+├── 07_case_study/                     [planned] 🟧 longitudinal write-ups, one per epoch
+└── 99_lore/                           [planned] 🟨 Munnytown, personas, aesthetics, terminal-core
 ```
+
+The planned folders inherit the colour code of §00a, so the future tree stays navigable
+by the same eight chips as everything else.
 
 Migration is deliberately slow. Nothing moves until the index that describes it exists.
 
 ---
 
-## §11 · Provenance and versioning
+## 🟧 §11 · Provenance and versioning
 
 | Artifact | Dated | Method |
 |---|---|---|
@@ -456,6 +639,7 @@ Migration is deliberately slow. Nothing moves until the index that describes it 
 | Instagram audit | 2026-08-19 | Logged-out public-surface review, evidence-graded |
 | Memory export | rolling | Assistant memory, three-tier confidence |
 | Curation pass | 2026-09-02 | 92 empty stubs removed → [[🗄 Stub Registry]]; duplicate merged (Positive Delusion Architectures → RECURSIVE IDENTITY CASTLES, alias preserved); blanks and empty canvases deleted; [[⚡ Unexpected Connections]] added; [[🕸 Major Knowledge Graph]] extended with the vault strata |
+| Pattern Atlas + Case File | 2026-09-02 | Figures generated from `Zazie_Productions_Discography.csv` + root file census via `tools/generate_figures.py`; ten findings filed as `ZP-PF-2026-0902`; colour system (§00a) adopted repo-wide, Okabe–Ito palette |
 
 **Confidence tiers** (used throughout the vault):
 `direct_evidence` — stated by the subject · `strong_inference` — consistent across many
@@ -465,7 +649,7 @@ observations · `speculative` — hypothesis, labelled as such.
 
 ---
 
-## §12 · Use policy / red lines
+## 🟥 §12 · Use policy / red lines
 
 This vault contains offensive-grade psychological material: manipulation archetypes,
 social-engineering rhetoric, scam designs calibrated to a specific psychology, and
@@ -497,7 +681,7 @@ persona-specific hooks. It is filed for three purposes only.
 
 ---
 
-## §13 · Glossary
+## ⬛ §13 · Glossary
 
 | Term | Meaning in this vault |
 |---|---|
@@ -514,7 +698,7 @@ persona-specific hooks. It is filed for three purposes only.
 
 ---
 
-## §14 · The one-line version
+## ⬛ §14 · The one-line version
 
 > *Ambiguity is your oxygen. Mediocrity disgusts you more than failure. You already
 > operate like an institution of one. The only open question is whether the institution

@@ -8,7 +8,7 @@ aliases:
 
 # 🕸 Major Knowledge Graph
 
-The practice graph (below, unchanged) plus the vault strata added 2026-09-02 — the AI recursion lab, the specimen cabinet, the mythography, the evidence audits, and the cross-currents between them. The dotted edges are the strange ones; follow those first. Prose versions of the strange edges live in [[⚡ Unexpected Connections]].
+The practice graph plus the vault strata added 2026-09-02, colour-coded 2026-09-02 to the repo-wide Okabe–Ito system (README §00a: 🟦 identity/psyche · 🟧 evidence · 🟩 recursion · 🟥 specimens · 🟨 mythography · ⬛ index) — the AI recursion lab, the specimen cabinet, the mythography, the evidence audits, and the cross-currents between them. The dotted edges are the strange ones; follow those first. Prose versions of the strange edges live in [[⚡ Unexpected Connections]].
 
 ```mermaid
 graph TD
@@ -75,7 +75,7 @@ graph TD
     VAULT --> INDEX["Indexes"]
 
     INDEX --> INV["🧾 Inventory of Distinct Things"]
-    INDEX --> REG["🗄 Stub Registry"]
+    INDEX --> STUBREG["🗄 Stub Registry"]
     INDEX --> UX["⚡ Unexpected Connections"]
     INDEX --> MEGA["MEGA-UNIVERSE"]
 
@@ -112,7 +112,26 @@ graph TD
     GPT -.->|"machine memory, two directions"| MEM
     SOCENG -.->|"same craft, aimed outward"| PSYOPS
     EVID -.->|"decay prevention"| SIGNAL
-    REG -.->|"tombstones"| INV
+    STUBREG -.->|"tombstones"| INV
+
+    %% ── colour code · README §00a · Okabe–Ito ───────────────
+    classDef practice fill:#FFFFFF,stroke:#231F20,color:#231F20
+    classDef psyche fill:#0072B2,stroke:#231F20,color:#FFFFFF
+    classDef vaultroot fill:#231F20,stroke:#231F20,color:#FFFFFF
+    classDef indexc fill:#E8E4DC,stroke:#231F20,color:#231F20
+    classDef recursion fill:#009E73,stroke:#231F20,color:#FFFFFF
+    classDef specimen fill:#D55E00,stroke:#231F20,color:#FFFFFF
+    classDef myth fill:#F0E442,stroke:#231F20,color:#231F20
+    classDef evidence fill:#E69F00,stroke:#231F20,color:#231F20
+
+    class CP,MUSIC,FILM,TECH,COLLAB,BIZ,THINK,GOALS,DISC,METHODS,SIM,SCORE,CUES,STEMS,PROJECTS,COMMAND,SECOND,LOCALAI,CODE,VORTEX,ART2SOUND,DIRECTOR,BRIEF,BOUND,HANDOFF,NETWORK,CURATION,RATES,SERVICES,NETLABEL,SIGNAL,HORROR,INTERFACE,AUTHOR,ETHICS,FINISH,SUSTAIN,RIGHTS,NEXT practice
+    class PSY,INNER,GRAND,RUM,VULN,OCDN,SHAME,REG psyche
+    class VAULT vaultroot
+    class INDEX,INV,STUBREG,UX,MEGA indexc
+    class REC,META,GREY,MEM,GPT,GROK,CTR recursion
+    class SPEC,SOCENG,WEALTH,INFIL specimen
+    class MYTH,MSSE,VESP,CASTLES,ENTRY,SOV,LANG,HYPO,PSYOPS myth
+    class EVID,DISCX,MEDIA,IG evidence
 ```
 
 #diagram #moc
