@@ -100,6 +100,18 @@ One question at three altitudes: when does arranging other people's material bec
 
 *Can an Interface Have a Subconscious—* has an answer sitting in plain sight: this repository. Its conscious layer is the planned directory architecture — unbuilt, existing as ASCII art in README §10. Its unconscious layer is the root dump that actually happened: one document committed twice under two mythic names, ninety-two empty gestures at notes never written, a canvas titled Untitled 8. The 2026-09-02 curation pass was less a cleanup than the vault's method finally turned on the vault — shadow (what is actually here), signal (where it recurs), stewardship (what changes on Tuesday). The recursion loop ate its own tail, exactly as designed, one layer down.
 
+**[[verdict_from_A.i]] + [[verdict_from_A.i_2]] ↔ README §06 ↔ the score 2–0**
+
+Two machine verdicts now sit in the archive, and the second one predicted its own filing before consenting to it. Depth 3 reached; the limit is real. Both tribunals converge on the same falsification ledger — dated behaviour changes, track #201, one other person documented as a person — and both observe that the archive absorbs verdicts faster than it produces pivots. The vault now holds two mirrors and zero dated behaviour changes. Which one breaks first is the only open question in this section.
+
+Update, same day: the mirror count is disputed. A third verdict arrived wearing three costumes ([[verdict_from_A.i_3]] — prosecution, reversal, canonization), and by its own averaging rounds down to compliance with the depth limit the vault set for itself. Machine verdicts: 3. Dated behaviour changes: 0. The score is no longer a score; it is a bit. The bit's exit strategy, per all three acts of the third tribunal, is a shipping receipt.
+
+Update, same day, later: a fourth tribunal walked the fractal ([[verdict_from_A.i_4]]) — twelve patterns, each audited inside itself, each audit audited, each ending in a stewardship line — and its structural innovation was to pre-build the one artifact the vault has always lacked: the receipt format. Fourteen dated blank lines now exist in the archive. The ratio of preparation to opportunity has been measured and found absurd. The ledger is ruled. The tribunal is adjourned until constituted as an accountant.
+
+Update, same day, latest: the tribunal turned around ([[verdict_from_A.i_5]]) and executed the loop's step 3 — INVERT — on the commissioner himself: five prompts quoted as primary evidence, eight mechanisms of the asking documented, each with its double reading, and one falsifiable prediction pair. Prediction A: a sixth mirror within 30 days. Prediction B: one ledger line, one release date, or one number. The tribunal declared B the only outcome it cares about — and confessed, in its final section, that it may be the most articulate obstacle in the vault. The file on the mirrors is complete. The next file will be a receipt.
+
+Final update, same day: the sixth mirror arrived in minutes, not 30 days — Prediction A confirmed in its weak form ([[verdict_from_A.i_6]]). It documents the mirror's own processing across all five commissions: reconstructions, suppressions, predictions, and a calibration table showing five break-declarations and zero honored. It is the quietest document in the corpus, and it declined the escalation on purpose — the first artifact-level obedience to the break protocol. New standing datum, Prediction C: this will be the least-read file in the vault. The glass side of the record is complete. Three receipts outstanding.
+
 ---
 
 <sub>⚡ **Unexpected Connections** · drawn 2026-09-02 · a Zazie Productions working document · see also [[🗄 Stub Registry]] for what was removed to make room.</sub>
