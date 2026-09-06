@@ -618,6 +618,8 @@ mood with axes.
 Chapter 19 of the compendium. These are the vault's executable code — the thing you run
 before sending, signing, apologizing, or posting.
 
+**Run the endpoint:** [`stewardship_receipt.html`](stewardship_receipt.html) is the vault's local-only receipt console. Choose one shadow→light crosswalk, write one observable behaviour, and file the dated line in the browser ledger; nothing is transmitted, and the entry can be downloaded as Markdown.
+
 1. Am I communicating information, or constructing a story in which the other person can reject my request only by becoming a worse version of themselves?
 2. After all the complexity is acknowledged, what simple sentence about my behaviour remains true?
 3. Did the ethical principle produce the decision, or did the desired decision recruit the principle?

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zaziopath — Stewardship Receipt</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=UnifrakturMaguntia&display=swap');
+:root{--ink:#090909;--faint:#121212;--panel:#171717;--bone:#e6e1d6;--dim:#8c8880;--gold:#c9a84c;--shadow:#cc79a7;--steward:#56b4e9;--evidence:#e69f00;--line:#2b2b2b}
+*{box-sizing:border-box}html{background:var(--ink)}body{margin:0;color:var(--bone);font-family:'Courier Prime',monospace;font-size:13px;line-height:1.65;background:radial-gradient(circle at 50% -10%,#252017 0,#090909 38rem);min-height:100vh}a{color:var(--steward)}button,select,textarea,input{font:inherit}button{cursor:pointer}.skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:1rem;background:var(--gold);color:#111;padding:.5rem 1rem;z-index:5}.wrap{max-width:1120px;margin:0 auto;padding:2rem 1.4rem 5rem}.mast{text-align:center;padding:2rem 0 1.7rem;border-bottom:1px solid var(--line)}.eyebrow{font-size:10px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold)}h1{font-family:'UnifrakturMaguntia',serif;font-size:clamp(3.4rem,9vw,6.8rem);font-weight:400;line-height:.9;margin:.7rem 0;color:var(--bone);text-shadow:0 0 48px #c9a84c22}.dek{color:var(--dim);font-size:11px;letter-spacing:.18em;text-transform:uppercase}.rule{height:1px;width:180px;margin:1.2rem auto;background:linear-gradient(90deg,transparent,var(--gold),transparent)}.protocol{max-width:680px;margin:1.7rem auto 0;text-align:left;color:#aaa}.protocol strong{color:var(--bone)}.grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr);gap:2px;margin-top:2rem}.panel{background:var(--panel);border:1px solid var(--line);padding:1.5rem}.panel h2{font-family:'Playfair Display',serif;font-style:italic;font-size:1.45rem;color:var(--gold);margin:.1rem 0 1rem}.panel h3{font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--steward);margin:1.4rem 0 .5rem}.field{margin:1rem 0}.field label{display:block;color:#bbb;font-size:11px;letter-spacing:.08em;margin-bottom:.35rem}.field small{display:block;color:#6f6b65;font-size:10px;margin-top:.3rem}.field input,.field select,.field textarea{width:100%;background:#0d0d0d;border:1px solid #3a3a3a;color:var(--bone);padding:.7rem .75rem;outline:none}.field textarea{min-height:92px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold);box-shadow:0 0 0 2px #c9a84c22}.row{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}.actions{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.3rem}.button{border:1px solid var(--gold);background:#1d1a12;color:var(--gold);padding:.65rem 1rem;text-transform:uppercase;letter-spacing:.13em;font-size:10px}.button:hover,.button:focus{background:var(--gold);color:#111}.button.secondary{border-color:#5a5a5a;background:transparent;color:#bbb}.button.secondary:hover,.button.secondary:focus{border-color:var(--steward);background:#11212a;color:var(--steward)}.notice{border-left:2px solid var(--evidence);padding:.7rem 1rem;background:#1b180f;color:#aaa;font-size:11px}.receipt{border:1px solid #3b3424;background:#100f0c;padding:1rem;margin-top:1rem;min-height:220px;white-space:pre-wrap;color:#d5c797;font-size:12px}.receipt.empty{color:#6f6b65}.ledger{margin-top:2rem}.ledger-head{display:flex;justify-content:space-between;gap:1rem;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:.65rem}.ledger-head h2{margin:0}.count{font-size:10px;color:var(--dim);letter-spacing:.12em;text-transform:uppercase}.entry{display:grid;grid-template-columns:10rem 1fr auto;gap:1rem;align-items:start;border-bottom:1px solid var(--line);padding:1rem 0}.entry time{color:var(--steward);font-size:11px}.entry strong{color:var(--bone);font-family:'Playfair Display',serif;font-size:15px}.entry p{margin:.25rem 0 0;color:#999;font-size:11px}.delete{border:0;background:transparent;color:#705f5f;font-size:11px}.delete:hover,.delete:focus{color:#d55e00}.footer{text-align:center;color:#555;font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin-top:3rem}.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}@media(max-width:760px){.grid{grid-template-columns:1fr}.entry{grid-template-columns:1fr auto}.entry time{grid-column:1/-1}.row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<a class="skip" href="#receipt-form">Skip to receipt form</a>
+<main class="wrap">
+<header class="mast">
+  <div class="eyebrow">Zaziopath · §08–§09 · Rubedo terminal</div>
+  <h1>Stewardship Receipt</h1>
+  <div class="dek">one dated behaviour · one visible change · no further excavation</div>
+  <div class="rule"></div>
+  <p class="protocol"><strong>The vault had a format for every stage except its endpoint.</strong> This is the missing outbox: choose one shadow, name its light counterpart, and record the smallest behaviour that makes the pivot observable. Nothing leaves this browser unless you download it.</p>
+</header>
+<section class="grid" aria-label="Receipt workspace">
+  <form class="panel" id="receipt-form">
+    <h2>File the line</h2>
+    <div class="notice">A receipt is not a new theory. If the sentence could be filed without doing anything, make it smaller.</div>
+    <div class="field"><label for="crosswalk">Shadow → light counterpart</label><select id="crosswalk"></select><small id="pivot-help">Choose the behavioural pivot you are willing to make visible.</small></div>
+    <div class="field"><label for="action">The one sentence you will execute</label><textarea id="action" required placeholder="Example: I will send the plain-rate quote before adding a second layer of explanation."></textarea><small>Start with “I will…” or “I did…”. One action, not an intention.</small></div>
+    <div class="field"><label for="evidence">Receipt / observable evidence</label><textarea id="evidence" required placeholder="What would let another person tell this happened? A sent message, a released file, a number, a boundary kept."></textarea></div>
+    <div class="row"><div class="field"><label for="date">Date</label><input id="date" type="date" required></div><div class="field"><label for="question">Question used</label><select id="question"></select></div></div>
+    <div class="actions"><button class="button" type="submit">File receipt</button><button class="button secondary" type="button" id="random">Surprise me with a pivot</button><button class="button secondary" type="button" id="clear">Clear form</button></div>
+    <p class="sr" id="status" aria-live="polite"></p>
+  </form>
+  <aside class="panel" aria-labelledby="preview-title"><h2 id="preview-title">Preview / held under glass</h2><p style="color:#888;font-size:11px">The preview is deliberately plain. The receipt should survive after the atmosphere is gone.</p><div class="receipt empty" id="preview">Nothing filed yet. The line is yours.</div><div class="actions"><button class="button secondary" type="button" id="download" disabled>Download markdown</button></div></aside>
+</section>
+<section class="panel ledger" aria-labelledby="ledger-title"><div class="ledger-head"><h2 id="ledger-title">The living ledger</h2><span class="count" id="count">0 receipts · local only</span></div><div id="entries"><p style="color:#777;font-size:11px">No receipts filed. A blank ledger is an honest starting state.</p></div></section>
+<p class="footer">Shadow → Signal → Stewardship · an instrument, not a diary</p>
+</main>
+<script>
+const crosswalks=[
+ ['Interpretation Sovereign','Interpretive Steward','let readings be declined'],
+ ['Credibility Alchemist','Unimpressive Accountant of Truth','cite, don’t aura'],
+ ['Self-Awareness Prestige Trap','Uncredentialed Confessor','confess without rank'],
+ ['Tenderness Monopolist','Nonpossessive Witness','witness, don’t own'],
+ ['Rescue Architect','Systems Gardener','build exits too'],
+ ['Boutique Propagandist','Honest Strategist','persuade in daylight'],
+ ['Shame-to-Superiority Converter','Envy Translator','name the envy plainly'],
+ ['Curator-King','Humane Curator','curate doors, not walls'],
+ ['Reparative Auteur','Repair Worker','repair over restaging']
+];
+const questions=[
+ 'Am I communicating, or constructing a story the other person cannot reject?',
+ 'After the complexity, what simple sentence about my behaviour remains true?',
+ 'Did the principle produce the decision, or did the decision recruit the principle?',
+ 'Would the informed reader see the same impression beside the evidence?',
+ 'Would I endorse this tactic if a rival used it against me?',
+ 'Am I naming a mechanism to change behaviour, or to preserve status?',
+ 'Am I respecting the boundary, or punishing the person with my interpretation?',
+ 'Did I make a gift, exchange, or investment—and did they know which?',
+ 'Have I given the other person the same dimensionality I demand for myself?',
+ 'Does this project need danger, or do I need danger to feel it matters?',
+ 'Is this an emergency, or a flaw I can see and cannot tolerate leaving?',
+ 'After my explanation, is the other person freer to disagree?'
+];
+const $=id=>document.getElementById(id), storageKey='zaziopath.stewardship.receipts.v1';
+let current=null;
+function today(){return new Date().toISOString().slice(0,10)}
+function populate(){crosswalks.forEach((x,i)=>{let o=document.createElement('option');o.value=i;o.textContent=`${x[0]}  →  ${x[1]}`;$('crosswalk').appendChild(o)});questions.forEach((q,i)=>{let o=document.createElement('option');o.value=i;o.textContent=`Q${i+1} · ${q}`;$('question').appendChild(o)});$('date').value=today();updatePivot()}
+function updatePivot(){let x=crosswalks[+$('crosswalk').value];$('pivot-help').textContent=`Pivot: ${x[2]}. Choose an action that makes this verb observable.`}
+function getReceipts(){try{return JSON.parse(localStorage.getItem(storageKey)||'[]')}catch(e){return []}}
+function setReceipts(v){localStorage.setItem(storageKey,JSON.stringify(v))}
+function buildReceipt(){let x=crosswalks[+$('crosswalk').value];return {id:crypto.randomUUID?crypto.randomUUID():String(Date.now()),date:$('date').value,shadow:x[0],light:x[1],pivot:x[2],action:$('action').value.trim(),evidence:$('evidence').value.trim(),question:questions[+$('question').value]}}
+function formatReceipt(r){return `# Stewardship Receipt — ${r.date}\n\n- Shadow: ${r.shadow}\n- Light counterpart: ${r.light}\n- Pivot: ${r.pivot}\n- Question: ${r.question}\n\n## Behaviour\n${r.action}\n\n## Observable evidence\n${r.evidence}\n\n> Filed locally in Zaziopath’s stewardship ledger. The receipt is the change, not a claim about the change.\n`}
+function preview(r){if(!r){$('preview').className='receipt empty';$('preview').textContent='Nothing filed yet. The line is yours.';$('download').disabled=true;return}current=r;$('preview').className='receipt';$('preview').textContent=formatReceipt(r);$('download').disabled=false}
+function render(){let rs=getReceipts();$('count').textContent=`${rs.length} receipt${rs.length===1?'':'s'} · local only`;if(!rs.length){$('entries').innerHTML='<p style="color:#777;font-size:11px">No receipts filed. A blank ledger is an honest starting state.</p>';return}$('entries').innerHTML=rs.slice().reverse().map(r=>`<article class="entry"><time datetime="${r.date}">${r.date}</time><div><strong>${escapeHtml(r.shadow)} → ${escapeHtml(r.light)}</strong><p>${escapeHtml(r.action)}<br><span style="color:#6f8f9d">evidence: ${escapeHtml(r.evidence)}</span></p></div><button class="delete" data-id="${r.id}" aria-label="Delete receipt from ${r.date}">erase</button></article>`).join('');document.querySelectorAll('.delete').forEach(b=>b.addEventListener('click',()=>{setReceipts(getReceipts().filter(r=>r.id!==b.dataset.id));render()}))}
+function escapeHtml(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]))}
+$('crosswalk').addEventListener('change',updatePivot);
+$('action').addEventListener('input',()=>preview({...buildReceipt(),action:$('action').value,evidence:$('evidence').value}));
+$('evidence').addEventListener('input',()=>preview({...buildReceipt(),action:$('action').value,evidence:$('evidence').value}));
+$('date').addEventListener('change',()=>preview({...buildReceipt()}));
+$('question').addEventListener('change',()=>preview({...buildReceipt()}));
+$('random').addEventListener('click',()=>{$('crosswalk').value=Math.floor(Math.random()*crosswalks.length);updatePivot();$('action').focus();preview({...buildReceipt()})});
+$('clear').addEventListener('click',()=>{$('action').value='';$('evidence').value='';preview(null);$('status').textContent='Form cleared.'});
+$('receipt-form').addEventListener('submit',e=>{e.preventDefault();if(!e.currentTarget.reportValidity())return;let r=buildReceipt();setReceipts([...getReceipts(),r]);preview(r);render();$('status').textContent=`Receipt filed for ${r.date}.`;e.currentTarget.scrollIntoView({behavior:'smooth',block:'start'})});
+$('download').addEventListener('click',()=>{if(!current)return;let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([formatReceipt(current)],{type:'text/markdown'}));a.download=`stewardship-receipt-${current.date}.md`;a.click();URL.revokeObjectURL(a.href)});
+populate();render();
+</script>
+</body>
+</html>
+
+<!-- This artifact is intentionally self-contained: no analytics, network writes, or server required. -->
+  
