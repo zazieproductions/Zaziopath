@@ -1,0 +1,139 @@
+{
+  "run_date": "2026-09-23",
+  "results": {
+    "readme_lines": {
+      "value": 778,
+      "note": ""
+    },
+    "readme_bytes": {
+      "value": 44790,
+      "note": ""
+    },
+    "stewardship_planned": {
+      "value": true,
+      "note": "├── 05_stewardship/                    [planned] 🔷 protocols, crosswalks, dated behaviour changes"
+    },
+    "console_bytes": {
+      "value": 13582,
+      "note": ""
+    },
+    "console_fetch_calls": {
+      "value": 0,
+      "note": ""
+    },
+    "console_xhr_calls": {
+      "value": 0,
+      "note": ""
+    },
+    "console_localstorage_refs": {
+      "value": 2,
+      "note": ""
+    },
+    "ledger_observable_in_git": {
+      "value": false,
+      "note": "no committed ledger artifact; state lives in the browser"
+    },
+    "stub_entries_listed": {
+      "value": 92,
+      "note": ""
+    },
+    "registry_claims_92": {
+      "value": true,
+      "note": ""
+    },
+    "parent_vault_claim": {
+      "value": true,
+      "note": "336-note parent vault, asserted not verifiable here"
+    },
+    "wikilink_instances": {
+      "value": 585,
+      "note": ""
+    },
+    "wikilinks_unique": {
+      "value": 403,
+      "note": ""
+    },
+    "wikilinks_dangling": {
+      "value": 377,
+      "note": ""
+    },
+    "dangling_pct": {
+      "value": 93.5,
+      "note": ""
+    },
+    "csv_rows": {
+      "value": 182,
+      "note": "verdict corpus repeats '200 tracks'"
+    },
+    "csv_unique_isrcs": {
+      "value": 143,
+      "note": "verdict corpus repeats '165 verified ISRCs'"
+    },
+    "csv_rows_with_isrc": {
+      "value": 182,
+      "note": ""
+    },
+    "csv_distinct_artists": {
+      "value": 3,
+      "note": "Unwashed Miscreant; Unwashed Miscreant & Hazzard Rune; Zazie Productions"
+    },
+    "csv_date_first": {
+      "value": "2019-09-09",
+      "note": ""
+    },
+    "csv_date_last": {
+      "value": "2026-05-19",
+      "note": ""
+    },
+    "xlsx_opened_by_any_verdict": {
+      "value": false,
+      "note": "no verdict cites a sheet, row, or cell"
+    },
+    "size:verdict_from_A.i": {
+      "value": 12389,
+      "note": ""
+    },
+    "size:verdict_from_A.i_2": {
+      "value": 10220,
+      "note": ""
+    },
+    "size:verdict_from_A.i_3": {
+      "value": 14103,
+      "note": ""
+    },
+    "size:verdict_from_A.i_4": {
+      "value": 45034,
+      "note": ""
+    },
+    "size:verdict_from_A.i_5": {
+      "value": 22435,
+      "note": ""
+    },
+    "size:verdict_from_A.i_6": {
+      "value": 27746,
+      "note": ""
+    },
+    "corpus_bytes": {
+      "value": 131927,
+      "note": ""
+    },
+    "verdicts_bearing_2026-09-02": {
+      "value": 5,
+      "note": "V1 carries no date header of its own; V2-V6 all self-date to 2026-09-02"
+    },
+    "verdicts_without_self_date": {
+      "value": [
+        "verdict_from_A.i"
+      ],
+      "note": ""
+    },
+    "filenames_trailing_space": {
+      "value": 4,
+      "note": "JSON file re-export ChatGPT Memory .md; Shadow Journal Observations .pdf; Social Engineering Email Templates .md; THE OMNIVISIONARY GROK OUTPUT .pdf"
+    },
+    "commits_on_head": {
+      "value": 1,
+      "note": ""
+    }
+  }
+}
