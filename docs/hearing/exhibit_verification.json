@@ -1,0 +1,778 @@
+{
+  "run_date": "2026-09-28",
+  "generated_by": "tools/verify_hearing_transcript.py",
+  "standing_rule": "hashes identify the audited version; they do not certify factual truth",
+  "exhibits": {
+    "PX-1a": {
+      "claim": "README line count",
+      "value": 778,
+      "counting_rule": "newline count + 1 (house rule from tools/verify_meta_analysis.py)",
+      "source": "README.md"
+    },
+    "PX-1b": {
+      "claim": "README bytes",
+      "value": 44790,
+      "counting_rule": "os.path.getsize",
+      "source": "README.md"
+    },
+    "PX-1c": {
+      "claim": "stewardship folder marked [planned]",
+      "value": true,
+      "counting_rule": "literal string test on the §10 architecture block",
+      "source": "README.md §10"
+    },
+    "PX-1d": {
+      "claim": "declared roles of the subject",
+      "value": 5,
+      "counting_rule": "count of 'specimen, analyst, prosecutor, archivist, architect'",
+      "source": "README.md §00"
+    },
+    "PX-1e": {
+      "claim": "self-audit questions in §08",
+      "value": 12,
+      "counting_rule": "numbered lines inside §08 before the 'hardest internal test'",
+      "source": "README.md §08"
+    },
+    "PX-11-legal": {
+      "claim": "whole-word count of 'legal' in the charter",
+      "value": 0,
+      "counting_rule": "case-insensitive regex on word boundaries; substring hits ('reissue', 'personality') do not count",
+      "source": "README.md"
+    },
+    "PX-11-rights": {
+      "claim": "whole-word count of 'rights' in the charter",
+      "value": 0,
+      "counting_rule": "case-insensitive regex on word boundaries; substring hits ('reissue', 'personality') do not count",
+      "source": "README.md"
+    },
+    "PX-11-right": {
+      "claim": "whole-word count of 'right' in the charter",
+      "value": 3,
+      "counting_rule": "case-insensitive regex on word boundaries; substring hits ('reissue', 'personality') do not count",
+      "source": "README.md"
+    },
+    "PX-11-court": {
+      "claim": "whole-word count of 'court' in the charter",
+      "value": 0,
+      "counting_rule": "case-insensitive regex on word boundaries; substring hits ('reissue', 'personality') do not count",
+      "source": "README.md"
+    },
+    "PX-11-duty": {
+      "claim": "whole-word count of 'duty' in the charter",
+      "value": 0,
+      "counting_rule": "case-insensitive regex on word boundaries; substring hits ('reissue', 'personality') do not count",
+      "source": "README.md"
+    },
+    "PX-11-duties": {
+      "claim": "whole-word count of 'duties' in the charter",
+      "value": 0,
+      "counting_rule": "case-insensitive regex on word boundaries; substring hits ('reissue', 'personality') do not count",
+      "source": "README.md"
+    },
+    "PX-11-guardian": {
+      "claim": "whole-word count of 'guardian' in the charter",
+      "value": 0,
+      "counting_rule": "case-insensitive regex on word boundaries; substring hits ('reissue', 'personality') do not count",
+      "source": "README.md"
+    },
+    "PX-11-property": {
+      "claim": "whole-word count of 'property' in the charter",
+      "value": 0,
+      "counting_rule": "case-insensitive regex on word boundaries; substring hits ('reissue', 'personality') do not count",
+      "source": "README.md"
+    },
+    "PX-11-personhood": {
+      "claim": "whole-word count of 'personhood' in the charter",
+      "value": 0,
+      "counting_rule": "case-insensitive regex on word boundaries; substring hits ('reissue', 'personality') do not count",
+      "source": "README.md"
+    },
+    "PX-11-sue": {
+      "claim": "whole-word count of 'sue' in the charter",
+      "value": 0,
+      "counting_rule": "case-insensitive regex on word boundaries; substring hits ('reissue', 'personality') do not count",
+      "source": "README.md"
+    },
+    "PX-11-person": {
+      "claim": "occurrences of 'person*' in the charter",
+      "value": 27,
+      "counting_rule": "includes persona/personality/personally/personae; every instance inspected denotes a human being or a mask",
+      "source": "README.md"
+    },
+    "PX-2a": {
+      "claim": "data rows",
+      "value": 182,
+      "counting_rule": "csv.DictReader over one header row",
+      "source": "Zazie_Productions_Discography.csv"
+    },
+    "PX-2b": {
+      "claim": "distinct release titles",
+      "value": 21,
+      "counting_rule": "set()",
+      "source": "…csv"
+    },
+    "PX-2c": {
+      "claim": "distinct release dates",
+      "value": 21,
+      "counting_rule": "set()",
+      "source": "…csv"
+    },
+    "PX-2d": {
+      "claim": "distinct artist strings",
+      "value": 3,
+      "counting_rule": "set() over the Artist column",
+      "source": "…csv"
+    },
+    "PX-2e": {
+      "claim": "rows by an artist other than 'Zazie Productions'",
+      "value": 4,
+      "counting_rule": "Artist != 'Zazie Productions' (exact string)",
+      "source": "…csv"
+    },
+    "PX-2f": {
+      "claim": "distinct title strings",
+      "value": 164,
+      "counting_rule": "set()",
+      "source": "…csv"
+    },
+    "PX-2g": {
+      "claim": "distinct values in the ISRC field",
+      "value": 143,
+      "counting_rule": "set() over the raw ISRC column, INCLUDING the literal string 'N/A'",
+      "source": "…csv"
+    },
+    "PX-2h": {
+      "claim": "distinct ISRC codes",
+      "value": 142,
+      "counting_rule": "set() excluding rows whose field is 'N/A'",
+      "source": "…csv"
+    },
+    "PX-2i": {
+      "claim": "rows whose ISRC field is the literal 'N/A'",
+      "value": 21,
+      "counting_rule": "strip().upper() == 'N/A'",
+      "source": "…csv"
+    },
+    "PX-2j": {
+      "claim": "rows carrying an ISRC shared with another row",
+      "value": 38,
+      "counting_rule": "sum of group sizes for codes appearing more than once",
+      "source": "…csv"
+    },
+    "PX-2k": {
+      "claim": "earliest / latest release date",
+      "value": "2019-09-09 → 2026-05-19",
+      "counting_rule": "min/max over Release Date",
+      "source": "…csv"
+    },
+    "PX-2l": {
+      "claim": "tracks in the peak year 2024",
+      "value": 60,
+      "counting_rule": "rows per Release Date year",
+      "source": "…csv"
+    },
+    "PX-2m": {
+      "claim": "median duration 2023 / 2024 (seconds)",
+      "value": "212 / 82",
+      "counting_rule": "statistics.median over Duration parsed as m:ss",
+      "source": "…csv"
+    },
+    "PX-2n": {
+      "claim": "2024 tracks under 2:00",
+      "value": 39,
+      "counting_rule": "duration < 120 s",
+      "source": "…csv"
+    },
+    "PX-2o": {
+      "claim": "tracks in the quiet year 2025",
+      "value": 4,
+      "counting_rule": "rows per Release Date year",
+      "source": "…csv"
+    },
+    "PX-2p": {
+      "claim": "longest track",
+      "value": "Spectral Ode to Synesthesia · 8:55 · 2025",
+      "counting_rule": "max(duration)",
+      "source": "…csv"
+    },
+    "PX-2q1": {
+      "claim": "deluxe inflation · Stutter to stammer",
+      "value": "5 → 32 (×6.4)",
+      "counting_rule": "row counts per Release Title",
+      "source": "…csv"
+    },
+    "PX-2q2": {
+      "claim": "deluxe inflation · Sellotape",
+      "value": "8 → 22 (×2.8)",
+      "counting_rule": "row counts per Release Title",
+      "source": "…csv"
+    },
+    "PX-2q3": {
+      "claim": "deluxe inflation · Greetings From Tinsel Time",
+      "value": "13 → 28 (×2.2)",
+      "counting_rule": "row counts per Release Title",
+      "source": "…csv"
+    },
+    "PX-2s": {
+      "claim": "release events in 2026",
+      "value": "3 · 2026-04-08 → 2026-04-17 → 2026-05-19",
+      "counting_rule": "distinct Release Date values in 2026",
+      "source": "…csv"
+    },
+    "PX-2r": {
+      "claim": "workbook headline numbers produced in evidence",
+      "value": false,
+      "counting_rule": "the .xlsx is in the tree but no reconciliation of 200/165/58 against the CSV exists in the record",
+      "source": "Zazie_Productions_Complete_Discography.xlsx"
+    },
+    "PX-3a": {
+      "claim": "verdict files",
+      "value": 6,
+      "counting_rule": "glob 'verdict_from_A.i*'",
+      "source": "repo root"
+    },
+    "PX-3b": {
+      "claim": "verdicts self-dating to 2026-09-02",
+      "value": 5,
+      "counting_rule": "regex on a Date header naming 2026-09-02",
+      "source": "verdict_from_A.i … _6"
+    },
+    "PX-3c": {
+      "claim": "verdicts carrying a 🔗 Connected block",
+      "value": 5,
+      "counting_rule": "literal 'Connected' present",
+      "source": "verdict_from_A.i … _6"
+    },
+    "PX-3d": {
+      "claim": "smallest / largest verdict (bytes)",
+      "value": "10,220 / 45,034",
+      "counting_rule": "os.path.getsize",
+      "source": "verdict_from_A.i … _6"
+    },
+    "PX-3e": {
+      "claim": "ledger classification of the series",
+      "value": "contaminated / sequential",
+      "counting_rule": "ZP-CLM-0010 as filed; not re-derived here",
+      "source": "CLAIM_PROVENANCE_LEDGER.md"
+    },
+    "PX-4a": {
+      "claim": "stub entries listed",
+      "value": 92,
+      "counting_rule": "lines beginning '- [['",
+      "source": "🗄 Stub Registry.md"
+    },
+    "PX-4b": {
+      "claim": "entries flagged 'private'",
+      "value": 35,
+      "counting_rule": "line ends with the token 'private'",
+      "source": "🗄 Stub Registry.md"
+    },
+    "PX-4c": {
+      "claim": "embodiment-related entries among them",
+      "value": 7,
+      "counting_rule": "regex on the body/medication/sensory titles named in the case study",
+      "source": "🗄 Stub Registry.md"
+    },
+    "PX-4d": {
+      "claim": "registry states removals are recoverable",
+      "value": true,
+      "counting_rule": "literal string test",
+      "source": "🗄 Stub Registry.md"
+    },
+    "PX-5a": {
+      "claim": "console bytes",
+      "value": 13582,
+      "counting_rule": "os.path.getsize",
+      "source": "stewardship_receipt.html"
+    },
+    "PX-5b": {
+      "claim": "fetch() calls",
+      "value": 0,
+      "counting_rule": "regex \\bfetch\\s*\\(",
+      "source": "stewardship_receipt.html"
+    },
+    "PX-5c": {
+      "claim": "XHR / sendBeacon calls",
+      "value": 0,
+      "counting_rule": "regex on the two upload APIs",
+      "source": "stewardship_receipt.html"
+    },
+    "PX-5d": {
+      "claim": "localStorage references",
+      "value": 2,
+      "counting_rule": "regex",
+      "source": "stewardship_receipt.html"
+    },
+    "PX-5e": {
+      "claim": "external stylesheet imports",
+      "value": 1,
+      "counting_rule": "regex on @import with an absolute http(s) URL",
+      "source": "stewardship_receipt.html"
+    },
+    "PX-5f": {
+      "claim": "families imported",
+      "value": [
+        "Courier+Prime",
+        "Playfair+Display",
+        "UnifrakturMaguntia"
+      ],
+      "counting_rule": "family= parameters in the import URL",
+      "source": "stewardship_receipt.html"
+    },
+    "PX-5g": {
+      "claim": "committed receipt entries in the tracked tree",
+      "value": 0,
+      "counting_rule": "git ls-files search for a ledger/receipt artifact; none exists",
+      "source": "git index"
+    },
+    "PX-6a": {
+      "claim": "claims filed in the pilot ledger",
+      "value": 10,
+      "counting_rule": "headings matching ZP-CLM-nnnn",
+      "source": "CLAIM_PROVENANCE_LEDGER.md"
+    },
+    "PX-6b": {
+      "claim": "source fingerprints recorded",
+      "value": 7,
+      "counting_rule": "table rows carrying a git blob SHA and a SHA-256, backticked or not",
+      "source": "CLAIM_PROVENANCE_LEDGER.md"
+    },
+    "PX-6c": {
+      "claim": "contradiction register entries",
+      "value": 4,
+      "counting_rule": "headings C-nn",
+      "source": "CLAIM_PROVENANCE_LEDGER.md"
+    },
+    "PX-6d": {
+      "claim": "overstrong statements governed",
+      "value": 8,
+      "counting_rule": "rows in the 'Derived Claims Requiring Caution' table",
+      "source": "CLAIM_PROVENANCE_LEDGER.md"
+    },
+    "PX-6e": {
+      "claim": "controlled vocabulary · source types",
+      "value": 11,
+      "counting_rule": "rows of the form | `value` | definition |",
+      "source": "EVIDENCE_GOVERNANCE_HANDBOOK.md §2.1"
+    },
+    "PX-6f": {
+      "claim": "controlled vocabulary · claim levels",
+      "value": 6,
+      "counting_rule": "rows of the form | `value` | definition |",
+      "source": "EVIDENCE_GOVERNANCE_HANDBOOK.md §2.2"
+    },
+    "PX-6g": {
+      "claim": "controlled vocabulary · independence values",
+      "value": 7,
+      "counting_rule": "rows of the form | `value` | definition |",
+      "source": "EVIDENCE_GOVERNANCE_HANDBOOK.md §2.3"
+    },
+    "PX-6h": {
+      "claim": "gaps audited",
+      "value": 12,
+      "counting_rule": "headings of the form 'N. Gap …'",
+      "source": "DEEP_GAP_AUDIT.md"
+    },
+    "PX-6i": {
+      "claim": "risks in the integrated register",
+      "value": 12,
+      "counting_rule": "rows R-nn",
+      "source": "DEEP_GAP_AUDIT.md §15"
+    },
+    "PX-6j": {
+      "claim": "items the archive is less likely to preserve",
+      "value": 8,
+      "counting_rule": "the eight bullets of §11.1's second list, allowing a leading 'or'",
+      "source": "DEEP_GAP_AUDIT.md §11.1"
+    },
+    "PX-6k": {
+      "claim": "audit records a missing governance role",
+      "value": true,
+      "counting_rule": "literal sentence test on §14.1",
+      "source": "DEEP_GAP_AUDIT.md §14.1"
+    },
+    "PX-6l": {
+      "claim": "governance ≠ ownership, as the audit states it",
+      "value": true,
+      "counting_rule": "literal sentence test on §14.1",
+      "source": "DEEP_GAP_AUDIT.md §14.1"
+    },
+    "PX-71": {
+      "claim": "stratum mass · identity",
+      "value": "3,763 KB across 10/10 files",
+      "counting_rule": "sum of os.path.getsize over the file list declared in tools/generate_figures.py",
+      "source": "tools/generate_figures.py STRATA"
+    },
+    "PX-72": {
+      "claim": "stratum mass · mythography",
+      "value": "1,835 KB across 19/20 files",
+      "counting_rule": "sum of os.path.getsize over the file list declared in tools/generate_figures.py",
+      "source": "tools/generate_figures.py STRATA"
+    },
+    "PX-73": {
+      "claim": "stratum mass · shadow",
+      "value": "1,407 KB across 4/4 files",
+      "counting_rule": "sum of os.path.getsize over the file list declared in tools/generate_figures.py",
+      "source": "tools/generate_figures.py STRATA"
+    },
+    "PX-74": {
+      "claim": "stratum mass · recursion",
+      "value": "582 KB across 7/7 files",
+      "counting_rule": "sum of os.path.getsize over the file list declared in tools/generate_figures.py",
+      "source": "tools/generate_figures.py STRATA"
+    },
+    "PX-75": {
+      "claim": "stratum mass · evidence",
+      "value": "332 KB across 5/5 files",
+      "counting_rule": "sum of os.path.getsize over the file list declared in tools/generate_figures.py",
+      "source": "tools/generate_figures.py STRATA"
+    },
+    "PX-76": {
+      "claim": "stratum mass · specimens",
+      "value": "145 KB across 4/4 files",
+      "counting_rule": "sum of os.path.getsize over the file list declared in tools/generate_figures.py",
+      "source": "tools/generate_figures.py STRATA"
+    },
+    "PX-77": {
+      "claim": "stratum mass · index",
+      "value": "129 KB across 8/8 files",
+      "counting_rule": "sum of os.path.getsize over the file list declared in tools/generate_figures.py",
+      "source": "tools/generate_figures.py STRATA"
+    },
+    "PX-78": {
+      "claim": "stratum mass · stewardship",
+      "value": "5 KB across 2/2 files",
+      "counting_rule": "sum of os.path.getsize over the file list declared in tools/generate_figures.py",
+      "source": "tools/generate_figures.py STRATA"
+    },
+    "PX-79": {
+      "claim": "atlas file-list entries that do not resolve on disk",
+      "value": 1,
+      "counting_rule": "os.path.exists over every path declared in STRATA; a miss here is a custody defect, not a missing file",
+      "source": "tools/generate_figures.py STRATA vs the working tree"
+    },
+    "PX-7a": {
+      "claim": "total mass of the eight strata",
+      "value": "8,197 KB",
+      "counting_rule": "sum over STRATA, excluding unresolved entries",
+      "source": "tools/generate_figures.py STRATA"
+    },
+    "PX-8a": {
+      "claim": "unique wikilinks",
+      "value": 414,
+      "counting_rule": "regex \\[\\[target over root + docs .md files",
+      "source": "markdown tree"
+    },
+    "PX-8b": {
+      "claim": "dangling wikilinks",
+      "value": 382,
+      "counting_rule": "target does not match the filename stem of any .md file in scope",
+      "source": "markdown tree"
+    },
+    "PX-8c": {
+      "claim": "dangling ratio",
+      "value": "92.3%",
+      "counting_rule": "b ÷ a",
+      "source": "markdown tree"
+    },
+    "PX-8d": {
+      "claim": "tracked files",
+      "value": 135,
+      "counting_rule": "git ls-files",
+      "source": "git index"
+    },
+    "PX-8e": {
+      "claim": "tracked files at the repository root",
+      "value": 116,
+      "counting_rule": "git ls-files without a slash",
+      "source": "git index"
+    },
+    "PX-8f": {
+      "claim": "tracked PDFs",
+      "value": 42,
+      "counting_rule": "extension test",
+      "source": "git index"
+    },
+    "PX-8g": {
+      "claim": "visible commits in this checkout",
+      "value": 1,
+      "counting_rule": "git rev-list --count HEAD; a grafted checkout understates history",
+      "source": "git"
+    },
+    "PX-8h0": {
+      "claim": "tracked filenames not in Unicode NFC form",
+      "value": 1,
+      "counting_rule": "unicodedata.is_normalized('NFC', basename); such names fail exact-string lookup against NFC sources",
+      "source": "git index"
+    },
+    "PX-8h": {
+      "claim": "HEAD commit",
+      "value": "920df33",
+      "counting_rule": "git rev-parse",
+      "source": "git"
+    },
+    "PX-9a": {
+      "claim": "twin disclaimer repetitions",
+      "value": "11 captions / 284 text lines",
+      "counting_rule": "occurrences of the caption string in the PDF's text layer; requires pypdf, else reported as unparsed",
+      "source": "Zaziopath_The_Uncreated_Twin.pdf"
+    },
+    "PX-9b": {
+      "claim": "seams in the negative-space biography",
+      "value": 13,
+      "counting_rule": "second-level headings",
+      "source": "NEGATIVE-SPACE_BIOGRAPHY.md"
+    },
+    "PX-9c": {
+      "claim": "other people named anywhere in the catalog",
+      "value": [
+        "Unwashed Miscreant",
+        "Unwashed Miscreant & Hazzard Rune"
+      ],
+      "counting_rule": "Artist strings other than the subject's",
+      "source": "Zazie_Productions_Discography.csv"
+    },
+    "PX-10a": {
+      "claim": "ledger fingerprints re-hashed at the hearing",
+      "value": 7,
+      "counting_rule": "SHA-256 recomputed over each path in the ledger's Source Fingerprints table",
+      "source": "CLAIM_PROVENANCE_LEDGER.md → working tree"
+    },
+    "PX-10b": {
+      "claim": "fingerprints still matching",
+      "value": 7,
+      "counting_rule": "recomputed digest == recorded digest",
+      "source": "…"
+    },
+    "PX-10c": {
+      "claim": "fingerprints failing or unresolved",
+      "value": "none",
+      "counting_rule": "paths absent from the tree, or digests differing",
+      "source": "…"
+    },
+    "PX-10d": {
+      "claim": "what a match certifies",
+      "value": "version identity, not truth",
+      "counting_rule": "the ledger's own closing note on its fingerprint table",
+      "source": "CLAIM_PROVENANCE_LEDGER.md"
+    },
+    "PX-3f": {
+      "claim": "fact-check desk · supported vs not established",
+      "value": "5 DIRECTLY SUPPORTED / 1 NOT ESTABLISHED",
+      "counting_rule": "occurrences of the two labels in the PDF text layer",
+      "source": "TattleCrime_The_Man_Who_Built_His_Own_Court.pdf pp. 6"
+    },
+    "PX-12a": {
+      "claim": "false classifications logged",
+      "value": 12,
+      "counting_rule": "table rows of the form | FC-nn |",
+      "source": "ERROR_LOG_BIOGRAPHICA-7.md §2"
+    },
+    "PX-12b": {
+      "claim": "training-data artifacts logged",
+      "value": 7,
+      "counting_rule": "lines beginning ART-nnn in the §3 log block",
+      "source": "ERROR_LOG_BIOGRAPHICA-7.md §3"
+    },
+    "PX-12c": {
+      "claim": "'recall@PERSON = undefined' appears in the log",
+      "value": true,
+      "counting_rule": "literal test on the §2 metric block",
+      "source": "ERROR_LOG_BIOGRAPHICA-7.md §2"
+    },
+    "PX-12d": {
+      "claim": "the unrepresentable concept is named",
+      "value": true,
+      "counting_rule": "literal test",
+      "source": "ERROR_LOG_BIOGRAPHICA-7.md §5"
+    },
+    "PX-12e": {
+      "claim": "the accepted remediation is present",
+      "value": true,
+      "counting_rule": "literal test on text normalised for whitespace and blockquote markers, because the bullet wraps",
+      "source": "ERROR_LOG_BIOGRAPHICA-7.md §6"
+    },
+    "PX-12f": {
+      "claim": "run status as filed",
+      "value": "DEGRADED → HALTED",
+      "counting_rule": "regex on the run header",
+      "source": "ERROR_LOG_BIOGRAPHICA-7.md"
+    },
+    "PX-12g": {
+      "claim": "genre disclaimer on its face",
+      "value": true,
+      "counting_rule": "literal test on the blockquote header",
+      "source": "ERROR_LOG_BIOGRAPHICA-7.md"
+    },
+    "PX-13a": {
+      "claim": "verified URL-level records",
+      "value": "133",
+      "counting_rule": "regex on the PDF text layer",
+      "source": "Zazie_Media_Master (1).pdf"
+    },
+    "PX-13b": {
+      "claim": "unverified leads held outside the total",
+      "value": "15",
+      "counting_rule": "regex on the PDF text layer",
+      "source": "Zazie_Media_Master (1).pdf"
+    },
+    "PX-13c": {
+      "claim": "Priority A",
+      "value": "23",
+      "counting_rule": "regex on the PDF text layer",
+      "source": "Zazie_Media_Master (1).pdf"
+    },
+    "PX-13d": {
+      "claim": "Priority C",
+      "value": "84",
+      "counting_rule": "regex on the PDF text layer",
+      "source": "Zazie_Media_Master (1).pdf"
+    },
+    "PX-14a": {
+      "claim": "evidence base",
+      "value": "14 of 29 grid posts · 8 tagged-tab items · 8 public comments",
+      "counting_rule": "regex on the report's evidence-base line",
+      "source": "ZP-IG-2026-0819 v1.1"
+    },
+    "PX-14b": {
+      "claim": "recurring civilian commenter located",
+      "value": true,
+      "counting_rule": "literal test on Appendix C commentary",
+      "source": "ZP-IG-2026-0819"
+    },
+    "PX-14c": {
+      "claim": "third-party tagged items",
+      "value": true,
+      "counting_rule": "literal test on the mirror source log",
+      "source": "ZP-IG-2026-0819"
+    }
+  },
+  "flat": {
+    "readme_line_count": 778,
+    "readme_bytes": 44790,
+    "stewardship_folder_marked_planned": true,
+    "declared_roles_of_the_subject": 5,
+    "self_audit_questions_in_08": 12,
+    "readme_sha256": "f09a1f5f4375ecb1e7592460348e3e0b43dfd76af12c2737f5cf507070d198d1",
+    "whole_word_count_of_legal_in_the_charter": 0,
+    "whole_word_count_of_rights_in_the_charter": 0,
+    "whole_word_count_of_right_in_the_charter": 3,
+    "whole_word_count_of_court_in_the_charter": 0,
+    "whole_word_count_of_duty_in_the_charter": 0,
+    "whole_word_count_of_duties_in_the_charter": 0,
+    "whole_word_count_of_guardian_in_the_charter": 0,
+    "whole_word_count_of_property_in_the_charter": 0,
+    "whole_word_count_of_personhood_in_the_charter": 0,
+    "whole_word_count_of_sue_in_the_charter": 0,
+    "occurrences_of_person_in_the_charter": 27,
+    "data_rows": 182,
+    "distinct_release_titles": 21,
+    "distinct_release_dates": 21,
+    "distinct_artist_strings": 3,
+    "rows_by_an_artist_other_than_zazie_productions": 4,
+    "distinct_title_strings": 164,
+    "distinct_values_in_the_isrc_field": 143,
+    "distinct_isrc_codes": 142,
+    "rows_whose_isrc_field_is_the_literal_n_a": 21,
+    "rows_carrying_an_isrc_shared_with_another_row": 38,
+    "earliest_latest_release_date": "2019-09-09 → 2026-05-19",
+    "tracks_in_the_peak_year_2024": 60,
+    "median_duration_2023_2024_seconds": "212 / 82",
+    "2024_tracks_under_2_00": 39,
+    "tracks_in_the_quiet_year_2025": 4,
+    "longest_track": "Spectral Ode to Synesthesia · 8:55 · 2025",
+    "deluxe_inflation_stutter_to_stammer": "5 → 32 (×6.4)",
+    "deluxe_inflation_sellotape": "8 → 22 (×2.8)",
+    "deluxe_inflation_greetings_from_tinsel_time": "13 → 28 (×2.2)",
+    "release_events_in_2026": "3 · 2026-04-08 → 2026-04-17 → 2026-05-19",
+    "workbook_headline_numbers_produced_in_evidence": false,
+    "csv_sha256": "268e396a10a59ab43ebd0289140a329286cd9cfb8b0baacf6025b7db186c1cab",
+    "verdict_files": 6,
+    "verdicts_self_dating_to_2026_09_02": 5,
+    "verdicts_carrying_a_connected_block": 5,
+    "smallest_largest_verdict_bytes": "10,220 / 45,034",
+    "ledger_classification_of_the_series": "contaminated / sequential",
+    "stub_entries_listed": 92,
+    "entries_flagged_private": 35,
+    "embodiment_related_entries_among_them": 7,
+    "registry_states_removals_are_recoverable": true,
+    "console_bytes": 13582,
+    "fetch_calls": 0,
+    "xhr_sendbeacon_calls": 0,
+    "localstorage_references": 2,
+    "external_stylesheet_imports": 1,
+    "families_imported": [
+      "Courier+Prime",
+      "Playfair+Display",
+      "UnifrakturMaguntia"
+    ],
+    "committed_receipt_entries_in_the_tracked_tree": 0,
+    "html_sha256": "405ac87e98739af74d42aa3be26033c364e4b8b8915f8d2e5daabc00c7ada9a2",
+    "claims_filed_in_the_pilot_ledger": 10,
+    "source_fingerprints_recorded": 7,
+    "contradiction_register_entries": 4,
+    "overstrong_statements_governed": 8,
+    "controlled_vocabulary_source_types": 11,
+    "controlled_vocabulary_claim_levels": 6,
+    "controlled_vocabulary_independence_values": 7,
+    "gaps_audited": 12,
+    "risks_in_the_integrated_register": 12,
+    "items_the_archive_is_less_likely_to_preserve": 8,
+    "audit_records_a_missing_governance_role": true,
+    "governance_ownership_as_the_audit_states_it": true,
+    "stratum_mass_identity": "3,763 KB across 10/10 files",
+    "stratum_mass_mythography": "1,835 KB across 19/20 files",
+    "stratum_mass_shadow": "1,407 KB across 4/4 files",
+    "stratum_mass_recursion": "582 KB across 7/7 files",
+    "stratum_mass_evidence": "332 KB across 5/5 files",
+    "stratum_mass_specimens": "145 KB across 4/4 files",
+    "stratum_mass_index": "129 KB across 8/8 files",
+    "stratum_mass_stewardship": "5 KB across 2/2 files",
+    "atlas_file_list_entries_that_do_not_resolve_on_d": 1,
+    "total_mass_of_the_eight_strata": "8,197 KB",
+    "strata_bytes": {
+      "INDEX": 131816,
+      "IDENTITY": 3853476,
+      "SHADOW": 1440517,
+      "EVIDENCE": 339749,
+      "RECURSION": 596154,
+      "STEWARDSHIP": 5197,
+      "SPECIMENS": 148385,
+      "MYTHOGRAPHY": 1878554
+    },
+    "unique_wikilinks": 414,
+    "dangling_wikilinks": 382,
+    "dangling_ratio": "92.3%",
+    "tracked_files": 135,
+    "tracked_files_at_the_repository_root": 116,
+    "tracked_pdfs": 42,
+    "visible_commits_in_this_checkout": 1,
+    "tracked_filenames_not_in_unicode_nfc_form": 1,
+    "head_commit": "920df33",
+    "twin_disclaimer_repetitions": "11 captions / 284 text lines",
+    "seams_in_the_negative_space_biography": 13,
+    "other_people_named_anywhere_in_the_catalog": [
+      "Unwashed Miscreant",
+      "Unwashed Miscreant & Hazzard Rune"
+    ],
+    "ledger_fingerprints_re_hashed_at_the_hearing": 7,
+    "fingerprints_still_matching": 7,
+    "fingerprints_failing_or_unresolved": "none",
+    "what_a_match_certifies": "version identity, not truth",
+    "fact_check_desk_supported_vs_not_established": "5 DIRECTLY SUPPORTED / 1 NOT ESTABLISHED",
+    "false_classifications_logged": 12,
+    "training_data_artifacts_logged": 7,
+    "recall_person_undefined_appears_in_the_log": true,
+    "the_unrepresentable_concept_is_named": true,
+    "the_accepted_remediation_is_present": true,
+    "run_status_as_filed": "DEGRADED → HALTED",
+    "genre_disclaimer_on_its_face": true,
+    "verified_url_level_records": "133",
+    "unverified_leads_held_outside_the_total": "15",
+    "priority_a": "23",
+    "priority_c": "84",
+    "evidence_base": "14 of 29 grid posts · 8 tagged-tab items · 8 public comments",
+    "recurring_civilian_commenter_located": true,
+    "third_party_tagged_items": true
+  }
+}
