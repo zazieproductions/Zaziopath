@@ -263,3 +263,24 @@ isn't.
 [run bg7-zp-0927 closed]  outputs: 12 false · 7 artifacts · 1 unrepresentable
                           summaries of the subject retained: 0
 ```
+
+---
+
+## 7 · EXPERIMENTAL BLOCK — run the model yourself
+
+`tools/biographica7.py` is a runnable version of this log. It uses only the Python
+standard library and never writes to disk. The training-data artifacts are written as
+code: rules that turn filenames into diagnoses, put everything in the past tense, and
+reduce names to initials. The script walks the live repository and emits false labels
+alongside the harness's corrections. It checks `stewardship_receipt.html` for any
+transmission path (`fetch`, `XMLHttpRequest`, `sendBeacon`, …). If there is none, the
+file has no reader, so the model can't embed it and halts.
+
+```bash
+python3 tools/biographica7.py            # paced, like a live log
+python3 tools/biographica7.py --quiet    # instant
+python3 tools/biographica7.py --seed 42  # different (equally wrong) confidences
+```
+
+If a later version of the receipt ever starts transmitting, the script will embed it
+without trouble and never halt. That is the test.
