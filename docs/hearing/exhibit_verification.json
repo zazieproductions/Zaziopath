@@ -1,5 +1,5 @@
 {
-  "run_date": "2026-09-28",
+  "run_date": "2026-09-30",
   "generated_by": "tools/verify_hearing_transcript.py",
   "standing_rule": "hashes identify the audited version; they do not certify factual truth",
   "exhibits": {
@@ -477,13 +477,13 @@
     },
     "PX-8d": {
       "claim": "tracked files",
-      "value": 135,
+      "value": 142,
       "counting_rule": "git ls-files",
       "source": "git index"
     },
     "PX-8e": {
       "claim": "tracked files at the repository root",
-      "value": 116,
+      "value": 117,
       "counting_rule": "git ls-files without a slash",
       "source": "git index"
     },
@@ -507,7 +507,7 @@
     },
     "PX-8h": {
       "claim": "HEAD commit",
-      "value": "920df33",
+      "value": "6e3cfa9",
       "counting_rule": "git rev-parse",
       "source": "git"
     },
@@ -743,12 +743,12 @@
     "unique_wikilinks": 414,
     "dangling_wikilinks": 382,
     "dangling_ratio": "92.3%",
-    "tracked_files": 135,
-    "tracked_files_at_the_repository_root": 116,
+    "tracked_files": 142,
+    "tracked_files_at_the_repository_root": 117,
     "tracked_pdfs": 42,
     "visible_commits_in_this_checkout": 1,
     "tracked_filenames_not_in_unicode_nfc_form": 1,
-    "head_commit": "920df33",
+    "head_commit": "6e3cfa9",
     "twin_disclaimer_repetitions": "11 captions / 284 text lines",
     "seams_in_the_negative_space_biography": 13,
     "other_people_named_anywhere_in_the_catalog": [
