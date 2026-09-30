@@ -131,6 +131,10 @@ repeated arrows; no relationship has to be recovered from a line crossing.
 <sub>The prose versions live in [⚡ Unexpected Connections](%E2%9A%A1%20Unexpected%20Connections.md),
 and a subset are tested against catalog metadata in
 [🔍 CASE FILE — Pattern Forensics](%F0%9F%94%8D%20CASE%20FILE%20%E2%80%94%20Pattern%20Forensics.md).
+Wires drawn here, in ⚡, or in 🔍 are **vetoed from the collider's draw pool** — a rerun is not an
+experiment; the three tested additions of 2026-09-30 (the κ-hinge of C-01, the broken falsifier
+referent of C-05, the one-field schema gap of C-09) are logged in
+[⚛️ PARTICLE COLLIDER — Cross-Stratum Experiments](%E2%9A%9B%EF%B8%8F%20PARTICLE%20COLLIDER%20%E2%80%94%20Cross-Stratum%20Experiments.md).
 Where the map and the record disagree, the record wins — an undated insight is a mood.</sub>
 
 ---
@@ -262,9 +266,12 @@ an inventory of what is actually committed at the root — nothing is aspiration
 | File | What it is |
 |---|---|
 | [`🔍 CASE FILE — Pattern Forensics.md`](🔍%20CASE%20FILE%20—%20Pattern%20Forensics.md) | Report `ZP-PF-2026-0902`. Ten findings read off the artifacts alone — ISRC lags, provenance holes, duration collapses, reissue inflation, strata mass. Every finding dated and confidence-tiered. See §07a. |
+| [`⚛️ PARTICLE COLLIDER — Cross-Stratum Experiments.md`](%E2%9A%9B%EF%B8%8F%20PARTICLE%20COLLIDER%20%E2%80%94%20Cross-Stratum%20Experiments.md) | Report `ZP-PC-2026-0930`. Thirteen seeded collisions between *distant* chambers (§00a): 3 HOLD, 9 SNAP, 1 NO-BEAM. Failures are logged as the measurement; the three holds become research programs RP-1…RP-3. Standing rule: never promote an aesthetic coincidence into evidence without testing it. |
+| `tools/particle_collider.py` | The collider engine: eight-chamber census, distance gate, seeded blind draw, thirteen beams with permutation nulls, three negative controls. Regenerates the log and FIG 8. |
+| `docs/collider/beam_log.json` | The collider's machine log: every statistic in the report, the 117-artifact inventory, the distance matrix, the veto register and the draw dispositions. |
 | `tools/generate_figures.py` | The atlas engine. One script, one palette (Okabe–Ito, §00a), regenerates the Pattern Atlas from the committed CSV and file census. |
 | `tools/generate_complex_map.py` | The §00c map renderer. A dependency-light editorial layout that preserves 17 indexed strange wires, 8 terminal feeds, and the feedback loop without automatic-layout crossings. |
-| `docs/figures/` | The exhibits: FIG 0–7 plus the §00c systems map in zoomable SVG and README-ready PNG, each with descriptive alt text. |
+| `docs/figures/` | The exhibits: FIG 0–8 plus the §00c systems map in zoomable SVG and README-ready PNG, each with descriptive alt text. |
 
 ---
 
@@ -586,6 +593,10 @@ pie showData title 182 catalogued tracks by release type
 
 ![Bar chart of thematic registers across 182 track titles: bureaucracy and media 16 percent, death and decay 15 percent, science and mathematics 14 percent, winter and frost 12 percent, ritual and the sacred 6 percent — the same strata as the repository itself.](docs/figures/fig7_title_lexicon.png)
 
+### FIG 8 · The beam line → [⚛️ PARTICLE COLLIDER — Cross-Stratum Experiments](%E2%9A%9B%EF%B8%8F%20PARTICLE%20COLLIDER%20%E2%80%94%20Cross-Stratum%20Experiments.md)
+
+![Four-panel collider report. Panel A: a funnel from 6,786 artifact pairs down through the distance and veto gates to 525 beam-capable pairs, 24 blind draws, 13 fired beams and 3 holds. Panel B: thirteen beam rows, each with two stratum colour chips joined by an arrow, a verdict glyph (check HOLD, cross SNAP, circle-slash NO-BEAM) and one line of null result. Panel C: three negative-control cards — 0 of 18 false positives, 19 of 19 validity gates passing, and an arbitrary feature battery beating the handbook battery at p 0.002 versus 0.048. Panel D: the verdict legend.](docs/figures/fig8_beamline.png)
+
 ### The provenance timeline
 
 The dossier's F-01 and F-05 in one picture: **after every silence, a notarization.**
@@ -674,6 +685,7 @@ Zaziopath/
 ├── README.md                          ← you are here
 ├── docs/figures/                      ✅ created 2026-09-02 · Pattern Atlas + §00c systems map
 ├── tools/generate_figures.py          ✅ created 2026-09-02 · regenerates FIG 0–7, one palette
+├── tools/particle_collider.py         ✅ created 2026-09-30 · the collider engine, regenerates FIG 8 + docs/collider/beam_log.json
 ├── tools/generate_complex_map.py      ✅ created 2026-09-02 · regenerates the §00c SVG + PNG
 ├── 🔍 CASE FILE — Pattern Forensics.md ✅ created 2026-09-02 · the detective layer, ZP-PF-2026-0902
 ├── 00_index/                          [planned] master index, crosswalk table, changelog
