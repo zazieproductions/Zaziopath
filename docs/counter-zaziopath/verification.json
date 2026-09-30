@@ -282,11 +282,11 @@
       "note": ""
     },
     "corpus_files_searched": {
-      "value": 115,
+      "value": 119,
       "note": "md, extension-less/verdict files, html, txt, csv, docx, pdf"
     },
     "corpus_words_searched": {
-      "value": 382917,
+      "value": 414383,
       "note": ""
     },
     "6foundations_raw": {
@@ -327,7 +327,9 @@
       "note": ""
     },
     "files_other_than_the_result_that_mention_it": {
-      "value": [],
+      "value": [
+        "⚛️ PARTICLE COLLIDER — Cross-Stratum Experiments.md"
+      ],
       "note": "searched corpus excluding the result file itself"
     },
     "vocabulary_file_counts": {
@@ -340,7 +342,7 @@
         "base rate": 0,
         "base-rate": 0,
         "preregist": 0,
-        "pre-regist": 4,
+        "pre-regist": 5,
         "holdout": 0,
         "hold-out": 0,
         "overfit": 0,
@@ -352,8 +354,8 @@
         "personal validation": 0,
         "confirmation bias": 1,
         "sycophan": 1,
-        "falsif": 30,
-        "validity": 5,
+        "falsif": 33,
+        "validity": 8,
         "psychometric": 2
       },
       "note": ""
@@ -373,6 +375,7 @@
         "pre-regist": [
           "CASE STUDY — The Summoned Witness.md",
           "ZAZIOPATH — Collected Readings (2026-09-23).md",
+          "⚛️ PARTICLE COLLIDER — Cross-Stratum Experiments.md",
           "ZAZIOPATH — Collected Readings (2026-09-23).pdf",
           "Zaziopath_XRay_Two_Voices.pdf"
         ],

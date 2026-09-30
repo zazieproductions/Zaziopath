@@ -1,23 +1,23 @@
 axis_id,axis_name,pole,pole_label,stratum,files_tagged,bytes,kb,share_of_axis,cost_tier,status
-X-00,Exit signs  ⇄  Mirrors,1,P1 · 741:1 is the finding,STEWARDSHIP,7,109611,107.0,0.2437,3,open
-X-00,Exit signs  ⇄  Mirrors,2,P2 · one more reading,RECURSION,10,340200,332.2,0.7563,3,open
-X-01,Anti-authority  ⇄  Absolute authorship,1,P1 · no authority deserves obedience,STEWARDSHIP,6,398694,389.3,0.6705,3,open
-X-01,Anti-authority  ⇄  Absolute authorship,2,P2 · write the constitution,INDEX,7,195906,191.3,0.3295,3,open
+X-00,Exit signs  ⇄  Mirrors,1,P1 · 741:1 is the finding,STEWARDSHIP,7,114137,111.5,0.2512,3,open
+X-00,Exit signs  ⇄  Mirrors,2,P2 · one more reading,RECURSION,10,340200,332.2,0.7488,3,open
+X-01,Anti-authority  ⇄  Absolute authorship,1,P1 · no authority deserves obedience,STEWARDSHIP,6,398694,389.3,0.6635,3,open
+X-01,Anti-authority  ⇄  Absolute authorship,2,P2 · write the constitution,INDEX,7,202207,197.5,0.3365,3,open
 X-02,Visibility  ⇄  Outsider status,1,"P1 · searchable, impossible to ignore",EVIDENCE,7,730788,713.7,0.5264,3,open
 X-02,Visibility  ⇄  Outsider status,2,"P2 · clandestine, cultic, anonymous",IDENTITY,8,657456,642.0,0.4736,3,open
 X-03,Evidence  ⇄  Myth,1,P1 · replace claims with counts,EVIDENCE,8,418021,408.2,0.2705,2,open
 X-03,Evidence  ⇄  Myth,2,P2 · the coherent legend,MYTHOGRAPHY,10,1127348,1100.9,0.7295,2,open
-X-04,Ambiguity  ⇄  Definitive answer,1,P1 · ambiguity is the oxygen,SHADOW,8,274325,267.9,0.3585,2,open
-X-04,Ambiguity  ⇄  Definitive answer,2,P2 · give me the line,INDEX,7,490967,479.5,0.6415,2,open
-X-05,Self-acceptance  ⇄  Endless optimisation,1,P1 · it just has to be real,STEWARDSHIP,7,95600,93.4,0.0704,3,open
-X-05,Self-acceptance  ⇄  Endless optimisation,2,P2 · one more pass,SHADOW,8,1262811,1233.2,0.9296,3,open
-X-06,Artistic danger  ⇄  Administrative control,1,P1 · knowing darkness as identity,SPECIMENS,9,1416772,1383.6,0.7616,3,open
-X-06,Artistic danger  ⇄  Administrative control,2,"P2 · fence it, date it, tier it",EVIDENCE,9,443477,433.1,0.2384,3,open
-X-07,Anti-clinical  ⇄  Diagnostic appetite,1,P1 · no document diagnoses anyone,STEWARDSHIP,5,243417,237.7,0.0764,2,open
-X-07,Anti-clinical  ⇄  Diagnostic appetite,2,P2 · the shelf of instruments,IDENTITY,10,2943717,2874.7,0.9236,2,open
+X-04,Ambiguity  ⇄  Definitive answer,1,P1 · ambiguity is the oxygen,SHADOW,8,276462,270.0,0.3573,2,open
+X-04,Ambiguity  ⇄  Definitive answer,2,P2 · give me the line,INDEX,7,497268,485.6,0.6427,2,open
+X-05,Self-acceptance  ⇄  Endless optimisation,1,P1 · it just has to be real,STEWARDSHIP,7,95600,93.4,0.0703,3,open
+X-05,Self-acceptance  ⇄  Endless optimisation,2,P2 · one more pass,SHADOW,8,1264586,1234.9,0.9297,3,open
+X-06,Artistic danger  ⇄  Administrative control,1,P1 · knowing darkness as identity,SPECIMENS,9,1416772,1383.6,0.7598,3,open
+X-06,Artistic danger  ⇄  Administrative control,2,"P2 · fence it, date it, tier it",EVIDENCE,9,448003,437.5,0.2402,3,open
+X-07,Anti-clinical  ⇄  Diagnostic appetite,1,P1 · no document diagnoses anyone,STEWARDSHIP,5,247943,242.1,0.0777,2,open
+X-07,Anti-clinical  ⇄  Diagnostic appetite,2,P2 · the shelf of instruments,IDENTITY,10,2943717,2874.7,0.9223,2,open
 X-08,Witness-hunger  ⇄  Witness-avoidance,1,P1 · an intelligence at full resolution,RECURSION,10,462926,452.1,0.419,3,open
 X-08,Witness-hunger  ⇄  Witness-avoidance,2,"P2 · no face, no name, no link",SHADOW,6,641998,627.0,0.581,3,open
-X-09,Curatorial deletion  ⇄  Archival hoarding,1,"P1 · 92 stubs removed, indexed",INDEX,6,180142,175.9,0.101,2,open
-X-09,Curatorial deletion  ⇄  Archival hoarding,2,P2 · nothing lost to history,EVIDENCE,8,1603792,1566.2,0.899,2,open
-X-10,Record frame  ⇄  Art frame,1,"P1 · dated, hashed, tiered",EVIDENCE,8,295697,288.8,0.3259,3,open
-X-10,Record frame  ⇄  Art frame,2,P2 · the doubleness is the medium,MYTHOGRAPHY,11,611560,597.2,0.6741,3,open
+X-09,Curatorial deletion  ⇄  Archival hoarding,1,"P1 · 92 stubs removed, indexed",INDEX,6,184054,179.7,0.1029,2,open
+X-09,Curatorial deletion  ⇄  Archival hoarding,2,P2 · nothing lost to history,EVIDENCE,8,1603792,1566.2,0.8971,2,open
+X-10,Record frame  ⇄  Art frame,1,"P1 · dated, hashed, tiered",EVIDENCE,8,295777,288.8,0.326,3,open
+X-10,Record frame  ⇄  Art frame,2,P2 · the doubleness is the medium,MYTHOGRAPHY,11,611560,597.2,0.674,3,open

@@ -2,11 +2,11 @@
   "run_date": "2026-09-30",
   "results": {
     "readme_lines": {
-      "value": 790,
+      "value": 809,
       "note": ""
     },
     "readme_bytes": {
-      "value": 46979,
+      "value": 50943,
       "note": ""
     },
     "stewardship_planned": {
@@ -46,11 +46,11 @@
       "note": "336-note parent vault, asserted not verifiable here"
     },
     "wikilink_instances": {
-      "value": 601,
+      "value": 620,
       "note": ""
     },
     "wikilinks_unique": {
-      "value": 414,
+      "value": 415,
       "note": ""
     },
     "wikilinks_dangling": {
@@ -58,7 +58,7 @@
       "note": ""
     },
     "dangling_pct": {
-      "value": 91.3,
+      "value": 91.1,
       "note": ""
     },
     "csv_rows": {
@@ -132,7 +132,7 @@
       "note": "JSON file re-export ChatGPT Memory .md; Shadow Journal Observations .pdf; Social Engineering Email Templates .md; THE OMNIVISIONARY GROK OUTPUT .pdf"
     },
     "commits_on_head": {
-      "value": 1,
+      "value": 104,
       "note": ""
     }
   }

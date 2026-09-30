@@ -193,7 +193,7 @@ Each objection gives: the claim; the exhibits; the mechanism (*how* the failure 
 
 - **E7.1** `META_ANALYSIS_OF_ZAZIOPATH.md` line 65 says so: "If every critique becomes another beautifully indexed artifact, the system can absorb disconfirmation without changing."
 - **E7.2** The 14-line pre-ruled ledger in `verdict_from_A.i_4`, made specifically to convert the critique into behaviour, is blank in the committed copy **[V]**. V5's Prediction A is confirmed on committed evidence (§1).
-- **E7.3** V6 records five break-declarations and zero honoured. 
+- **E7.3** V6 records five break-declarations and zero honoured.
 - **E7.4** The README still carries claims the audits contradicted: "200 tracks, 165 with verified ISRC", "Twelve files, 323 pages." The hostile dossier withdrew 11 claims *in the dossier*. I did not find a corresponding edit of the README's headline figures. (I grant the README may be intentionally frozen at a dated state; if so, it should say so.)
 - **E7.5** `DEEP_GAP_AUDIT.md` §13.3 proposes a pilot with 5 outside adults. There are no results, and I found no record that it started.
 

@@ -299,7 +299,7 @@
       "note": "'Discogs Artist 11354435 = 58 Appearances' — asserted, not enumerable in-repo"
     },
     "mentions_revenue_income": {
-      "value": 59,
+      "value": 61,
       "note": "all in interpretations/memory exports; no figures"
     },
     "mentions_streams_sales": {
@@ -328,14 +328,20 @@
     },
     "md_dates_by_month": {
       "value": {
-        "2019-09": 8,
+        "2019-09": 11,
+        "2021-05": 1,
+        "2023-04": 1,
         "2023-12": 1,
+        "2024-07": 1,
         "2024-12": 1,
         "2025-06": 1,
         "2025-12": 1,
-        "2026-05": 11,
-        "2026-08": 13,
-        "2026-09": 108,
+        "2026-05": 14,
+        "2026-08": 17,
+        "2026-09": 150,
+        "2026-10": 5,
+        "2026-11": 2,
+        "2026-12": 2,
         "2027-03": 3
       },
       "note": "the vault's observational base is weeks wide; the catalogue's is seven years"
