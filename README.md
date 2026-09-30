@@ -266,6 +266,15 @@ an inventory of what is actually committed at the root — nothing is aspiration
 | `tools/generate_complex_map.py` | The §00c map renderer. A dependency-light editorial layout that preserves 17 indexed strange wires, 8 terminal feeds, and the feedback loop without automatic-layout crossings. |
 | `docs/figures/` | The exhibits: FIG 0–7 plus the §00c systems map in zoomable SVG and README-ready PNG, each with descriptive alt text. |
 
+### 👻 The ghost layer *(added 2026-09-30)*
+
+| File | What it is |
+|---|---|
+| [`👻 X — The Missing Variable.md`](👻%20X%20—%20The%20Missing%20Variable.md) | Report `ZP-GV-2026-0930`. The search for a variable the repository cannot observe: ten measured anomalies, three classes of apparatus separated, ten candidate identities scored against a rubric fixed in advance, none admitted. X is rendered as a node with edges and no contents. Ten candidates, one residual, five naming conditions, none met. |
+| `tools/probe_missing_variable.py` | The probe. 57 measurements, standard library only, including the first read of the workbook's six sheets in this repository's history. Writes `docs/ghost-x/verification.json`. |
+| `tools/generate_ghost_node.py` | The ghost renderer: the empty node with its incoming anomalies and outgoing consequences, and the same node inserted into the Major Knowledge Graph with a numbered wire register. |
+| `docs/figures/figx_ghost_node.*` · `docs/figures/figx_ghost_in_graph.*` | The two figures. The node is deliberately blank in the SVG and in every rasterised preview; the Mermaid transcription in the dossier explains why it cannot be fully blank there. |
+
 ---
 
 ## 🟦 §04 · The subject
