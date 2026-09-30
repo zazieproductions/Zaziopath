@@ -14,7 +14,7 @@ The instrument has three parts:
      negative controls. Most are expected to fail, and the failures are the measurement.
 
 Run:  python3 tools/particle_collider.py            (needs pypdf for PDF text)
-Out:  docs/collider/beam_log.json  ·  docs/figures/fig8_beamline.png
+Out:  docs/collider/beam_log.json  ·  docs/figures/fig9_beamline.png
 
 Standing rule of this instrument: never promote an aesthetic coincidence into evidence
 without testing it. Every HOLD in the log is reproducible from primary files alone.
@@ -409,6 +409,18 @@ DRAW_DISPOSITIONS = {
     11: dict(beam="C-03"),
     19: dict(beam="C-02"),
 }
+
+# ── census pin ─────────────────────────────────────────────────────────────────
+# ZP-PC-2026-0930 measured the tree as committed at 3f78d7a. wikilinks() reads every
+# root/docs markdown file, so a tree that gained or lost one would silently change C-04's
+# link geometry on a re-run. The pin makes that impossible: a full run on a moved census
+# refuses unless --recensus acknowledges that a NEW report id is required.
+CENSUS_PIN_MD = "dd1438ee92daf8c1"   # sha256[:16] of the sorted root+docs md list at 3f78d7a (43 files)
+
+def census_digest():
+    mds = sorted(f for f in all_files() if f.endswith(".md")
+                 and ("/" not in f or f.startswith("docs/")))
+    return hashlib.sha256("\n".join(mds).encode()).hexdigest()[:16], len(mds)
 
 # ─────────────────────────── statistics (stdlib only) ───────────────────────────
 def perm_p(observed, null, two_sided=False, greater=True):
@@ -1620,7 +1632,20 @@ def run_beams():
                             clears_corrected_alpha=(v == "HOLD"), result=res)
     return out
 
-def main(n_perm=4000, draw_n=24, seed=20260930, figure=True):
+def main(n_perm=4000, draw_n=24, seed=20260930, figure=True, render_only=False, recensus=False):
+    import sys, platform
+    if render_only:
+        with open(os.path.join(ROOT, "docs", "collider", "beam_log.json"), encoding="utf-8") as fh:
+            log = json.load(fh)
+        print("  re-rendered", render_figure(log))
+        return
+    dig, n_md = census_digest()
+    if dig != CENSUS_PIN_MD and not recensus:
+        print(f"CENSUS MOVED · pinned {CENSUS_PIN_MD} ({43} md files) vs current {dig} ({n_md}).\n"
+              "ZP-PC-2026-0930 is a dated experiment over a dated census; re-running the beams on a\n"
+              "moved tree would silently re-measure it. Issue a new report id, or pass --recensus\n"
+              "to acknowledge that this run belongs to that new report.")
+        sys.exit(2)
     import sys, platform
     log = dict(
         report="ZP-PC-2026-0930", tool="tools/particle_collider.py",
@@ -1660,7 +1685,7 @@ def main(n_perm=4000, draw_n=24, seed=20260930, figure=True):
     if figure:
         try:
             render_figure(log)
-            print("  wrote docs/figures/fig8_beamline.png")
+            print("  wrote docs/figures/fig9_beamline.png")
         except Exception as e:
             print("  figure skipped:", e)
     return log
@@ -1838,10 +1863,12 @@ def render_figure(log):
     ax.text(0.0, 0.02, "regenerate:  python3 tools/particle_collider.py\n"
             "log:  docs/collider/beam_log.json", fontsize=7.4, color="#7A736A",
             transform=ax.transAxes, va="bottom")
-    out = os.path.join(ROOT, "docs", "figures", "fig8_beamline.png")
+    out = os.path.join(ROOT, "docs", "figures", "fig9_beamline.png")
     fig.savefig(out, dpi=150)
     plt.close(fig)
     return out
 
 if __name__ == "__main__":
-    main(figure="--no-figure" not in sys.argv)
+    main(figure="--no-figure" not in sys.argv,
+         render_only="--render-only" in sys.argv,
+         recensus="--recensus" in sys.argv)

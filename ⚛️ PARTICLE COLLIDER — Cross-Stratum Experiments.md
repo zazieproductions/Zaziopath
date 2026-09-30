@@ -1,7 +1,7 @@
 # ⚛️ PARTICLE COLLIDER — Cross-Stratum Experiments
 
 > **Dated 2026-09-30.** Instrument `ZP-PC-2026-0930` · seed `20260930` · α = 0.05, family-wise α = 0.05/13 = **0.0038**
-> **State:** 13 beams fired · **3 HOLD · 9 SNAP · 1 NO-BEAM** · engine `tools/particle_collider.py` · machine log `docs/collider/beam_log.json` · figure `docs/figures/fig8_beamline.png` (FIG 8)
+> **State:** 13 beams fired · **3 HOLD · 9 SNAP · 1 NO-BEAM** · engine `tools/particle_collider.py` · machine log `docs/collider/beam_log.json` · figure `docs/figures/fig9_beamline.png` (FIG 9)
 > **Standing rule of this chamber:** *never promote an aesthetic coincidence into evidence without testing it.* Every number below is re-derivable from primary files by re-running the engine. Anything that looked beautiful and died under its null is recorded here with its corpse intact.
 
 ---
@@ -338,11 +338,19 @@ Recorded so the temptations stay dead:
 ## §8 · Reproduction
 
 ```bash
-python3 tools/particle_collider.py            # full run: census, draw, 13 beams, 3 controls, FIG 8
+python3 tools/particle_collider.py                # full run: census, draw, 13 beams, 3 controls, FIG 9
 python3 tools/particle_collider.py --no-figure
+python3 tools/particle_collider.py --render-only  # redraw FIG 9 from the committed log
 ```
 
-Outputs: `docs/collider/beam_log.json` (every statistic above, plus the 117-artifact inventory, the distance matrix, the veto register and the draw dispositions) and `docs/figures/fig8_beamline.png`. Seed `20260930` fixes the draw; permutation p-values use 4,000 shuffles (400 for NC-1). Text extraction needs `pypdf`; the text cache lives in `$TMPDIR/zaziopath_collider_text`, never in the repo.
+The engine is **pinned to this report's census** (`CENSUS_PIN_MD`, the 43 root/docs markdown
+files as committed at `3f78d7a`). Because `wikilinks()` reads every markdown file in the tree,
+a vault that gains a document would silently change C-04's link geometry on a naive re-run;
+on a moved census a full run therefore refuses with `CENSUS MOVED` and exits non-zero.
+`--recensus` acknowledges that the run belongs to a *new* report id — a dated experiment
+does not get re-measured behind its own back.
+
+Outputs: `docs/collider/beam_log.json` (every statistic above, plus the 117-artifact inventory, the distance matrix, the veto register and the draw dispositions) and `docs/figures/fig9_beamline.png`. Seed `20260930` fixes the draw; permutation p-values use 4,000 shuffles (400 for NC-1). Text extraction needs `pypdf`; the text cache lives in `$TMPDIR/zaziopath_collider_text`, never in the repo.
 
 Cross-references: chambers and chips README §00a · existing wires README §00c (this document adds three: C-01's κ-hinge, C-05's referent break, C-09's schema gap — all dated 2026-09-30 and tested) · tested findings 🔍 CASE FILE F-01…F-10 (not re-derived here; C-07b audits F-10's vocabulary claim and finds it does not hold at lexicon level) · untested prose wires ⚡ Unexpected Connections (veto source, §1).
 

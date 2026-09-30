@@ -10,6 +10,8 @@ aliases:
 
 The practice graph plus the vault strata added 2026-09-02, colour-coded 2026-09-02 to the repo-wide Okabe–Ito system (README §00a: 🟦 identity/psyche · 🟧 evidence · 🟩 recursion · 🟥 specimens · 🟨 mythography · ⬛ index) — the AI recursion lab, the specimen cabinet, the mythography, the evidence audits, and the cross-currents between them. The dotted edges are the strange ones; follow those first. Prose versions of the strange edges live in [[⚡ Unexpected Connections]].
 
+**Added 2026-09-30:** one node with no contents. [[👻 X — The Missing Variable]] (`ZP-GV-2026-0930`) inserts a blank, dashed node into this graph and registers the wires that reach it — from the practice (no reception term), from Music (no series but packaging counts), from Goals (no instrument that could record a behaviour), from the vault (five registers, no measurement), from Evidence (the audits that compiled the anomalies), and out to the stewardship ledger (which cannot emit its own state) and the indexes (which name 336 things, two of which are here). The node is empty on purpose: a name would require a measurement this repository does not contain. Figure: `docs/figures/figx_ghost_in_graph.svg`.
+
 ```mermaid
 graph TD
     CP["Creative Practice"] --> PSY["Psychological System"]
@@ -114,6 +116,19 @@ graph TD
     EVID -.->|"decay prevention"| SIGNAL
     STUBREG -.->|"tombstones"| INV
 
+    %% ── ghost layer · added 2026-09-30 ──────────────────────
+    GHOST["👻 X — The Missing Variable<br/>interior blank · identity withheld<br/>report ZP-GV-2026-0930"]
+    VAULT -.->|"five strata, five registers, no measurement"| GHOST
+    INDEX -.->|"names 336 · two present"| GHOST
+    EVID -.->|"compiled these anomalies"| GHOST
+    REC -.->|"re-describes the unknown"| GHOST
+    MUSIC -.->|"the only series is packaging counts"| GHOST
+    GOALS -.->|"no instrument for a behaviour"| GHOST
+    PSY -.->|"a state with no series"| GHOST
+    GHOST -.->|"the line that never arrives"| LEDGERX["Stewardship ledger — 0 committed lines, no outbox"]
+    GHOST -.->|"what the audits are evidence of"| EVID
+    GHOST -.->|"what the shadow stratum is a state of"| PSY
+
     %% ── colour code · README §00a · Okabe–Ito ───────────────
     classDef practice fill:#FFFFFF,stroke:#231F20,color:#231F20
     classDef psyche fill:#0072B2,stroke:#231F20,color:#FFFFFF
@@ -132,6 +147,10 @@ graph TD
     class SPEC,SOCENG,WEALTH,INFIL specimen
     class MYTH,MSSE,VESP,CASTLES,ENTRY,SOV,LANG,HYPO,PSYOPS myth
     class EVID,DISCX,MEDIA,IG evidence
+    classDef ghostc fill:#FFFFFF,stroke:#231F20,stroke-width:2.5px,stroke-dasharray:9 6,color:#231F20
+    classDef ledgerc fill:#FFFFFF,stroke:#56B4E9,stroke-dasharray:6 5,color:#231F20
+    class GHOST ghostc
+    class LEDGERX ledgerc
 ```
 
 #diagram #moc
