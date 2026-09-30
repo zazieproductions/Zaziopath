@@ -1,0 +1,61 @@
+{
+  "artifact": "docs/figures/fig8_contradiction_field.png",
+  "generator": "tools/generate_contradiction_field.py",
+  "report": "ZP-CE-2026-0930",
+  "generated_at": "2026-09-30T21:57:28+00:00",
+  "inputs": [
+    {
+      "path": "committed tree (per-axis tag ledger embedded in the generator)",
+      "files_resolved": 175,
+      "files_unresolved": []
+    }
+  ],
+  "environment": {
+    "python": "3.11.2",
+    "matplotlib": "3.11.2",
+    "numpy": "2.4.6"
+  },
+  "self_reference": {
+    "excluded_from_bars": "⚡ CONTRADICTION ENGINE.md",
+    "note": "the engine is not tagged into its own measured bars; including it would shift X-00 and X-05 pole 2 by the amounts below, because it is a twelfth mirror and a twelfth pass over old material",
+    "document_bytes": 94192,
+    "counterfactual": {
+      "X-00": {
+        "pole2_share_without_self": 0.7563,
+        "pole2_share_with_self": 0.7985,
+        "shift_points": 4.2
+      },
+      "X-05": {
+        "pole2_share_without_self": 0.9296,
+        "pole2_share_with_self": 0.9342,
+        "shift_points": 0.5
+      }
+    }
+  },
+  "contains_interpretive_annotations": true,
+  "interpretive_layer": [
+    "pole tagging",
+    "cost tier",
+    "panel B dominance grid"
+  ],
+  "measured_layer": [
+    "file sizes",
+    "file counts",
+    "shares",
+    "net lean"
+  ],
+  "outputs": {
+    "docs/figures/fig8_contradiction_field.png": {
+      "sha256": "d9d988438cf44941514f6f95dc4af79ef7124f2516254973ab09d5d8a68dc300",
+      "bytes": 487264
+    },
+    "docs/figures/fig8_contradiction_field.svg": {
+      "sha256": "55e4a2a0a4c73ff14e7b1e090700544c0c4594de01995157d3f8299b91b80931",
+      "bytes": 289843
+    },
+    "docs/data/fig8_contradiction_loads.csv": {
+      "sha256": "62305a1152944bdf5452be222d733e15daad259782fd2c4e65db24833ff77c78",
+      "bytes": 2607
+    }
+  }
+}

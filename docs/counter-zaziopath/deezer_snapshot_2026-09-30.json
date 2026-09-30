@@ -1,0 +1,31 @@
+{
+  "_note": "Hand-transcribed from two public, unauthenticated Deezer API responses fetched 2026-09-30: (1) GET https://api.deezer.com/artist/170543657/albums?limit=100 (field 'total' = 16), (2) GET https://api.deezer.com/track/isrc:QZHNA2257492. Only id/title/release_date/record_type are kept. Re-fetch to refresh; Deezer may change.",
+  "artist": {"id": 170543657, "name": "Zazie Productions"},
+  "albums_total_reported_by_deezer": 16,
+  "albums": [
+    {"id": 986739221, "title": "Anesthesia for the Signal Age", "release_date": "2026-05-19", "record_type": "album"},
+    {"id": 964394391, "title": "Sellotape (Super Deluxe Edition)", "release_date": "2026-04-17", "record_type": "album"},
+    {"id": 689796971, "title": "Greetings From Tinsel Time (Super Deluxe Edition)", "release_date": "2024-12-23", "record_type": "album"},
+    {"id": 563573972, "title": "Stutter to stammer (Super Deluxe Edition)", "release_date": "2024-03-20", "record_type": "album"},
+    {"id": 527505852, "title": "Greetings From Tinsel Time", "release_date": "2023-12-19", "record_type": "album"},
+    {"id": 490647065, "title": "A Long Way From Nowhere", "release_date": "2023-09-19", "record_type": "album"},
+    {"id": 462855435, "title": "Vermiform", "release_date": "2023-07-08", "record_type": "album"},
+    {"id": 435410987, "title": "To Halt Space Adrift", "release_date": "2023-04-28", "record_type": "album"},
+    {"id": 369839547, "title": "Constrained Capacity", "release_date": "2022-05-06", "record_type": "album"},
+    {"id": 323854557, "title": "Sellotape", "release_date": "2020-03-20", "record_type": "album"},
+    {"id": 406481167, "title": "Distant Bells For Surgical Minds", "release_date": "2023-02-10", "record_type": "ep"},
+    {"id": 880238162, "title": "Opaline Lament (Life From The Beyond)", "release_date": "2025-12-18", "record_type": "single"},
+    {"id": 722762831, "title": "Spectral Ode to Synesthesia", "release_date": "2025-03-05", "record_type": "single"},
+    {"id": 612904062, "title": "CAN'T GET MY EYES OFF YOU (123)", "release_date": "2024-07-09", "record_type": "single"},
+    {"id": 421682127, "title": "Miraculously Unhurt", "release_date": "2023-03-23", "record_type": "single"},
+    {"id": 332690907, "title": "Well Meaning Neurotypicals", "release_date": "2022-07-01", "record_type": "single"}
+  ],
+  "isrc_spot_check": {
+    "isrc": "QZHNA2257492",
+    "deezer_title": "Cheaper Impressions",
+    "deezer_duration_seconds": 269,
+    "deezer_album": "Stutter to stammer (Super Deluxe Edition)",
+    "deezer_album_release_date": "2024-03-20",
+    "deezer_artist": "Zazie Productions"
+  }
+}

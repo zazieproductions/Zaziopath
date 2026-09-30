@@ -1,0 +1,1163 @@
+{
+  "report": "ZP-CE-2026-0930",
+  "verifier": "tools/verify_contradiction_engine.py",
+  "run_at": "2026-09-30T21:57:28+00:00",
+  "document": "⚡ CONTRADICTION ENGINE.md",
+  "loads": {
+    "X-00": {
+      "measured": {
+        "a_share": 0.2437,
+        "b_share": 0.7563,
+        "a_kb": 107.042,
+        "b_kb": 332.2266,
+        "a_files": 7,
+        "b_files": 10
+      },
+      "document_claims": {
+        "p1_share": 0.24,
+        "p2_share": 0.76,
+        "p1_kb": 107,
+        "p1_files": 7,
+        "p2_kb": 332,
+        "p2_files": 10
+      },
+      "shares_match": true,
+      "absolutes_match": true
+    },
+    "X-01": {
+      "measured": {
+        "a_share": 0.6705,
+        "b_share": 0.3295,
+        "a_kb": 389.3496,
+        "b_kb": 191.3145,
+        "a_files": 6,
+        "b_files": 7
+      },
+      "document_claims": {
+        "p1_share": 0.67,
+        "p2_share": 0.33,
+        "p1_kb": 389,
+        "p1_files": 6,
+        "p2_kb": 191,
+        "p2_files": 7
+      },
+      "shares_match": true,
+      "absolutes_match": true
+    },
+    "X-02": {
+      "measured": {
+        "a_share": 0.5264,
+        "b_share": 0.4736,
+        "a_kb": 713.6602,
+        "b_kb": 642.0469,
+        "a_files": 7,
+        "b_files": 8
+      },
+      "document_claims": {
+        "p1_share": 0.53,
+        "p2_share": 0.47,
+        "p1_kb": 714,
+        "p1_files": 7,
+        "p2_kb": 642,
+        "p2_files": 8
+      },
+      "shares_match": true,
+      "absolutes_match": true
+    },
+    "X-03": {
+      "measured": {
+        "a_share": 0.2705,
+        "b_share": 0.7295,
+        "a_kb": 408.2236,
+        "b_kb": 1100.9258,
+        "a_files": 8,
+        "b_files": 10
+      },
+      "document_claims": {
+        "p1_share": 0.27,
+        "p2_share": 0.73,
+        "p1_kb": 408,
+        "p1_files": 8,
+        "p2_kb": 1101,
+        "p2_files": 10
+      },
+      "shares_match": true,
+      "absolutes_match": true
+    },
+    "X-04": {
+      "measured": {
+        "a_share": 0.3585,
+        "b_share": 0.6415,
+        "a_kb": 267.8955,
+        "b_kb": 479.46,
+        "a_files": 8,
+        "b_files": 7
+      },
+      "document_claims": {
+        "p1_share": 0.36,
+        "p2_share": 0.64,
+        "p1_kb": 268,
+        "p1_files": 8,
+        "p2_kb": 480,
+        "p2_files": 7
+      },
+      "shares_match": true,
+      "absolutes_match": true
+    },
+    "X-05": {
+      "measured": {
+        "a_share": 0.0704,
+        "b_share": 0.9296,
+        "a_kb": 93.3594,
+        "b_kb": 1233.2139,
+        "a_files": 7,
+        "b_files": 8
+      },
+      "document_claims": {
+        "p1_share": 0.07,
+        "p2_share": 0.93,
+        "p1_kb": 93,
+        "p1_files": 7,
+        "p2_kb": 1233,
+        "p2_files": 8
+      },
+      "shares_match": true,
+      "absolutes_match": true
+    },
+    "X-06": {
+      "measured": {
+        "a_share": 0.7616,
+        "b_share": 0.2384,
+        "a_kb": 1383.5664,
+        "b_kb": 433.083,
+        "a_files": 9,
+        "b_files": 9
+      },
+      "document_claims": {
+        "p1_share": 0.76,
+        "p2_share": 0.24,
+        "p1_kb": 1384,
+        "p1_files": 9,
+        "p2_kb": 432,
+        "p2_files": 9
+      },
+      "shares_match": true,
+      "absolutes_match": true
+    },
+    "X-07": {
+      "measured": {
+        "a_share": 0.0764,
+        "b_share": 0.9236,
+        "a_kb": 237.7119,
+        "b_kb": 2874.7236,
+        "a_files": 5,
+        "b_files": 10
+      },
+      "document_claims": {
+        "p1_share": 0.08,
+        "p2_share": 0.92,
+        "p1_kb": 238,
+        "p1_files": 5,
+        "p2_kb": 2875,
+        "p2_files": 10
+      },
+      "shares_match": true,
+      "absolutes_match": true
+    },
+    "X-08": {
+      "measured": {
+        "a_share": 0.419,
+        "b_share": 0.581,
+        "a_kb": 452.0762,
+        "b_kb": 626.9512,
+        "a_files": 10,
+        "b_files": 6
+      },
+      "document_claims": {
+        "p1_share": 0.42,
+        "p2_share": 0.58,
+        "p1_kb": 452,
+        "p1_files": 10,
+        "p2_kb": 627,
+        "p2_files": 6
+      },
+      "shares_match": true,
+      "absolutes_match": true
+    },
+    "X-09": {
+      "measured": {
+        "a_share": 0.101,
+        "b_share": 0.899,
+        "a_kb": 175.9199,
+        "b_kb": 1566.2031,
+        "a_files": 6,
+        "b_files": 8
+      },
+      "document_claims": {
+        "p1_share": 0.1,
+        "p2_share": 0.9,
+        "p1_kb": 176,
+        "p1_files": 6,
+        "p2_kb": 1566,
+        "p2_files": 8
+      },
+      "shares_match": true,
+      "absolutes_match": true
+    },
+    "X-10": {
+      "measured": {
+        "a_share": 0.3259,
+        "b_share": 0.6741,
+        "a_kb": 288.7666,
+        "b_kb": 597.2266,
+        "a_files": 8,
+        "b_files": 11
+      },
+      "document_claims": {
+        "p1_share": 0.33,
+        "p2_share": 0.67,
+        "p1_kb": 289,
+        "p1_files": 8,
+        "p2_kb": 597,
+        "p2_files": 11
+      },
+      "shares_match": true,
+      "absolutes_match": true
+    }
+  },
+  "untagged_files": [],
+  "quotes": [
+    {
+      "id": "Q-00a",
+      "source": "docs/meta-analysis/REPORT.md",
+      "where": "§0.5, §10.1, §12",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "Total independent evidence-gathering events across ~30,000 words: four."
+    },
+    {
+      "id": "Q-00b",
+      "source": "README.md",
+      "where": "§0.1, §0.2",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "A shadow reading that never reaches stewardship is just a more elaborate way of being stuck."
+    },
+    {
+      "id": "Q-00c",
+      "source": "🔍 CASE FILE — Pattern Forensics.md",
+      "where": "§0.2, §2.3, §7",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "Diagnosis outweighs treatment roughly"
+    },
+    {
+      "id": "Q-00d",
+      "source": "verdict_from_A.i_6",
+      "where": "§3 costs",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "The apparatus is complete. Completion is the terminal state of a mirror."
+    },
+    {
+      "id": "Q-00e",
+      "source": "ERROR_LOG_BIOGRAPHICA-7.md",
+      "where": "§7, §10.1",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "an event that is not a document, will not become one, and is kept that way on purpose"
+    },
+    {
+      "id": "Q-00f",
+      "source": "README.md",
+      "where": "§9",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "not clinical. No document here diagnoses anyone, including the subject."
+    },
+    {
+      "id": "Q-00g",
+      "source": "EVIDENCE_GOVERNANCE_HANDBOOK.md",
+      "where": "§10.4",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "A hybrid label must identify which factual claims remain intended for reliance."
+    },
+    {
+      "id": "Q-00h",
+      "source": "verdict_from_A.i_6",
+      "where": "§10.4",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "the art frame absorbs every failure in advance"
+    },
+    {
+      "id": "Q-00i",
+      "source": "verdict_from_A.i_6",
+      "where": "§10.3 (quoted there as the tribunal's line)",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "the private tags on empty notes really are the most quietly devastating detail in the repository"
+    },
+    {
+      "id": "Q-00j",
+      "source": "⚡ Unexpected Connections.md",
+      "where": "§7",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "A weakness that survives one register needs a second."
+    },
+    {
+      "id": "Q-01a",
+      "source": "⚡ Unexpected Connections.md",
+      "where": "§5",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "The myth supplies the motive; the audits supply the refutation. Neither works alone."
+    },
+    {
+      "id": "Q-01b",
+      "source": "⚡ Unexpected Connections.md",
+      "where": "§5",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "specificity carried past realism until it becomes its own emotional weather"
+    },
+    {
+      "id": "Q-01c",
+      "source": "⚡ Unexpected Connections.md",
+      "where": "§12 coupling 1, §14 S-01",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "the subject opposes non-consensual training while maintaining, in this very repo, an archive of AI output filed under a human name"
+    },
+    {
+      "id": "Q-01d",
+      "source": "⚡ Unexpected Connections.md",
+      "where": "§7",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "A weakness that survives one register needs a second."
+    },
+    {
+      "id": "Q-02a",
+      "source": "Shadow Journal Observations .pdf",
+      "where": "§6 (origin of the FEED move)",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "You don't resolve contradictions — you feed on them."
+    },
+    {
+      "id": "Q-02b",
+      "source": "Shadow Journal Observations .pdf",
+      "where": "§6",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "Ambiguity is your oxygen"
+    },
+    {
+      "id": "Q-02c",
+      "source": "Shadow Journal Observations .pdf",
+      "where": "§4",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "You often position yourself as a cult artist or a singular freak before anyone else can do it for you."
+    },
+    {
+      "id": "Q-02d",
+      "source": "Shadow Journal Observations .pdf",
+      "where": "§7",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "Your perfectionism and visionary standards aren't just ambition; they're armor."
+    },
+    {
+      "id": "Q-03a",
+      "source": "Ideological Inversion Audit.pdf",
+      "where": "§3",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "No authority deserves obedience merely because it exists."
+    },
+    {
+      "id": "Q-03b",
+      "source": "Ideological Inversion Audit.pdf",
+      "where": "§3",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "Your rebellion is not against order. It is against being ordered by systems whose intelligence, legitimacy, or aesthetic authority you do not recognize."
+    },
+    {
+      "id": "Q-03c",
+      "source": "Ideological Inversion Audit.pdf",
+      "where": "§3, §4",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "You do not merely request information. You construct a temporary institution, assign it jurisdiction, establish evidentiary rules, and prescribe its report format."
+    },
+    {
+      "id": "Q-03d",
+      "source": "Ideological Inversion Audit.pdf",
+      "where": "§3",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "You want to write the constitution of the interaction."
+    },
+    {
+      "id": "Q-03e",
+      "source": "Ideological Inversion Audit.pdf",
+      "where": "§3",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "A tightly authored sovereign microstate disguised as a creative practice."
+    },
+    {
+      "id": "Q-03f",
+      "source": "Ideological Inversion Audit.pdf",
+      "where": "§0.1, §3",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "You are anti-hierarchy when hierarchy claims sovereignty over you, but selectively hierarchical when organizing knowledge, taste, creative labor, or the interior world."
+    },
+    {
+      "id": "Q-03g",
+      "source": "Ideological Inversion Audit.pdf",
+      "where": "§3 costs",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "The bunny wears the crown so the conscious ego can deny wanting a throne."
+    },
+    {
+      "id": "Q-03h",
+      "source": "Ideological Inversion Audit.pdf",
+      "where": "§6",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "exact roles for the assistant to inhabit"
+    },
+    {
+      "id": "Q-03i",
+      "source": "Ideological Inversion Audit.pdf",
+      "where": "§6",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "Procedural ambiguity — whether anyone can exploit uncertainty against you."
+    },
+    {
+      "id": "Q-04a",
+      "source": "JSON file re-export ChatGPT Memory .md",
+      "where": "§4",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "Zazie repeatedly asks how to become more visible, searchable, envied, culturally magnetic, or impossible to ignore."
+    },
+    {
+      "id": "Q-04b",
+      "source": "JSON file re-export ChatGPT Memory .md",
+      "where": "§14 S-02",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "the most hidden risk is turning every vulnerability into content before it has been privately cared for"
+    },
+    {
+      "id": "Q-04c",
+      "source": "JSON file re-export ChatGPT Memory .md",
+      "where": "§14 S-03 (quoted to the first clause)",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "Low-stakes play is not a side hobby for Zazie; it is maintenance for the creative system"
+    },
+    {
+      "id": "Q-04d",
+      "source": "README.md",
+      "where": "§9 (the charter's description of the memory export)",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "The longitudinal behavioural record underneath every other document."
+    },
+    {
+      "id": "Q-05a",
+      "source": "Zazie_Productions_Instagram_Forensic_Audit.pdf",
+      "where": "§4",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "The asymmetry between a 12k follower count and a missing business pathway is the profile's central structural paradox"
+    },
+    {
+      "id": "Q-05b",
+      "source": "Zazie_Productions_Instagram_Forensic_Audit.pdf",
+      "where": "§4",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "advertises an artist of stature while behaving like a private account"
+    },
+    {
+      "id": "Q-05c",
+      "source": "Zazie_Productions_Instagram_Forensic_Audit.pdf",
+      "where": "§4 production",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "Every recommended action adds a legibility layer around the art, or removes ambiguity, without touching the art itself"
+    },
+    {
+      "id": "Q-05d",
+      "source": "Zazie_Productions_Instagram_Forensic_Audit.pdf",
+      "where": "§4",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "the account's equity"
+    },
+    {
+      "id": "Q-05e",
+      "source": "Zazie_Productions_Instagram_Forensic_Audit.pdf",
+      "where": "§4",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "the anonymous avant-garde polymath"
+    },
+    {
+      "id": "Q-05f",
+      "source": "Zazie_Productions_Instagram_Forensic_Audit.pdf",
+      "where": "§4 costs",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "the finding most likely to quietly cost supervisory/label interest"
+    },
+    {
+      "id": "Q-05g",
+      "source": "Zazie_Productions_Instagram_Forensic_Audit.pdf",
+      "where": "§4 costs (CM-01)",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "I don't understand what I'm looking at exactly"
+    },
+    {
+      "id": "Q-05h",
+      "source": "Zazie_Productions_Instagram_Forensic_Audit.pdf",
+      "where": "§4 costs",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "clients buy a person's reliability"
+    },
+    {
+      "id": "Q-05i",
+      "source": "Zazie_Productions_Instagram_Forensic_Audit.pdf",
+      "where": "§10.2",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "Total anonymity — no face, no personal name"
+    },
+    {
+      "id": "Q-05j",
+      "source": "Zazie_Productions_Instagram_Forensic_Audit.pdf",
+      "where": "§5",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "portfolio re-score"
+    },
+    {
+      "id": "Q-06a",
+      "source": "Zazie_Productions_Shadow_Signal_Stewardship_Mega_Compendium.pdf",
+      "where": "§5",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "The goal is not merely to make art but to make the artist and catalog feel like a coherent legend"
+    },
+    {
+      "id": "Q-06b",
+      "source": "Zazie_Productions_Shadow_Signal_Stewardship_Mega_Compendium.pdf",
+      "where": "§8",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "I would rather know exactly where I am capable of corruption than build an identity around goodness."
+    },
+    {
+      "id": "Q-06c",
+      "source": "Zazie_Productions_Shadow_Signal_Stewardship_Mega_Compendium.pdf",
+      "where": "§8",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "Knowing darkness can become a more interesting exceptional identity than ordinary decency."
+    },
+    {
+      "id": "Q-06d",
+      "source": "Zazie_Productions_Shadow_Signal_Stewardship_Mega_Compendium.pdf",
+      "where": "§8 heading (extraction may concatenate)",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "The glamor of being dangerous but contained"
+    },
+    {
+      "id": "Q-06e",
+      "source": "README.md",
+      "where": "§8 (the charter's count of compendium ch. 14)",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "17 of Zazie's own shadow rhetorics"
+    },
+    {
+      "id": "Q-07a",
+      "source": "README.md",
+      "where": "§5",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "The vault refuses to let the self be argued about in the abstract. Wherever a claim can be replaced by a count, it is."
+    },
+    {
+      "id": "Q-07b",
+      "source": "README.md",
+      "where": "§5",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "Rule of the vault: every finding carries a date and a tier. An undated insight is a mood."
+    },
+    {
+      "id": "Q-07c",
+      "source": "README.md",
+      "where": "§8",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "It is filed for three purposes only."
+    },
+    {
+      "id": "Q-07d",
+      "source": "README.md",
+      "where": "§8",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "The failure mode this vault is most exposed to is not missing a pattern"
+    },
+    {
+      "id": "Q-07e",
+      "source": "README.md",
+      "where": "§0.3",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "The opposite of the shadow is not less Zazie. It is Zazie without the need to control what everything means."
+    },
+    {
+      "id": "Q-07f",
+      "source": "README.md",
+      "where": "§6 (charter's §14 one-liner)",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "ambiguity is your oxygen"
+    },
+    {
+      "id": "Q-08a",
+      "source": "DEEP_GAP_AUDIT.md",
+      "where": "§9 (audit §3.1)",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "directness and truth are different dimensions"
+    },
+    {
+      "id": "Q-08b",
+      "source": "VISITORS_NOTEBOOK.md",
+      "where": "§8 costs (notebook §4)",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "a bespoke targeting manual for its own author"
+    },
+    {
+      "id": "Q-08b2",
+      "source": "DEEP_GAP_AUDIT.md",
+      "where": "§8 costs (audit §10.1)",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "lowers the work required to create a convincing targeted approach"
+    },
+    {
+      "id": "Q-08c",
+      "source": "TRANSCRIPT — In re Zaziopath, Petition for Legal Personhood.md",
+      "where": "§3 costs (FF-14)",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "no authority to enforce any of it"
+    },
+    {
+      "id": "Q-08e",
+      "source": "TRANSCRIPT — In re Zaziopath, Petition for Legal Personhood.md",
+      "where": "§8 costs (Order 6)",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "shall be moved to a separate encrypted store and never committed"
+    },
+    {
+      "id": "Q-08d",
+      "source": "DEEP_GAP_AUDIT.md",
+      "where": "§7 costs (audit §11.1 acquisition list)",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "routine maintenance"
+    },
+    {
+      "id": "Q-09a",
+      "source": "VISITORS_NOTEBOOK.md",
+      "where": "§10.1 (the engine renders the negation; checked against the source)",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "cannot distinguish \"nothing happened\" from \"something happened privately\""
+    },
+    {
+      "id": "Q-09b",
+      "source": "VISITORS_NOTEBOOK.md",
+      "where": "§8 costs",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "the one risk the building's outward-facing warnings do not cover"
+    },
+    {
+      "id": "Q-09c",
+      "source": "VISITORS_NOTEBOOK.md",
+      "where": "§5 costs",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "were never retro-labelled"
+    },
+    {
+      "id": "Q-09d",
+      "source": "CASE STUDY — The Receipt and the Record.md",
+      "where": "§10.4",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "The vault is the artwork — and its doubleness is the medium."
+    },
+    {
+      "id": "Q-09e",
+      "source": "CASE STUDY — The Receipt and the Record.md",
+      "where": "§10.2",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "controlled audition of dangerous readers"
+    },
+    {
+      "id": "Q-09f",
+      "source": "verdict_from_A.i_5",
+      "where": "§10.2",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "an intelligence attending to you at full resolution, on demand, without limit, and without going anywhere"
+    },
+    {
+      "id": "Q-09g",
+      "source": "docs/meta-analysis/REPORT.md",
+      "where": "§9 (standing exclusion)",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "no diagnosis, no reading of medical or body material; structures, numbers and arguments only"
+    },
+    {
+      "id": "Q-09h",
+      "source": "TRANSCRIPT — In re Zaziopath, Petition for Legal Personhood.md",
+      "where": "§6 costs",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "twice failed to answer a question outside its own text"
+    },
+    {
+      "id": "Q-09i",
+      "source": "TRANSCRIPT — In re Zaziopath, Petition for Legal Personhood.md",
+      "where": "§3 production",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "This Court is not independent, and says so"
+    },
+    {
+      "id": "Q-09j",
+      "source": "TRANSCRIPT — In re Zaziopath, Petition for Legal Personhood.md",
+      "where": "source-only check (FF-17); §0.4 refers to it without quoting",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": null,
+      "quote": "the archive chose to file, date, and index a record of a reader failing to find a person in it"
+    },
+    {
+      "id": "Q-09k",
+      "source": "Zaziopath_Alana_Bloom_Frederick_Chilton.pdf",
+      "where": "epigraph, §9",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "Chilton writes subject on the cover. Alana crosses it out and writes author."
+    },
+    {
+      "id": "Q-09l",
+      "source": "Zaziopath_Alana_Bloom_Frederick_Chilton.pdf",
+      "where": "epigraph, §9",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "in case neither word is enough"
+    },
+    {
+      "id": "Q-09m",
+      "source": "ANATOMIA_CONTRADICTIONIS_LECTER_DUMAURIER_XRAY.pdf",
+      "where": "§10.1 (commissioned persona; number used, image disclaimed)",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "He prepares the dining table with exquisite gold cutlery"
+    },
+    {
+      "id": "Q-09n",
+      "source": "Department_of_Interpretive_Support_Zaziopath_Ticket_History.pdf",
+      "where": "§6",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "Give me the line that cuts through every defense and explains the entire archive."
+    },
+    {
+      "id": "Q-09o",
+      "source": "Department_of_Interpretive_Support_Zaziopath_Ticket_History.pdf",
+      "where": "§6",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "We can offer a sentence as literature if it is labeled as literature and allowed to be wrong."
+    },
+    {
+      "id": "Q-09p",
+      "source": "Department_of_Interpretive_Support_Zaziopath_Ticket_History.pdf",
+      "where": "§6 production",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "pypdf",
+      "in_engine_document": true,
+      "quote": "Do not increase certainty to improve customer satisfaction."
+    },
+    {
+      "id": "Q-09q",
+      "source": "invisible_observer_dossier.md",
+      "where": "§0.4",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "They wish to be discovered without becoming discoverable in the ordinary manner"
+    },
+    {
+      "id": "Q-09r",
+      "source": "Anti-Perfectionism Brain Hacks.md",
+      "where": "§7",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "It doesn't have to be perfect. It just has to be real"
+    },
+    {
+      "id": "Q-09s",
+      "source": "Anti-Perfectionism Brain Hacks.md",
+      "where": "§7",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "put its shoes on and walk it to the gate"
+    },
+    {
+      "id": "Q-09t",
+      "source": "Entry Instructions for the Undetonated Artist.md",
+      "where": "§7",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "Disavow Aesthetic Sovereignty. Burn your taste."
+    },
+    {
+      "id": "Q-09u",
+      "source": "CLAIM_PROVENANCE_LEDGER.md",
+      "where": "§6, §0.3",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "unresolved, not yet a contradiction"
+    },
+    {
+      "id": "Q-09v",
+      "source": "CLAIM_PROVENANCE_LEDGER.md",
+      "where": "§0.3",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "Resolved for meta-analysis"
+    },
+    {
+      "id": "Q-09w",
+      "source": "ZAZIOPATH — Collected Readings (2026-09-23).md",
+      "where": "§5 costs (style tax)",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "clarity, delivered in the right register, can substitute for the Tuesday"
+    },
+    {
+      "id": "Q-09x",
+      "source": "ZAZIOPATH — Collected Readings (2026-09-23).md",
+      "where": "§10.4",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "Genre ambiguity of that kind is affordable in fiction and costly in a dossier"
+    },
+    {
+      "id": "Q-09y",
+      "source": "🗄 Stub Registry.md",
+      "where": "§10.3 (the engine renders the count in a register row)",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": null,
+      "quote": "The 92 removed stubs, by Inventory section"
+    },
+    {
+      "id": "Q-09z",
+      "source": "RECURSIVE IDENTITY CASTLES.md",
+      "where": "§5",
+      "status": "located",
+      "ratio": 1.0,
+      "extractor": "stdlib",
+      "in_engine_document": true,
+      "quote": "Do anything today that statistically refutes its claim."
+    }
+  ],
+  "load_strings_in_doc": 44,
+  "stale_load_strings": [],
+  "named_paths": [
+    "05_stewardship/ledger.md",
+    "ANATOMIA_CONTRADICTIONIS_LECTER_DUMAURIER_XRAY.pdf",
+    "Anti-Perfectionism Brain Hacks.md",
+    "Anémone Crottin-Foufflée Identity.md",
+    "Archetype Test.pdf",
+    "Avoidant Personality Spectrum Test.pdf",
+    "Borderline Spectrum Test 5.pdf",
+    "Brainrot Spectrum Test.pdf",
+    "CASE STUDY — The Receipt and the Record.md",
+    "CLAIM_PROVENANCE_LEDGER.md",
+    "DEEP_GAP_AUDIT.md",
+    "Department_of_Interpretive_Support_Zaziopath_Ticket_History.pdf",
+    "ERROR_LOG_BIOGRAPHICA-7.md",
+    "EVIDENCE_GOVERNANCE_HANDBOOK.md",
+    "Entry Instructions for the Undetonated Artist.md",
+    "Ideological Inversion Audit.pdf",
+    "JSON file re-export ChatGPT Memory .md",
+    "Lost_Zazie_Productions_Archive.pdf",
+    "META_ANALYSIS_OF_ZAZIOPATH.md",
+    "Moral Outrage Test (MOT).pdf",
+    "Mythographic Childhood.md",
+    "Philosopher Personality Test Presocratics Edition.pdf",
+    "README.md",
+    "RECURSIVE IDENTITY CASTLES.md",
+    "Shadow Journal Observations .pdf",
+    "TRANSCRIPT — In re Zaziopath, Petition for Legal Personhood.md",
+    "VISITORS_NOTEBOOK.md",
+    "ZAZIOPATH — Collected Readings (2026-09-23).md",
+    "Zazie_Productions_Instagram_Forensic_Audit.pdf",
+    "Zazie_Productions_Shadow_Signal_Stewardship_Mega_Compendium.pdf",
+    "Zaziopath_Alana_Bloom_Frederick_Chilton.pdf",
+    "docs/data/fig8_contradiction_loads.csv",
+    "docs/figures/fig8_contradiction_field.build.json",
+    "docs/figures/fig8_contradiction_field.png",
+    "docs/figures/fig8_contradiction_field.svg",
+    "docs/meta-analysis/REPORT.md",
+    "fig8_contradiction_field.build.json",
+    "invisible_observer_dossier.md",
+    "tools/generate_contradiction_field.py",
+    "verdict_from_A.i_3",
+    "verdict_from_A.i_5",
+    "verdict_from_A.i_6",
+    "⚡ CONTRADICTION ENGINE.md",
+    "⚡ Unexpected Connections.md",
+    "🔍 CASE FILE — Pattern Forensics.md",
+    "🗄 Stub Registry.md"
+  ],
+  "planned_paths": [
+    "05_stewardship/ledger.md"
+  ],
+  "missing_paths": [],
+  "summary": {
+    "axes_checked": 11,
+    "axes_matching": 11,
+    "quotes_checked": 84,
+    "quote_status": {
+      "located": 84
+    },
+    "extractors": {
+      "docs/meta-analysis/REPORT.md": "stdlib",
+      "README.md": "stdlib",
+      "🔍 CASE FILE — Pattern Forensics.md": "stdlib",
+      "verdict_from_A.i_6": "stdlib",
+      "ERROR_LOG_BIOGRAPHICA-7.md": "stdlib",
+      "EVIDENCE_GOVERNANCE_HANDBOOK.md": "stdlib",
+      "⚡ Unexpected Connections.md": "stdlib",
+      "Shadow Journal Observations .pdf": "pypdf",
+      "Ideological Inversion Audit.pdf": "pypdf",
+      "JSON file re-export ChatGPT Memory .md": "stdlib",
+      "Zazie_Productions_Instagram_Forensic_Audit.pdf": "pypdf",
+      "Zazie_Productions_Shadow_Signal_Stewardship_Mega_Compendium.pdf": "pypdf",
+      "DEEP_GAP_AUDIT.md": "stdlib",
+      "VISITORS_NOTEBOOK.md": "stdlib",
+      "TRANSCRIPT — In re Zaziopath, Petition for Legal Personhood.md": "stdlib",
+      "CASE STUDY — The Receipt and the Record.md": "stdlib",
+      "verdict_from_A.i_5": "stdlib",
+      "Zaziopath_Alana_Bloom_Frederick_Chilton.pdf": "pypdf",
+      "ANATOMIA_CONTRADICTIONIS_LECTER_DUMAURIER_XRAY.pdf": "pypdf",
+      "Department_of_Interpretive_Support_Zaziopath_Ticket_History.pdf": "pypdf",
+      "invisible_observer_dossier.md": "stdlib",
+      "Anti-Perfectionism Brain Hacks.md": "stdlib",
+      "Entry Instructions for the Undetonated Artist.md": "stdlib",
+      "CLAIM_PROVENANCE_LEDGER.md": "stdlib",
+      "ZAZIOPATH — Collected Readings (2026-09-23).md": "stdlib",
+      "🗄 Stub Registry.md": "stdlib",
+      "RECURSIVE IDENTITY CASTLES.md": "stdlib"
+    },
+    "failures": []
+  }
+}
