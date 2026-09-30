@@ -1,0 +1,344 @@
+{
+  "run": "tools/probe_missing_variable.py",
+  "subject": "anomalies that a missing variable would explain",
+  "results": {
+    "wb_rows": {
+      "value": 200,
+      "note": "rows with a numeric index in CATALOG"
+    },
+    "wb_isrc_cells": {
+      "value": 200,
+      "note": "165 well-formed, 35 literal '—'"
+    },
+    "wb_unique_isrc": {
+      "value": 145,
+      "note": ""
+    },
+    "wb_non_track_rows": {
+      "value": 4,
+      "note": "— No Zazie track found — Not in Discogs 58; —; Dissonance Index Vol.1 (full 105 artists); 50+ VA Appearances — See Discogs 11354435 / "
+    },
+    "wb_total_row": {
+      "value": "TOTAL / 200.0 / 165/200",
+      "note": "the workbook's own arithmetic: 200 = 165 + 35"
+    },
+    "csv_rows": {
+      "value": 182,
+      "note": ""
+    },
+    "csv_unique_isrc": {
+      "value": 142,
+      "note": ""
+    },
+    "csv_na": {
+      "value": 21,
+      "note": ""
+    },
+    "csv_distinct_artists": {
+      "value": 3,
+      "note": "Unwashed Miscreant; Unwashed Miscreant & Hazzard Rune; Zazie Productions"
+    },
+    "record_divergence_wb_only": {
+      "value": 61,
+      "note": "rows the audited CSV never carried"
+    },
+    "record_divergence_csv_only": {
+      "value": 43,
+      "note": "rows the workbook never carried"
+    },
+    "g7e_torpedo_in_csv": {
+      "value": false,
+      "note": "2019 EP: 6 workbook rows, 0 CSV rows"
+    },
+    "triangular_savant_rows": {
+      "value": "csv=6 wb=1",
+      "note": "the same release, counted six times in one record and once in the other"
+    },
+    "isrc_lag_histogram": {
+      "value": {
+        "-4": 7,
+        "-2": 5,
+        "-1": 8,
+        "0": 128,
+        "2": 8,
+        "3": 5
+      },
+      "note": ""
+    },
+    "isrc_retroactive": {
+      "value": 13,
+      "note": "registered after release (2019/2020 works coded 22)"
+    },
+    "isrc_carried_forward": {
+      "value": 20,
+      "note": "older codes reused on deluxe reissues"
+    },
+    "wb_isrc_lag_histogram": {
+      "value": {
+        "-4": 8,
+        "-2": 5,
+        "-1": 6,
+        "0": 131,
+        "1": 1,
+        "2": 8,
+        "3": 6
+      },
+      "note": ""
+    },
+    "unregistered_rows_csv": {
+      "value": 21,
+      "note": {
+        "Interference Archive 01010101": 5,
+        "Anything Can Happen On An Electric Day": 5,
+        "The Triangular Savant": 6,
+        "Greetings From Tinsel Time (Super Deluxe Edition)": 4,
+        "Sellotape (Super Deluxe Edition)": 1
+      }
+    },
+    "wb_unregistered_by_release": {
+      "value": {
+        "Greetings From Tinsel Time (Super Deluxe Edition)": 1,
+        "Greetings From Tinsel Time": 3,
+        "Vermiform": 1,
+        "Anything Can Happen On An Electric Day": 5,
+        "Interference Archive 01010101": 5,
+        "G7e Torpedo": 5,
+        "The Triangular Savant": 1,
+        "Dissonance Index Vol. 1": 2,
+        "C'est la période de Noël": 1,
+        "ArrhythNia Digital Net Label Compilation 4: Experimental Music And Noise (aNr122)": 1,
+        "Warm Music For Cold Weather: For The Muscular Dystrophy Association": 1,
+        "Plosives: An Introduction To Ghost Nun": 1,
+        "Esoterrexus - A Slithering Black Compilation": 1,
+        "Harsh Noise Wall Means Fight Back: Smash Gay Oppression": 1,
+        "Ripples Exhibition": 1,
+        "HERBIGORE (Plant-based Gorenoise) — Linktree only": 1,
+        "Comp27 - Shadowlands 4": 1,
+        "Christmasasaurus Unleashed!": 1,
+        "Amnesia X Zazie Productions / Oliver Schöffler Split (aNr124)": 1,
+        "Discogs Appearances Summary": 1
+      },
+      "note": ""
+    },
+    "wb_dash_meaning": {
+      "value": "— = 'no ISRC found on Deezer/SoundCharts/MusicBrainz'",
+      "note": "absence of a platform sighting is written as absence of an identifier"
+    },
+    "duration_deluxe_median": {
+      "value": 104.5,
+      "note": ""
+    },
+    "duration_deluxe_under_120s": {
+      "value": "47/82",
+      "note": "57%"
+    },
+    "duration_deluxe_30s_or_less": {
+      "value": 14,
+      "note": ""
+    },
+    "duration_non_deluxe_median": {
+      "value": 160.0,
+      "note": ""
+    },
+    "duration_non_deluxe_under_120s": {
+      "value": "31/100",
+      "note": "31%"
+    },
+    "duration_non_deluxe_30s_or_less": {
+      "value": 5,
+      "note": ""
+    },
+    "y2024_rows": {
+      "value": 60,
+      "note": ""
+    },
+    "y2024_non_deluxe_rows": {
+      "value": 0,
+      "note": "every 2024 row belongs to a deluxe edition"
+    },
+    "per_year_metrics": {
+      "value": {
+        "2019": {
+          "csv_rows": 5,
+          "release_events": 1,
+          "non_deluxe_rows": 5,
+          "feature_rows": 0
+        },
+        "2020": {
+          "csv_rows": 8,
+          "release_events": 1,
+          "non_deluxe_rows": 8,
+          "feature_rows": 0
+        },
+        "2021": {
+          "csv_rows": 5,
+          "release_events": 1,
+          "non_deluxe_rows": 5,
+          "feature_rows": 0
+        },
+        "2022": {
+          "csv_rows": 23,
+          "release_events": 4,
+          "non_deluxe_rows": 23,
+          "feature_rows": 0
+        },
+        "2023": {
+          "csv_rows": 43,
+          "release_events": 6,
+          "non_deluxe_rows": 43,
+          "feature_rows": 0
+        },
+        "2024": {
+          "csv_rows": 60,
+          "release_events": 2,
+          "non_deluxe_rows": 0,
+          "feature_rows": 0
+        },
+        "2025": {
+          "csv_rows": 4,
+          "release_events": 3,
+          "non_deluxe_rows": 4,
+          "feature_rows": 2
+        },
+        "2026": {
+          "csv_rows": 34,
+          "release_events": 3,
+          "non_deluxe_rows": 12,
+          "feature_rows": 2
+        }
+      },
+      "note": "under 'non_deluxe_rows' the quiet year is 2024 (0), not 2025 (4)"
+    },
+    "rows_mean_sd": {
+      "value": [
+        22.8,
+        21.1
+      ],
+      "note": ""
+    },
+    "events_mean_sd": {
+      "value": [
+        2.6,
+        1.8
+      ],
+      "note": ""
+    },
+    "packaging_share": {
+      "value": "82/182",
+      "note": "share of the discography that is reissue packaging (3 deluxe editions)"
+    },
+    "audit_window": {
+      "value": "2023-2026",
+      "note": "the vault's own self-dating concentrates in 2026-08/09 (see md_dates_by_month)"
+    },
+    "console_fetch_calls": {
+      "value": 0,
+      "note": ""
+    },
+    "console_xhr_sendbeacon": {
+      "value": 0,
+      "note": ""
+    },
+    "console_localstorage_refs": {
+      "value": 2,
+      "note": ""
+    },
+    "console_committed_ledger": {
+      "value": false,
+      "note": "state lives in the browser; empty and full repos are byte-identical"
+    },
+    "wikilink_instances": {
+      "value": 620,
+      "note": ""
+    },
+    "wikilinks_unique": {
+      "value": 415,
+      "note": ""
+    },
+    "wikilinks_dangling": {
+      "value": "382/415",
+      "note": "92.0% of the reference graph has no target in this repo"
+    },
+    "inventory_notes": {
+      "value": 336,
+      "note": ""
+    },
+    "inventory_resolving_in_repo": {
+      "value": "2/336",
+      "note": "the manifest names an archive that is mostly elsewhere"
+    },
+    "tombstones": {
+      "value": 92,
+      "note": "bodies removed, names kept"
+    },
+    "zero_width_titles": {
+      "value": 7,
+      "note": "titles whose identity is unstable in string comparison"
+    },
+    "solo_rows": {
+      "value": 178,
+      "note": ""
+    },
+    "collaborator_strings": {
+      "value": [
+        "Unwashed Miscreant",
+        "Unwashed Miscreant & Hazzard Rune"
+      ],
+      "note": ""
+    },
+    "comp_rows_listed": {
+      "value": 16,
+      "note": ""
+    },
+    "comp_rows_that_are_entries": {
+      "value": 12,
+      "note": "the sheet mixes entries with counters and pointers"
+    },
+    "claim_58_appearances": {
+      "value": "asserted in sheet1/sheet5",
+      "note": "'Discogs Artist 11354435 = 58 Appearances' — asserted, not enumerable in-repo"
+    },
+    "mentions_revenue_income": {
+      "value": 59,
+      "note": "all in interpretations/memory exports; no figures"
+    },
+    "mentions_streams_sales": {
+      "value": 11,
+      "note": ""
+    },
+    "own_release_audience_figures": {
+      "value": 0,
+      "note": "no streams, sales, listeners or follower count for any own release in the repo"
+    },
+    "curation_audience_figure": {
+      "value": "≈32k followers (one Goa/Psytrance playlist; ChatGPT memory export l.112)",
+      "note": "the only audience number present belongs to a playlist the subject curates"
+    },
+    "revenue_artifact": {
+      "value": "[[Revenue Snapshot — July 2026]] — a name in the Inventory, no file",
+      "note": "the financial register exists as a title only"
+    },
+    "audit_bytes": {
+      "value": 268209,
+      "note": "12 documents"
+    },
+    "ledger_bytes": {
+      "value": 0,
+      "note": "receipts committed to the repository"
+    },
+    "md_dates_by_month": {
+      "value": {
+        "2019-09": 8,
+        "2023-12": 1,
+        "2024-12": 1,
+        "2025-06": 1,
+        "2025-12": 1,
+        "2026-05": 11,
+        "2026-08": 13,
+        "2026-09": 108,
+        "2027-03": 3
+      },
+      "note": "the vault's observational base is weeks wide; the catalogue's is seven years"
+    }
+  }
+}
