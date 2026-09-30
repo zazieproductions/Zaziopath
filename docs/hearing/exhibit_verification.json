@@ -5,13 +5,13 @@
   "exhibits": {
     "PX-1a": {
       "claim": "README line count",
-      "value": 778,
+      "value": 809,
       "counting_rule": "newline count + 1 (house rule from tools/verify_meta_analysis.py)",
       "source": "README.md"
     },
     "PX-1b": {
       "claim": "README bytes",
-      "value": 44790,
+      "value": 50943,
       "counting_rule": "os.path.getsize",
       "source": "README.md"
     },
@@ -435,7 +435,7 @@
     },
     "PX-77": {
       "claim": "stratum mass · index",
-      "value": "129 KB across 8/8 files",
+      "value": "139 KB across 8/8 files",
       "counting_rule": "sum of os.path.getsize over the file list declared in tools/generate_figures.py",
       "source": "tools/generate_figures.py STRATA"
     },
@@ -453,13 +453,13 @@
     },
     "PX-7a": {
       "claim": "total mass of the eight strata",
-      "value": "8,197 KB",
+      "value": "8,207 KB",
       "counting_rule": "sum over STRATA, excluding unresolved entries",
       "source": "tools/generate_figures.py STRATA"
     },
     "PX-8a": {
       "claim": "unique wikilinks",
-      "value": 414,
+      "value": 415,
       "counting_rule": "regex \\[\\[target over root + docs .md files",
       "source": "markdown tree"
     },
@@ -471,19 +471,19 @@
     },
     "PX-8c": {
       "claim": "dangling ratio",
-      "value": "92.3%",
+      "value": "92.0%",
       "counting_rule": "b ÷ a",
       "source": "markdown tree"
     },
     "PX-8d": {
       "claim": "tracked files",
-      "value": 142,
+      "value": 167,
       "counting_rule": "git ls-files",
       "source": "git index"
     },
     "PX-8e": {
       "claim": "tracked files at the repository root",
-      "value": 117,
+      "value": 122,
       "counting_rule": "git ls-files without a slash",
       "source": "git index"
     },
@@ -495,7 +495,7 @@
     },
     "PX-8g": {
       "claim": "visible commits in this checkout",
-      "value": 1,
+      "value": 104,
       "counting_rule": "git rev-list --count HEAD; a grafted checkout understates history",
       "source": "git"
     },
@@ -507,7 +507,7 @@
     },
     "PX-8h": {
       "claim": "HEAD commit",
-      "value": "6e3cfa9",
+      "value": "0072572",
       "counting_rule": "git rev-parse",
       "source": "git"
     },
@@ -540,13 +540,15 @@
     },
     "PX-10b": {
       "claim": "fingerprints still matching",
-      "value": 7,
+      "value": 6,
       "counting_rule": "recomputed digest == recorded digest",
       "source": "…"
     },
     "PX-10c": {
       "claim": "fingerprints failing or unresolved",
-      "value": "none",
+      "value": [
+        "`README.md` (hash differs)"
+      ],
       "counting_rule": "paths absent from the tree, or digests differing",
       "source": "…"
     },
@@ -648,12 +650,12 @@
     }
   },
   "flat": {
-    "readme_line_count": 778,
-    "readme_bytes": 44790,
+    "readme_line_count": 809,
+    "readme_bytes": 50943,
     "stewardship_folder_marked_planned": true,
     "declared_roles_of_the_subject": 5,
     "self_audit_questions_in_08": 12,
-    "readme_sha256": "f09a1f5f4375ecb1e7592460348e3e0b43dfd76af12c2737f5cf507070d198d1",
+    "readme_sha256": "4044c0bceb1f6753fbe35bbdae397ec96e648878ac9d1389d4cf78ef484f9039",
     "whole_word_count_of_legal_in_the_charter": 0,
     "whole_word_count_of_rights_in_the_charter": 0,
     "whole_word_count_of_right_in_the_charter": 3,
@@ -726,12 +728,12 @@
     "stratum_mass_recursion": "582 KB across 7/7 files",
     "stratum_mass_evidence": "332 KB across 5/5 files",
     "stratum_mass_specimens": "145 KB across 4/4 files",
-    "stratum_mass_index": "129 KB across 8/8 files",
+    "stratum_mass_index": "139 KB across 8/8 files",
     "stratum_mass_stewardship": "5 KB across 2/2 files",
     "atlas_file_list_entries_that_do_not_resolve_on_d": 1,
-    "total_mass_of_the_eight_strata": "8,197 KB",
+    "total_mass_of_the_eight_strata": "8,207 KB",
     "strata_bytes": {
-      "INDEX": 131816,
+      "INDEX": 141881,
       "IDENTITY": 3853476,
       "SHADOW": 1440517,
       "EVIDENCE": 339749,
@@ -740,15 +742,15 @@
       "SPECIMENS": 148385,
       "MYTHOGRAPHY": 1878554
     },
-    "unique_wikilinks": 414,
+    "unique_wikilinks": 415,
     "dangling_wikilinks": 382,
-    "dangling_ratio": "92.3%",
-    "tracked_files": 142,
-    "tracked_files_at_the_repository_root": 117,
+    "dangling_ratio": "92.0%",
+    "tracked_files": 167,
+    "tracked_files_at_the_repository_root": 122,
     "tracked_pdfs": 42,
-    "visible_commits_in_this_checkout": 1,
+    "visible_commits_in_this_checkout": 104,
     "tracked_filenames_not_in_unicode_nfc_form": 1,
-    "head_commit": "6e3cfa9",
+    "head_commit": "0072572",
     "twin_disclaimer_repetitions": "11 captions / 284 text lines",
     "seams_in_the_negative_space_biography": 13,
     "other_people_named_anywhere_in_the_catalog": [
@@ -756,8 +758,10 @@
       "Unwashed Miscreant & Hazzard Rune"
     ],
     "ledger_fingerprints_re_hashed_at_the_hearing": 7,
-    "fingerprints_still_matching": 7,
-    "fingerprints_failing_or_unresolved": "none",
+    "fingerprints_still_matching": 6,
+    "fingerprints_failing_or_unresolved": [
+      "`README.md` (hash differs)"
+    ],
     "what_a_match_certifies": "version identity, not truth",
     "fact_check_desk_supported_vs_not_established": "5 DIRECTLY SUPPORTED / 1 NOT ESTABLISHED",
     "false_classifications_logged": 12,

@@ -463,12 +463,19 @@ def draw(rows, out_png, out_svg):
 
     fig.savefig(out_png, dpi=200)
     fig.savefig(out_svg)
+    # Matplotlib wraps SVG path data across lines with trailing separators.
+    # They render identically without end-of-line whitespace, so normalize it
+    # before recording the output hash (and keep the generated diff checkable).
+    with open(out_svg, encoding="utf-8", newline="") as fh:
+        svg_lines = fh.read().splitlines()
+    with open(out_svg, "w", encoding="utf-8", newline="\n") as fh:
+        fh.write("\n".join(line.rstrip(" \t\r") for line in svg_lines) + "\n")
     plt.close(fig)
 
 
 def write_csv(rows, path):
     with open(path, "w", newline="", encoding="utf-8") as fh:
-        w = csv.writer(fh)
+        w = csv.writer(fh, lineterminator="\n")
         w.writerow(["axis_id", "axis_name", "pole", "pole_label", "stratum",
                     "files_tagged", "bytes", "kb", "share_of_axis",
                     "cost_tier", "status"])

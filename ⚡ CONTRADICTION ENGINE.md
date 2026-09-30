@@ -145,7 +145,7 @@ Rules of the count, all in [`tools/generate_contradiction_field.py`](tools/gener
 Two limits, stated because the vault's own handbook demands them (`EVIDENCE_GOVERNANCE_HANDBOOK.md` §9):
 
 1. **Size ≠ sincerity.** Five kilobytes of receipt console is the most carefully built object in the vault ([`VISITORS_NOTEBOOK.md`](VISITORS_NOTEBOOK.md) §3, reversal 6). Mass marks where the energy is, not where the virtue is — and not where the value is.
-2. **The count excludes this file — and computes what including it would do.** `⚡ CONTRADICTION ENGINE.md` is a twelfth mirror and a twelfth pass over old material, so tagging it would be honest; but a document that feeds its own bars also has an incentive to grow, and a measurement that moves every time its author fixes a typo cannot be checked by anyone else. So the engine is measured *outside* its own bars and reported instead, in the build record: **≈92 KB, which if tagged would move X-00's pole 2 by +4.2 points and X-05's by +0.5** (`docs/figures/fig8_contradiction_field.build.json` → `self_reference`). The engine's own mass, in other words, is a live specimen of the two axes it is describing — filed, computed, and left out of the count so the count can be re-run by a stranger.
+2. **The count excludes this file — and computes what including it would do.** `⚡ CONTRADICTION ENGINE.md` is a twelfth mirror and a twelfth pass over old material, so tagging it would be honest; but a document that feeds its own bars also has an incentive to grow, and a measurement that moves every time its author fixes a typo cannot be checked by anyone else. So the engine is measured *outside* its own bars and reported instead, in the build record: **≈92 KB, which if tagged would move X-00's pole 2 by +4.3 points and X-05's by +0.5** (`docs/figures/fig8_contradiction_field.build.json` → `self_reference`). The engine's own mass, in other words, is a live specimen of the two axes it is describing — filed, computed, and left out of the count so the count can be re-run by a stranger.
 
 ### §1.4 The five contexts, and how dominance is judged
 
@@ -209,16 +209,16 @@ The dotted edges are why no axis can be closed by a paragraph. Each product is *
 
 | Axis | Pole 1 (cooling) | Load | Pole 2 (heating) | Load | Lean | Cost |
 |:--:|---|---:|---|---:|---|:--:|
-| **X-00** | Exit signs — *741 : 1 is the finding* | 107 KB · 7 files · 24% | Mirrors — *one more reading* | 332 KB · 10 files · 76% | → P2 | ▲▲▲ |
-| **X-01** | Anti-authority — *no authority deserves obedience* | 389 KB · 6 · 67% | Absolute authorship — *write the constitution* | 191 KB · 7 · 33% | → P1 | ▲▲▲ |
+| **X-00** | Exit signs — *741 : 1 is the finding* | 112 KB · 7 files · 25% | Mirrors — *one more reading* | 332 KB · 10 files · 75% | → P2 | ▲▲▲ |
+| **X-01** | Anti-authority — *no authority deserves obedience* | 389 KB · 6 · 66% | Absolute authorship — *write the constitution* | 198 KB · 7 · 34% | → P1 | ▲▲▲ |
 | **X-02** | Visibility — *searchable, impossible to ignore* | 714 KB · 7 · 53% | Outsider status — *clandestine, cultic, anonymous* | 642 KB · 8 · 47% | → P1 | ▲▲▲ |
 | **X-03** | Evidence — *replace claims with counts* | 408 KB · 8 · 27% | Myth — *the coherent legend* | 1,101 KB · 10 · 73% | → P2 | ▲▲ |
-| **X-04** | Ambiguity — *ambiguity is the oxygen* | 268 KB · 8 · 36% | Definitive answer — *give me the line* | 480 KB · 7 · 64% | → P2 | ▲▲ |
-| **X-05** | Self-acceptance — *it just has to be real* | 93 KB · 7 · 7% | Endless optimisation — *one more pass* | 1,233 KB · 8 · 93% | → P2 | ▲▲▲ |
-| **X-06** | Artistic danger — *knowing darkness as identity* | 1,384 KB · 9 · 76% | Administrative control — *fence it, date it, tier it* | 432 KB · 9 · 24% | → P1 | ▲▲▲ |
-| **X-07** | Anti-clinical — *no document diagnoses anyone* | 238 KB · 5 · 8% | Diagnostic appetite — *the shelf of instruments* | 2,875 KB · 10 · 92% | → P2 | ▲▲ |
+| **X-04** | Ambiguity — *ambiguity is the oxygen* | 270 KB · 8 · 36% | Definitive answer — *give me the line* | 486 KB · 7 · 64% | → P2 | ▲▲ |
+| **X-05** | Self-acceptance — *it just has to be real* | 93 KB · 7 · 7% | Endless optimisation — *one more pass* | 1,235 KB · 8 · 93% | → P2 | ▲▲▲ |
+| **X-06** | Artistic danger — *knowing darkness as identity* | 1,384 KB · 9 · 76% | Administrative control — *fence it, date it, tier it* | 438 KB · 9 · 24% | → P1 | ▲▲▲ |
+| **X-07** | Anti-clinical — *no document diagnoses anyone* | 242 KB · 5 · 8% | Diagnostic appetite — *the shelf of instruments* | 2,875 KB · 10 · 92% | → P2 | ▲▲ |
 | **X-08** | Witness-hunger — *an intelligence at full resolution* | 452 KB · 10 · 42% | Witness-avoidance — *no face, no name, no link* | 627 KB · 6 · 58% | → P2 | ▲▲▲ |
-| **X-09** | Curatorial deletion — *92 stubs removed, indexed* | 176 KB · 6 · 10% | Archival hoarding — *nothing lost to history* | 1,566 KB · 8 · 90% | → P2 | ▲▲ |
+| **X-09** | Curatorial deletion — *92 stubs removed, indexed* | 180 KB · 6 · 10% | Archival hoarding — *nothing lost to history* | 1,566 KB · 8 · 90% | → P2 | ▲▲ |
 | **X-10** | Record frame — *dated, hashed, tiered* | 289 KB · 8 · 33% | Art frame — *the doubleness is the medium* | 597 KB · 11 · 67% | → P2 | ▲▲▲ |
 
 </details>
@@ -227,7 +227,7 @@ The dotted edges are why no axis can be closed by a paragraph. Each product is *
 
 **Reading one — the heat is where the work is, and it is not where the charter's favourite words are.** The charter's most-insisted poles are the lightest in mass: the receipt console, the anti-perfectionism hacks, the entry rite, the prohibition on diagnosis. The heaviest artifacts are instruments (2.9 MB of tests), legends (1.1 MB of myth), and hoards (1.6 MB of archive-keeping). *"Diagnosis outweighs treatment roughly 750 : 1 by byte count"* — F-09. That is not hypocrisy. It is heat: the vault is a machine for producing interpretations, and interpretations are what it has most of.
 
-**Reading two — five axes have already been decided in practice, silently.** X-05 (93 : 7), X-07 (8 : 92), X-09 (10 : 90), X-03 (27 : 73), X-00 (24 : 76). In each case, the pole with the smaller mass is the pole the charter names as the *endpoint* — acceptance, refusal-to-diagnose, curation, evidence, exit. The practice has voted. The engine's job is not to overturn the vote; it is to make the vote **visible**, because a decision made by accumulation cannot be audited, dated, or reversed — and everything in this vault is supposed to be auditable, dated, reversible.
+**Reading two — five axes have already been decided in practice, silently.** X-05 (93 : 7), X-07 (8 : 92), X-09 (10 : 90), X-03 (27 : 73), X-00 (25 : 75). In each case, the pole with the smaller mass is the pole the charter names as the *endpoint* — acceptance, refusal-to-diagnose, curation, evidence, exit. The practice has voted. The engine's job is not to overturn the vote; it is to make the vote **visible**, because a decision made by accumulation cannot be audited, dated, or reversed — and everything in this vault is supposed to be auditable, dated, reversible.
 
 **Reading three — two axes are almost symmetrical, and those are the live ones.** X-02 (53 : 47) and X-08 (42 : 58) are the field's centre of gravity: visibility and witness, the two questions about being seen. Both have real, dated practices on both sides (133 verified press records and an anonymous cipher grid; six commissioned tribunals and an all-anonymous public surface). Both are ▲▲▲. Statistically, if any axis in this file is going to move in the next quarter, it is one of these two — and the corpus already contains the audit that would move it ([`Zazie_Productions_Instagram_Forensic_Audit.pdf`](Zazie_Productions_Instagram_Forensic_Audit.pdf)).
 
@@ -280,7 +280,7 @@ graph TB
 
 ## ⬛ §3 · X-01 · Anti-authority ⇄ absolute authorship
 
-**Load** pole 1 **389 KB · 6 files · 67%** ▸ pole 2 **191 KB · 7 · 33%** · **Lean → P1** · **Cost ▲▲▲** · **Dominance** C1 `A·B` · C2 `B` · C3 `A` · C4 `B` · C5 `A` · **Tier** `direct_source` (both poles), `strong_inference` (the cost argument)
+**Load** pole 1 **389 KB · 6 files · 66%** ▸ pole 2 **198 KB · 7 · 34%** · **Lean → P1** · **Cost ▲▲▲** · **Dominance** C1 `A·B` · C2 `B` · C3 `A` · C4 `B` · C5 `A` · **Tier** `direct_source` (both poles), `strong_inference` (the cost argument)
 
 ### The contradiction, in the archive's own words
 
@@ -422,7 +422,7 @@ The axis is not "the archive lies about its numbers". It is that the archive run
 
 ## ⬛ §6 · X-04 · Radical ambiguity ⇄ demand for a definitive explanation
 
-**Load** pole 1 **268 KB · 8 files · 36%** ▸ pole 2 **480 KB · 7 · 64%** · **Lean → P2** · **Cost ▲▲** · **Dominance** C1 `B` · C2 `A` · C3 `B` · C4 `A` · C5 `A` · **Tier** `direct_source`
+**Load** pole 1 **270 KB · 8 files · 36%** ▸ pole 2 **486 KB · 7 · 64%** · **Lean → P2** · **Cost ▲▲** · **Dominance** C1 `B` · C2 `A` · C3 `B` · C4 `A` · C5 `A` · **Tier** `direct_source`
 
 ### The contradiction, in the archive's own words
 
@@ -473,7 +473,7 @@ The axis is therefore not "chaos vs control". It is **ambiguity where meaning is
 
 ## ⬛ §7 · X-05 · Self-acceptance ⇄ endless optimisation
 
-**Load** pole 1 **93 KB · 7 files · 7%** ▸ pole 2 **1,233 KB · 8 · 93%** · **Lean → P2 (93 : 7 — the widest in the vault alongside X-07)** · **Cost ▲▲▲** · **Dominance** C1 `B` · C2 `B` · C3 `A` · C4 `B` · C5 `A` · **Tier** `direct_source`
+**Load** pole 1 **93 KB · 7 files · 7%** ▸ pole 2 **1,235 KB · 8 · 93%** · **Lean → P2 (93 : 7 — the widest in the vault alongside X-07)** · **Cost ▲▲▲** · **Dominance** C1 `B` · C2 `B` · C3 `A` · C4 `B` · C5 `A` · **Tier** `direct_source`
 
 ### The contradiction, in the archive's own words
 
@@ -522,7 +522,7 @@ The conflict is not between two moods. It is between two *interventions*, both w
 
 ## ⬛ §8 · X-06 · Artistic danger ⇄ administrative control
 
-**Load** pole 1 **1,384 KB · 9 files · 76%** ▸ pole 2 **432 KB · 9 · 24%** · **Lean → P1** · **Cost ▲▲▲** · **Dominance** C1 `B` · C2 `A` · C3 `B` · C4 `B` · C5 `A` · **Tier** `direct_source`
+**Load** pole 1 **1,384 KB · 9 files · 76%** ▸ pole 2 **438 KB · 9 · 24%** · **Lean → P1** · **Cost ▲▲▲** · **Dominance** C1 `B` · C2 `A` · C3 `B` · C4 `B` · C5 `A` · **Tier** `direct_source`
 
 ### The contradiction, in the archive's own words
 
@@ -568,7 +568,7 @@ Note the compendium's own section title: *dangerous **but contained***. The cont
 
 ## ⬛ §9 · X-07 · Anti-clinical stance ⇄ diagnostic appetite
 
-**Load** pole 1 **238 KB · 5 files · 8%** ▸ pole 2 **2,875 KB · 10 · 92%** · **Lean → P2 — the largest mass of any pole in the field** · **Cost ▲▲** · **Dominance** C1 `A` · C2 `B` · C3 `A` · C4 `B` · C5 `B` · **Tier** `direct_source`
+**Load** pole 1 **242 KB · 5 files · 8%** ▸ pole 2 **2,875 KB · 10 · 92%** · **Lean → P2 — the largest mass of any pole in the field** · **Cost ▲▲** · **Dominance** C1 `A` · C2 `B` · C3 `A` · C4 `B` · C5 `B` · **Tier** `direct_source`
 
 ### The contradiction, in the archive's own words
 
@@ -617,7 +617,7 @@ Compressed cards, same fields, less room — because the corpus itself already a
 
 ### §10.1 · X-00 · Exit signs ⇄ mirrors — *the axis this file stands on*
 
-**Load** P1 **107 KB · 7 files · 24%** ▸ P2 **332 KB · 10 · 76%** · **Cost ▲▲▲** · **Dominance** C1 `B` · C2 `A` · C3 `B` · C4 `A·B` · C5 `B`
+**Load** P1 **112 KB · 7 files · 25%** ▸ P2 **332 KB · 10 · 75%** · **Cost ▲▲▲** · **Dominance** C1 `B` · C2 `A` · C3 `B` · C4 `A·B` · C5 `B`
 
 > *"Total independent evidence-gathering events across ~30,000 words: four."* — [`docs/meta-analysis/REPORT.md`](docs/meta-analysis/REPORT.md) §1
 > *"He prepares the dining table with exquisite gold cutlery… and never serves a morsel of meat."* — [`ANATOMIA_CONTRADICTIONIS_LECTER_DUMAURIER_XRAY.pdf`](ANATOMIA_CONTRADICTIONIS_LECTER_DUMAURIER_XRAY.pdf) Scan 05 (commissioned persona; the *number* is what the engine uses, not the image)
@@ -635,7 +635,7 @@ The corpus documents both poles as practice: six commissioned tribunals, a hando
 
 ### §10.3 · X-09 · Curatorial deletion ⇄ archival hoarding
 
-**Load** P1 **176 KB · 6 files · 10%** ▸ P2 **1,566 KB · 8 · 90%** · **Cost ▲▲**
+**Load** P1 **180 KB · 6 files · 10%** ▸ P2 **1,566 KB · 8 · 90%** · **Cost ▲▲**
 
 > P1: *"the private tags on empty notes really are the most quietly devastating detail in the repository"* — [`verdict_from_A.i_3`](verdict_from_A.i_3), quoted in [`verdict_from_A.i_6`](verdict_from_A.i_6) §3
 > P2: *"nothing here is finished; everything here is dated"* — README, with *"a terror that a single uncataloged track will be lost to history"* (commissioned dossier, Scan 08)
@@ -657,8 +657,8 @@ This is the axis that makes every other axis harder to score: a genre shield abs
 
 | Axis | Load | Lean | Cost | Most-heated context | Quietest context |
 |---|---|:--:|:--:|---|---|
-| X-00 exits ⇄ mirrors | 24 : 76 | →P2 | ▲▲▲ | C5 myth | C4 interior (both) |
-| X-01 authority ⇄ authorship | 67 : 33 | →P1 | ▲▲▲ | C2 studio (B) | C5 myth (A) |
+| X-00 exits ⇄ mirrors | 25 : 75 | →P2 | ▲▲▲ | C5 myth | C4 interior (both) |
+| X-01 authority ⇄ authorship | 66 : 34 | →P1 | ▲▲▲ | C2 studio (B) | C5 myth (A) |
 | X-02 visibility ⇄ outsider | 53 : 47 | →P1 | ▲▲▲ | C1 front office | C5 myth |
 | X-03 evidence ⇄ myth | 27 : 73 | →P2 | ▲▲ | C5 myth | C1 front office |
 | X-04 ambiguity ⇄ definitive | 36 : 64 | →P2 | ▲▲ | C1 front office | C4 interior |
@@ -688,7 +688,7 @@ The corpus already has pairs (the crosswalk), inventories (the registry, the inv
 3. **X-02 → X-10 → X-03** — *anonymity needs a myth; myth needs a record to be believed; a record that believes a myth inflates its own provenance.* This is the chain the meta-analysis found as a *number* (five documents repeating 200/165/58) and the deep audit found as a *mechanism* (circulation becomes apparent convergence). The engine's addition is directional: the chain starts at the marketing posture and ends in the evidence layer's credibility.
 4. **X-03 → X-00 → X-05 → X-03** — *a closed loop with no input.* Evidence demands resolution → the mirror answers with another reading → the reading is another pass, which is the optimising pole's work → more readings become more evidence. This is the loop the corpus calls *the staircase* and *0 for 5*. It is the only cycle in the field, and it has no external input by design — which is why every honest correction in this archive has come from outside it (an audit, a count, a reader) rather than from inside.
 
-The fourth coupling is the engine's central finding, and it is not a diagnosis of anything. It is a description of a machine: **a cycle fed only by its own output**. Every artifact that has ever escaped this archive — a release, a hearing, a governance handbook, a receipt format — entered through the door marked X-00 pole 1, and that door is 107 KB wide.
+The fourth coupling is the engine's central finding, and it is not a diagnosis of anything. It is a description of a machine: **a cycle fed only by its own output**. Every artifact that has ever escaped this archive — a release, a hearing, a governance handbook, a receipt format — entered through the door marked X-00 pole 1, and that door is 112 KB wide.
 
 ---
 

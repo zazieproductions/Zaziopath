@@ -1,22 +1,22 @@
 {
   "report": "ZP-CE-2026-0930",
   "verifier": "tools/verify_contradiction_engine.py",
-  "run_at": "2026-09-30T21:57:28+00:00",
+  "run_at": "2026-09-30T23:22:17+00:00",
   "document": "⚡ CONTRADICTION ENGINE.md",
   "loads": {
     "X-00": {
       "measured": {
-        "a_share": 0.2437,
-        "b_share": 0.7563,
-        "a_kb": 107.042,
+        "a_share": 0.2512,
+        "b_share": 0.7488,
+        "a_kb": 111.4619,
         "b_kb": 332.2266,
         "a_files": 7,
         "b_files": 10
       },
       "document_claims": {
-        "p1_share": 0.24,
-        "p2_share": 0.76,
-        "p1_kb": 107,
+        "p1_share": 0.25,
+        "p2_share": 0.75,
+        "p1_kb": 112,
         "p1_files": 7,
         "p2_kb": 332,
         "p2_files": 10
@@ -26,19 +26,19 @@
     },
     "X-01": {
       "measured": {
-        "a_share": 0.6705,
-        "b_share": 0.3295,
+        "a_share": 0.6635,
+        "b_share": 0.3365,
         "a_kb": 389.3496,
-        "b_kb": 191.3145,
+        "b_kb": 197.4678,
         "a_files": 6,
         "b_files": 7
       },
       "document_claims": {
-        "p1_share": 0.67,
-        "p2_share": 0.33,
+        "p1_share": 0.66,
+        "p2_share": 0.34,
         "p1_kb": 389,
         "p1_files": 6,
-        "p2_kb": 191,
+        "p2_kb": 198,
         "p2_files": 7
       },
       "shares_match": true,
@@ -86,19 +86,19 @@
     },
     "X-04": {
       "measured": {
-        "a_share": 0.3585,
-        "b_share": 0.6415,
-        "a_kb": 267.8955,
-        "b_kb": 479.46,
+        "a_share": 0.3573,
+        "b_share": 0.6427,
+        "a_kb": 269.9824,
+        "b_kb": 485.6133,
         "a_files": 8,
         "b_files": 7
       },
       "document_claims": {
         "p1_share": 0.36,
         "p2_share": 0.64,
-        "p1_kb": 268,
+        "p1_kb": 270,
         "p1_files": 8,
-        "p2_kb": 480,
+        "p2_kb": 486,
         "p2_files": 7
       },
       "shares_match": true,
@@ -106,10 +106,10 @@
     },
     "X-05": {
       "measured": {
-        "a_share": 0.0704,
-        "b_share": 0.9296,
+        "a_share": 0.0703,
+        "b_share": 0.9297,
         "a_kb": 93.3594,
-        "b_kb": 1233.2139,
+        "b_kb": 1234.9473,
         "a_files": 7,
         "b_files": 8
       },
@@ -118,7 +118,7 @@
         "p2_share": 0.93,
         "p1_kb": 93,
         "p1_files": 7,
-        "p2_kb": 1233,
+        "p2_kb": 1235,
         "p2_files": 8
       },
       "shares_match": true,
@@ -126,10 +126,10 @@
     },
     "X-06": {
       "measured": {
-        "a_share": 0.7616,
-        "b_share": 0.2384,
+        "a_share": 0.7598,
+        "b_share": 0.2402,
         "a_kb": 1383.5664,
-        "b_kb": 433.083,
+        "b_kb": 437.5029,
         "a_files": 9,
         "b_files": 9
       },
@@ -138,7 +138,7 @@
         "p2_share": 0.24,
         "p1_kb": 1384,
         "p1_files": 9,
-        "p2_kb": 432,
+        "p2_kb": 438,
         "p2_files": 9
       },
       "shares_match": true,
@@ -146,9 +146,9 @@
     },
     "X-07": {
       "measured": {
-        "a_share": 0.0764,
-        "b_share": 0.9236,
-        "a_kb": 237.7119,
+        "a_share": 0.0777,
+        "b_share": 0.9223,
+        "a_kb": 242.1318,
         "b_kb": 2874.7236,
         "a_files": 5,
         "b_files": 10
@@ -156,7 +156,7 @@
       "document_claims": {
         "p1_share": 0.08,
         "p2_share": 0.92,
-        "p1_kb": 238,
+        "p1_kb": 242,
         "p1_files": 5,
         "p2_kb": 2875,
         "p2_files": 10
@@ -186,9 +186,9 @@
     },
     "X-09": {
       "measured": {
-        "a_share": 0.101,
-        "b_share": 0.899,
-        "a_kb": 175.9199,
+        "a_share": 0.1029,
+        "b_share": 0.8971,
+        "a_kb": 179.7402,
         "b_kb": 1566.2031,
         "a_files": 6,
         "b_files": 8
@@ -196,7 +196,7 @@
       "document_claims": {
         "p1_share": 0.1,
         "p2_share": 0.9,
-        "p1_kb": 176,
+        "p1_kb": 180,
         "p1_files": 6,
         "p2_kb": 1566,
         "p2_files": 8
@@ -206,9 +206,9 @@
     },
     "X-10": {
       "measured": {
-        "a_share": 0.3259,
-        "b_share": 0.6741,
-        "a_kb": 288.7666,
+        "a_share": 0.326,
+        "b_share": 0.674,
+        "a_kb": 288.8447,
         "b_kb": 597.2266,
         "a_files": 8,
         "b_files": 11

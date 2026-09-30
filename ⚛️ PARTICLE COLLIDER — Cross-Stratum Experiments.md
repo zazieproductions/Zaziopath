@@ -2,7 +2,7 @@
 
 > **Dated 2026-09-30.** Instrument `ZP-PC-2026-0930` · seed `20260930` · α = 0.05, family-wise α = 0.05/13 = **0.0038**
 > **State:** 13 beams fired · **3 HOLD · 9 SNAP · 1 NO-BEAM** · engine `tools/particle_collider.py` · machine log `docs/collider/beam_log.json` · figure `docs/figures/fig9_beamline.png` (FIG 9)
-> **Standing rule of this chamber:** *never promote an aesthetic coincidence into evidence without testing it.* Every number below is re-derivable from primary files by re-running the engine. Anything that looked beautiful and died under its null is recorded here with its corpse intact.
+> **Standing rule of this chamber:** *never promote an aesthetic coincidence into evidence without testing it.* The saved `beam_log.json` is the record of this run. Re-derivation requires its source tree and engine revision; the log does not hash the engine code. A rerun on the merged tree is a new experiment, not a reproduction. Anything that looked beautiful and died under its null is recorded here with its corpse intact.
 
 ---
 
@@ -343,12 +343,11 @@ python3 tools/particle_collider.py --no-figure
 python3 tools/particle_collider.py --render-only  # redraw FIG 9 from the committed log
 ```
 
-The engine is **pinned to this report's census** (`CENSUS_PIN_MD`, the 43 root/docs markdown
-files as committed at `3f78d7a`). Because `wikilinks()` reads every markdown file in the tree,
-a vault that gains a document would silently change C-04's link geometry on a naive re-run;
-on a moved census a full run therefore refuses with `CENSUS MOVED` and exits non-zero.
-`--recensus` acknowledges that the run belongs to a *new* report id — a dated experiment
-does not get re-measured behind its own back.
+The engine's `CENSUS_PIN_MD` pins the **names of the 43 root/docs Markdown files** at `3f78d7a`, because `wikilinks()` reads that path list. It does not hash file contents or identify the original engine bytes. A vault that gains or loses a Markdown path would silently change C-04's link geometry on a naive re-run; on a moved path census a full run therefore refuses with `CENSUS MOVED` and exits non-zero. `--recensus` acknowledges that a new run belongs to a *new* report id — a dated experiment does not get re-measured behind its own back.
+
+### Input-snapshot audit
+
+The saved `beam_log.json` has 145 inventory rows. Its 142 normalized source paths and byte counts match the tracked tree at base commit `6e3cfa94bafa743b45acae4f220ed6f645391c33`; the three additional rows are the collider engine, the saved log itself, and the original `docs/figures/fig8_beamline.png`. One diagnostic makes the distinction visible: the log records `README.md` as **44,790 bytes**, matching the base commit, while README at `3f78d7a` is **46,979 bytes**. So the saved beam results are supported as a run on the earlier input snapshot, not as a content-level measurement of the later PR-head tree named by the path-list pin. The log's self-row is pre-write (131,369 bytes recorded; 131,985 bytes in the saved file), and the engine row's byte count matches the committed script while its decoded character count does not. These are post-hoc path/size comparisons, not content hashes; the exact original engine revision cannot be certified from the log. The measured pool remains 117 artifacts, but later main-branch material and the ancestry report are outside this run. Absence from that snapshot is not a null result.
 
 Outputs: `docs/collider/beam_log.json` (every statistic above, plus the 117-artifact inventory, the distance matrix, the veto register and the draw dispositions) and `docs/figures/fig9_beamline.png`. Seed `20260930` fixes the draw; permutation p-values use 4,000 shuffles (400 for NC-1). Text extraction needs `pypdf`; the text cache lives in `$TMPDIR/zaziopath_collider_text`, never in the repo.
 
