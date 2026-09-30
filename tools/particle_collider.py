@@ -1726,7 +1726,7 @@ def render_figure(log):
     gs = fig.add_gridspec(2, 3, width_ratios=[0.92, 1.72, 0.86], height_ratios=[1, 1],
                           left=0.042, right=0.986, top=0.855, bottom=0.055,
                           wspace=0.26, hspace=0.30)
-    fig.text(0.042, 0.965, "FIG 8 · THE BEAM LINE — cross-stratum collisions, triage and verdicts",
+    fig.text(0.042, 0.965, "FIG 9 · THE BEAM LINE — cross-stratum collisions, triage and verdicts",
              fontsize=16, fontweight="bold", ha="left", va="center")
     fig.text(0.042, 0.925, "ZP-PC-2026-0930 · seed 20260930 · every count re-derived from primary files · "
                            "α = 0.05/13 = 0.0038 · chip colour = stratum (README §00a), never verdict",
@@ -1770,7 +1770,7 @@ def render_figure(log):
     top, bot = 0.965, 0.045
     ax.text(0.0, 1.005, "B · thirteen beams: what was crossed, and what came back",
             fontsize=10.5, fontweight="bold", transform=ax.transAxes, va="bottom")
-    for label, x in (("BEAM", 0.0), ("CROSSED", 0.058), ("VERDICT", 0.360), ("WHAT THE NULL SAID", 0.470)):
+    for label, x in (("BEAM", 0.0), ("CROSSED", 0.058), ("VERDICT", 0.360), ("WHAT THE NULL SAID", 0.492))):
         ax.text(x, top + 0.008, label, fontsize=8.0, fontweight="bold", color=DIM,
                 transform=ax.transAxes, va="bottom")
     GLYPH_MARK = {"HOLD": "✓", "SNAP": "✗", "NO-BEAM": "⊘", "PENDING": "◷"}
@@ -1794,16 +1794,16 @@ def render_figure(log):
         ax.text(0.1235, yv, gb, ha="center", va="center", fontsize=8.0, transform=ax.transAxes,
                 color="white" if cb in WHITE_ON else INK)
         ax.text(0.0, yv, b["id"], fontsize=9.2, fontweight="bold", va="center", transform=ax.transAxes)
-        ax.text(0.140, yv + 0.009, _disp(b["source"], 26), fontsize=6.9, va="center", transform=ax.transAxes)
-        ax.text(0.140, yv - 0.012, _disp(b["target"], 26), fontsize=6.9, va="center", color=DIM,
+        ax.text(0.140, yv + 0.009, _disp(b["source"], 22), fontsize=6.9, va="center", transform=ax.transAxes)
+        ax.text(0.140, yv - 0.012, _disp(b["target"], 22), fontsize=6.9, va="center", color=DIM,
                 transform=ax.transAxes)
         v = b["verdict"]
         ax.text(0.360, yv + 0.006, f"{GLYPH_MARK[v]} {v}", fontsize=9.2, va="center",
                 fontweight="bold", transform=ax.transAxes)
         sub = b["failure_class"] or ("survives α = 0.0038" if v == "HOLD" else "")
         ax.text(0.360, yv - 0.015, sub, fontsize=6.6, va="center", color="#7A736A", transform=ax.transAxes)
-        for k, ln in enumerate(_wrap(b["verdict_note"], 62)[:3]):
-            ax.text(0.470, yv + 0.013 - k * 0.0185, ln, fontsize=7.1, va="center",
+        for k, ln in enumerate(_wrap(b["verdict_note"], 58)[:3]):
+            ax.text(0.492, yv + 0.013 - k * 0.0185, ln, fontsize=7.1, va="center",
                     color="#2A251F", transform=ax.transAxes)
         ax.plot([0.0, 0.995], [yv - 0.030, yv - 0.030], color=GRID, lw=0.5, alpha=0.8,
                 transform=ax.transAxes)
@@ -1852,17 +1852,14 @@ def render_figure(log):
               ("⊘ NO-BEAM", "nothing survived triage: no shared referent, an "
                "unreplicated source, or the instrument failed its own validity gate"),
               ("◷ PENDING", "the beam is a clock and its window has not closed yet")]
-    yy = 0.90
+    yy = 0.94
     for mark, txt in legend:
-        ax.text(0.0, yy, mark, fontsize=9.4, fontweight="bold", transform=ax.transAxes, va="top")
-        lines = _wrap(txt, 37)
+        ax.text(0.0, yy, mark, fontsize=8.8, fontweight="bold", transform=ax.transAxes, va="top")
+        lines = _wrap(txt, 38)
         for k, ln in enumerate(lines):
-            ax.text(0.245, yy - k * 0.062, ln, fontsize=7.2, color="#3A342C",
+            ax.text(0.26, yy - k * 0.058, ln, fontsize=7.1, color="#3A342C",
                     transform=ax.transAxes, va="top")
-        yy -= 0.062 * max(len(lines), 1) + 0.055
-    ax.text(0.0, 0.02, "regenerate:  python3 tools/particle_collider.py\n"
-            "log:  docs/collider/beam_log.json", fontsize=7.4, color="#7A736A",
-            transform=ax.transAxes, va="bottom")
+        yy -= 0.058 * max(len(lines), 1) + 0.052
     out = os.path.join(ROOT, "docs", "figures", "fig9_beamline.png")
     fig.savefig(out, dpi=150)
     plt.close(fig)
