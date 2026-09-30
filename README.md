@@ -262,6 +262,7 @@ an inventory of what is actually committed at the root — nothing is aspiration
 | File | What it is |
 |---|---|
 | [`🔍 CASE FILE — Pattern Forensics.md`](🔍%20CASE%20FILE%20—%20Pattern%20Forensics.md) | Report `ZP-PF-2026-0902`. Ten findings read off the artifacts alone — ISRC lags, provenance holes, duration collapses, reissue inflation, strata mass. Every finding dated and confidence-tiered. See §07a. |
+| [`🧨 COUNTER-ZAZIOPATH.md`](%F0%9F%A7%A8%20COUNTER-ZAZIOPATH.md) | Report `ZP-CZ-2026-0930`. A hostile review of the whole apparatus (overfitting, AI suggestion loops, reification, coherence-as-truth, exceptionalism, self-knowledge as prestige), with a response register that answers only what the repo's evidence supports and an unresolved ledger for the rest. Reproduce with `tools/verify_counter_zaziopath.py`. Itself an AI-commissioned artifact; see its §1. |
 | `tools/generate_figures.py` | The atlas engine. One script, one palette (Okabe–Ito, §00a), regenerates the Pattern Atlas from the committed CSV and file census. |
 | `tools/generate_complex_map.py` | The §00c map renderer. A dependency-light editorial layout that preserves 17 indexed strange wires, 8 terminal feeds, and the feedback loop without automatic-layout crossings. |
 | `docs/figures/` | The exhibits: FIG 0–7 plus the §00c systems map in zoomable SVG and README-ready PNG, each with descriptive alt text. |

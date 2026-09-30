@@ -1,0 +1,466 @@
+{
+  "run_date": "2026-09-30",
+  "pypdf": true,
+  "results": {
+    "csv_rows": {
+      "value": 182,
+      "note": ""
+    },
+    "F01_2019_2020_rows_with_isrc_year_22": {
+      "value": 13,
+      "note": "Case File F-01 says 13"
+    },
+    "F02_na_rows": {
+      "value": 21,
+      "note": "Case File F-02 says 21"
+    },
+    "F02_na_by_release": {
+      "value": {
+        "Interference Archive 01010101": 5,
+        "Anything Can Happen On An Electric Day": 5,
+        "The Triangular Savant": 6,
+        "Greetings From Tinsel Time (Super Deluxe Edition)": 4,
+        "Sellotape (Super Deluxe Edition)": 1
+      },
+      "note": ""
+    },
+    "F03_median_by_year": {
+      "value": {
+        "2019": {
+          "n": 5,
+          "median": "2:53",
+          "under_120s": 0
+        },
+        "2020": {
+          "n": 8,
+          "median": "2:28",
+          "under_120s": 3
+        },
+        "2021": {
+          "n": 5,
+          "median": "2:16",
+          "under_120s": 1
+        },
+        "2022": {
+          "n": 23,
+          "median": "2:16",
+          "under_120s": 8
+        },
+        "2023": {
+          "n": 43,
+          "median": "3:32",
+          "under_120s": 12
+        },
+        "2024": {
+          "n": 60,
+          "median": "1:22",
+          "under_120s": 39
+        },
+        "2025": {
+          "n": 4,
+          "median": "2:19",
+          "under_120s": 1
+        },
+        "2026": {
+          "n": 34,
+          "median": "2:20",
+          "under_120s": 14
+        }
+      },
+      "note": "Case File F-03"
+    },
+    "F03_shortest_longest": {
+      "value": [
+        7,
+        535
+      ],
+      "note": "seconds; 7 and 535 = 0:07 / 8:55"
+    },
+    "F04_deluxe_track_counts": {
+      "value": {
+        "Stutter to stammer (Super Deluxe Edition)": 32,
+        "Greetings From Tinsel Time (Super Deluxe Edition)": 28,
+        "Sellotape (Super Deluxe Edition)": 22
+      },
+      "note": ""
+    },
+    "F05_2025_rows": {
+      "value": 4,
+      "note": ""
+    },
+    "F05_2025_feature_rows": {
+      "value": 2,
+      "note": "rows whose Artist column is not Zazie Productions"
+    },
+    "xlsx_sheets": {
+      "value": [
+        "COVER",
+        "LEGEND",
+        "CATALOG",
+        "FEATURES & COLLABS",
+        "COMPILATIONS",
+        "STATISTICS"
+      ],
+      "note": ""
+    },
+    "xlsx_legend_bc_only_releases": {
+      "value": [
+        "G7e Torpedo",
+        "Interference Archive 01010101",
+        "The Triangular Savant",
+        "Anything Can Happen On An Electric Day"
+      ],
+      "note": "LEGEND column ISRC PREFIX contains 'BC-only'"
+    },
+    "xlsx_cover_states_bandcamp_only_not_on_deezer": {
+      "value": true,
+      "note": ""
+    },
+    "xlsx_legend_defines_isrc_year_as_year_of_assignment": {
+      "value": true,
+      "note": ""
+    },
+    "xlsx_catalog_rows": {
+      "value": 200,
+      "note": ""
+    },
+    "xlsx_G7e_Torpedo_rows": {
+      "value": 6,
+      "note": "Bandcamp-only 2019 EP"
+    },
+    "csv_contains_G7e_Torpedo": {
+      "value": false,
+      "note": ""
+    },
+    "xlsx_2025_compilation_rows": {
+      "value": 3,
+      "note": "COMPILATIONS sheet, YEAR column"
+    },
+    "xlsx_2025_feature_rows": {
+      "value": 2,
+      "note": ""
+    },
+    "xlsx_2025_catalog_rows": {
+      "value": 8,
+      "note": "CATALOG sheet rows with YEAR 2025 (singles + features + compilation appearances)"
+    },
+    "casefile_mentions_bandcamp_or_workbook": {
+      "value": false,
+      "note": "F-02 names 'a platform that issued no codes' but never identifies it"
+    },
+    "casefile_contains_both_readings_agree_sentence": {
+      "value": true,
+      "note": ""
+    },
+    "deezer_albums_listed": {
+      "value": 16,
+      "note": ""
+    },
+    "csv_release_dates": {
+      "value": 21,
+      "note": ""
+    },
+    "release_dates_in_both": {
+      "value": 15,
+      "note": ""
+    },
+    "csv_only_release_dates": {
+      "value": [
+        "2019-09-09",
+        "2021-05-19",
+        "2022-08-03",
+        "2022-10-17",
+        "2025-06-22",
+        "2026-04-08"
+      ],
+      "note": ""
+    },
+    "deezer_only_release_dates": {
+      "value": [
+        "2024-07-09"
+      ],
+      "note": ""
+    },
+    "F02_hole_releases_absent_from_deezer_listing": {
+      "value": true,
+      "note": "dates ['2021-05-19', '2022-08-03', '2022-10-17']"
+    },
+    "isrc_spot_check_title_match": {
+      "value": true,
+      "note": ""
+    },
+    "isrc_spot_check_duration_match": {
+      "value": true,
+      "note": ""
+    },
+    "isrc_spot_check_deezer_resolves_to_2024_deluxe_only": {
+      "value": true,
+      "note": "the 2019 ISRC resolves to the 2024 deluxe; the 2019 original is not listed as its own Deezer album"
+    },
+    "cv_entries_dated_2025": {
+      "value": 22,
+      "note": "lines beginning '2025' or '2025–26' (wrapped lines not double-counted)"
+    },
+    "cv_2025_films": {
+      "value": [
+        "The Haunted",
+        "Eclipsed",
+        "Expire"
+      ],
+      "note": ""
+    },
+    "cv_lists_interference_archive_year": {
+      "value": [
+        "2022"
+      ],
+      "note": "CSV says 2021-05-19"
+    },
+    "cv_lists_to_halt_space_adrift_year": {
+      "value": [
+        "2022"
+      ],
+      "note": "CSV/Deezer say 2023-04-28"
+    },
+    "identity_graded_labels": {
+      "value": {
+        "Very High": 18,
+        "Moderate": 10,
+        "Low": 5,
+        "High": 11,
+        "Extremely High": 8,
+        "Moderate-Low": 1,
+        "Moderate-High": 5
+      },
+      "note": "n=58 distinct label-bearing attributes (+ 'Peter Pan Complex: 65%'); duplicates removed"
+    },
+    "identity_share_very_or_extremely_high": {
+      "value": 0.448,
+      "note": ""
+    },
+    "identity_share_high_or_above": {
+      "value": 0.638,
+      "note": "High + Very High + Extremely High"
+    },
+    "identity_first_line": {
+      "value": "Make this into a spreadsheet for me. Im only sure ",
+      "note": "chat-prompt residue at the top of the committed card"
+    },
+    "compendium_calibration_notes_by_chapter": {
+      "value": {
+        "6": 13,
+        "7": 16,
+        "8": 20,
+        "9": 21
+      },
+      "note": "chapters 6-9 = incoming personas"
+    },
+    "compendium_evidence_grades_by_chapter": {
+      "value": {
+        "1": 10
+      },
+      "note": ""
+    },
+    "compendium_user_agreement_sentence": {
+      "value": true,
+      "note": ""
+    },
+    "compendium_two_poles_sentence": {
+      "value": true,
+      "note": ""
+    },
+    "compendium_pre_named_critique_archetypes_present": {
+      "value": {
+        "The Self-Awareness Prestige Trap": true,
+        "The Anti-Ordinary Missionary": true,
+        "The Evidentiary Stylist": true,
+        "The Moral Aesthetician": true,
+        "The Solitary Genius Emergency": true,
+        "The Complexity Exemption": true,
+        "The Beautifully Explained Recidivist": true,
+        "The Witness Engineer": true
+      },
+      "note": ""
+    },
+    "corpus_files_searched": {
+      "value": 115,
+      "note": "md, extension-less/verdict files, html, txt, csv, docx, pdf"
+    },
+    "corpus_words_searched": {
+      "value": 382917,
+      "note": ""
+    },
+    "6foundations_raw": {
+      "value": [
+        [
+          "Care",
+          "8"
+        ],
+        [
+          "Fairness",
+          "6"
+        ],
+        [
+          "Loyalty",
+          "6"
+        ],
+        [
+          "Authority",
+          "6"
+        ],
+        [
+          "Sanctity",
+          "6"
+        ],
+        [
+          "Liberty",
+          "30"
+        ]
+      ],
+      "note": ""
+    },
+    "6foundations_estimated_ideology_mentions_objectivism": {
+      "value": true,
+      "note": ""
+    },
+    "6foundations_next_matches": {
+      "value": "Bleeding Heart Libertarianism, Paleolibertarianism, Anarcho-Capitalism",
+      "note": ""
+    },
+    "files_other_than_the_result_that_mention_it": {
+      "value": [],
+      "note": "searched corpus excluding the result file itself"
+    },
+    "vocabulary_file_counts": {
+      "value": {
+        "barnum": 0,
+        "forer": 0,
+        "test-retest": 0,
+        "retest": 0,
+        "inter-rater": 0,
+        "base rate": 0,
+        "base-rate": 0,
+        "preregist": 0,
+        "pre-regist": 4,
+        "holdout": 0,
+        "hold-out": 0,
+        "overfit": 0,
+        "reification": 0,
+        "reify": 0,
+        "forking paths": 0,
+        "multiple comparison": 0,
+        "demand characteristic": 0,
+        "personal validation": 0,
+        "confirmation bias": 1,
+        "sycophan": 1,
+        "falsif": 30,
+        "validity": 5,
+        "psychometric": 2
+      },
+      "note": ""
+    },
+    "typology_files": {
+      "value": 12,
+      "note": "files mentioning MBTI, Enneagram or Socionics"
+    },
+    "vocabulary_hit_files_for_nonzero_validity_terms": {
+      "value": {
+        "sycophan": [
+          "verdict_from_A.i_6"
+        ],
+        "confirmation bias": [
+          "Zazie_Productions_Shadow_Signal_Stewardship_Mega_Compendium.pdf"
+        ],
+        "pre-regist": [
+          "CASE STUDY — The Summoned Witness.md",
+          "ZAZIOPATH — Collected Readings (2026-09-23).md",
+          "ZAZIOPATH — Collected Readings (2026-09-23).pdf",
+          "Zaziopath_XRay_Two_Voices.pdf"
+        ],
+        "psychometric": [
+          "⚡ CONTRADICTION ENGINE.md",
+          "GPT Model 7.7-t Surveillance Subroutine.pdf"
+        ]
+      },
+      "note": ""
+    },
+    "console_crosswalk_options": {
+      "value": 9,
+      "note": ""
+    },
+    "console_question_items": {
+      "value": 12,
+      "note": ""
+    },
+    "console_escape_terms_found": {
+      "value": [],
+      "note": "searched stewardship_receipt.html for disconfirming options"
+    },
+    "preruled_ledger_lines": {
+      "value": 14,
+      "note": ""
+    },
+    "preruled_ledger_lines_filled": {
+      "value": 0,
+      "note": "committed copy only; local receipts are invisible to Git by design"
+    },
+    "credential_docs_mentions_of_zaziopath_or_self_analysis": {
+      "value": {
+        "Zazie_Kanwar-Torge_Artist_CV_2026.pdf": 0,
+        "Zazie_Kanwar-Torge_Artist_CV_2026_electroacoustic.pdf": 0,
+        "Zazie_Media_Master (1).pdf": 0,
+        "ZazieKanwarTorge_ArtZoydResidency_SignalRotAtlas_2026.pdf": 0
+      },
+      "note": ""
+    },
+    "shadow_resume_pages": {
+      "value": 11,
+      "note": ""
+    },
+    "shadow_resume_unusually": {
+      "value": 2,
+      "note": ""
+    },
+    "shadow_resume_first_lines": {
+      "value": "ADAPTIVE INTELLIGENCE DOSSIER / PRIVATE WORKING DOCUMENT SHADOW RESUME A record of survival, navigation, concealed ability, and the conditio",
+      "note": ""
+    },
+    "analyses_of_analyses_documents": {
+      "value": 13,
+      "note": "hand-listed; V2..V6 each read V1..; the rest audit the verdict corpus or its audits"
+    },
+    "analyses_of_analyses_words": {
+      "value": 61829,
+      "note": ""
+    },
+    "readme_depth_cap_text_present": {
+      "value": true,
+      "note": ""
+    },
+    "readme_adversarial_prompt_presupposes_hidden_content": {
+      "value": true,
+      "note": ""
+    },
+    "readme_constitutional_authorship_quote_present": {
+      "value": true,
+      "note": ""
+    },
+    "stewardship_named_files_bytes": {
+      "value": {
+        "stewardship_receipt.html": 13582,
+        "Anti-Perfectionism Brain Hacks.md": 1866,
+        "Entry Instructions for the Undetonated Artist.md": 3331
+      },
+      "note": ""
+    },
+    "github_repo_observed_2026_09_30": {
+      "value": {
+        "visibility": "public",
+        "created_at": "2026-08-27T04:48:12Z",
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0
+      },
+      "note": "via `gh api repos/zazieproductions/Zaziopath` on 2026-09-30"
+    }
+  }
+}
