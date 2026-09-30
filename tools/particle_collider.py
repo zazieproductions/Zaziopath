@@ -1770,7 +1770,7 @@ def render_figure(log):
     top, bot = 0.965, 0.045
     ax.text(0.0, 1.005, "B · thirteen beams: what was crossed, and what came back",
             fontsize=10.5, fontweight="bold", transform=ax.transAxes, va="bottom")
-    for label, x in (("BEAM", 0.0), ("CROSSED", 0.058), ("VERDICT", 0.360), ("WHAT THE NULL SAID", 0.492))):
+    for label, x in (("BEAM", 0.0), ("CROSSED", 0.058), ("VERDICT", 0.360), ("WHAT THE NULL SAID", 0.492)):
         ax.text(x, top + 0.008, label, fontsize=8.0, fontweight="bold", color=DIM,
                 transform=ax.transAxes, va="bottom")
     GLYPH_MARK = {"HOLD": "✓", "SNAP": "✗", "NO-BEAM": "⊘", "PENDING": "◷"}
